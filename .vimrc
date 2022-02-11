@@ -30,7 +30,8 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'mbbill/undotree'
 Plug 'frazrepo/vim-rainbow'
 Plug 'itchyny/lightline.vim'
-
+Plug 'dense-analysis/ale'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 let g:lightline = {
