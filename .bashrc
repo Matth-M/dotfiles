@@ -39,21 +39,23 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# set a fancy prompt (non-color, unless we know we "want" color)
-case "$TERM" in
-    xterm-color|*-256color) color_prompt=yes;;
-esac
+export TERM=xterm-256color
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
+# Disable Ctrl-S action (?)
+stty start undef stop undef
 
 ###################################################
 #  PS1
 ###################################################
 
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
 
-PS1="\e[0;32m\]\u: \w \]\e[0m\] \n> "
+PS1="\e[0;32m\]\u: \w \]\e[0m\]\$(parse_git_branch)\[\e[00m\] \n> "
 
 
 ###################################################
@@ -62,12 +64,13 @@ PS1="\e[0;32m\]\u: \w \]\e[0m\] \n> "
 
 #ls aliases
 alias ls='ls --color=auto'
+alias ll='ls -AlF'
+alias la='ls -A'
+alias l='ls -CF'
+
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 
 alias c='clear'
 
@@ -81,11 +84,14 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias matlab='bash ~/matlab/bin/matlab'
 
 alias v='vim'
+alias t='tmux'
+
 ###################################################
 #  PATH
 ###################################################
 
 export PATH=$PATH:/home/matth/.local/bin
+export PATH=$PATH:/home/matth/.local/bin/scripts
 
 
 ###################################################
