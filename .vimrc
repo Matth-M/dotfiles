@@ -97,3 +97,6 @@ nnoremap <C-q> :q<CR>
 nnoremap <leader><space> :w<CR>
 imap jj <Esc>
 
+imap { {}<Esc>i
+imap [ []<Esc>i
+imap ( ()<Esc>i

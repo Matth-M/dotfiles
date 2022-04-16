@@ -47,6 +47,9 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # Disable Ctrl-S action (?)
 stty start undef stop undef
 
+# Editor
+export EDITOR=vim
+
 ###################################################
 #  PS1
 ###################################################
@@ -86,6 +89,11 @@ alias matlab='bash ~/matlab/bin/matlab'
 alias v='vim'
 alias t='tmux'
 
+# git
+alias gs='git status'
+alias gl='git log --oneline --graph'
+alias ga='git add'
+
 ###################################################
 #  PATH
 ###################################################
@@ -116,5 +124,5 @@ unset __conda_setup
 #  STYLE
 ###################################################
 
-# Prompts a message when nex terminal is opened
+# Prompts a message when new terminal is opened
 figlet TERMINAL

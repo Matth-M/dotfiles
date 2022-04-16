@@ -38,7 +38,7 @@ exec --no-startup-id /usr/libexec/gnome-settings-daemon-localeexec
 # Fix a bug in gnome-settings-daemon: http://feeding.cloud.geek.nz/posts/creating-a-modern-tiling-desktop-environment-using-i3/
 exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/active false
 
-set $wallpaper $HOME/Pictures/Wallpapers/wallhaven-montagne_enneigee.png
+set $wallpaper $HOME/Pictures/Wallpapers/red-moon-minimalist.jpg
 #Loads wallpaper
 exec_always--no-startup-id feh --bg-scale $wallpaper
 
@@ -80,7 +80,7 @@ floating_modifier $mod
 bindsym $mod+t exec i3-sensible-terminal
 
 bindsym $mod+f exec --no-startup-id firefox
-bindsym $mod+n exec --no-startup-id nautilus
+bindsym $mod+n exec --no-startup-id thunar
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -232,7 +232,7 @@ bindsym $mod+ctrl+p exec --no-startup-id systemctl poweroff
 
 for_window [class="^.*"] border pixel 2 
 #Space between windows
-gaps inner 3 
+gaps inner 1
 #If only one window is opened, no spaces 
 smart_gaps on 
 #When windows is in fullscreen, doesn't display borders
