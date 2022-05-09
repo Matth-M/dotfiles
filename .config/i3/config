@@ -38,7 +38,8 @@ exec --no-startup-id /usr/libexec/gnome-settings-daemon-localeexec
 # Fix a bug in gnome-settings-daemon: http://feeding.cloud.geek.nz/posts/creating-a-modern-tiling-desktop-environment-using-i3/
 exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/active false
 
-set $wallpaper $HOME/Pictures/Wallpapers/red-moon-minimalist.jpg
+set $wallpaper $HOME/Pictures/Wallpapers/wallpapers_cool_oldirrtydoogz_deadpool_whipped_couple_wallpaper.jpg
+
 #Loads wallpaper
 exec_always--no-startup-id feh --bg-scale $wallpaper
 
@@ -81,6 +82,7 @@ bindsym $mod+t exec i3-sensible-terminal
 
 bindsym $mod+f exec --no-startup-id firefox
 bindsym $mod+n exec --no-startup-id thunar
+bindsym $mod+m exec --no-startup-id thunderbird
 
 # kill focused window
 bindsym $mod+Shift+Q kill

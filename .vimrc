@@ -21,6 +21,7 @@ set background=dark
 set laststatus=2
 set noshowmode "" No need since we use lightline
 set signcolumn=yes
+set directory^=$HOME/.vim/swap// ""Place .swp files in this directory
 
 
 """""""""""
@@ -74,18 +75,22 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+"nnoremap <C-S-h> <C-w><S-h>
+"nnoremap <C-S-j> <C-w><S-j>
+"nnoremap <C-S-k> <C-w><S-k>
+"nnoremap <C-S-l> <C-w><S-l>
 nnoremap <C-x> :call smoothie#upwards()<CR>
 nnoremap <C-o> <C-o>zz
-nnoremap <C-i> <C-i>zz
+"nnoremap <C-i> <C-i>zz
 
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>b :BuffergatorToggle<CR>
-nnoremap <leader>s :buffers<CR>
+nnoremap <leader>r :registers<CR>
+
 nnoremap <C-n> :NERDTreeToggle<CR>
 
 "Buffers
 nnoremap <leader>p <C-^>
-nnoremap <leader>n :bn<CR>
 
 "Tabs
 nnoremap <Tab> gt
@@ -100,3 +105,6 @@ imap jj <Esc>
 imap { {}<Esc>i
 imap [ []<Esc>i
 imap ( ()<Esc>i
+
+"Tags
+nnoremap ff <Ctrl-]>

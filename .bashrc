@@ -91,7 +91,7 @@ alias t='tmux'
 
 # git
 alias gs='git status'
-alias gl='git log --oneline --graph'
+alias graph='git log --oneline --graph --decorate'
 alias ga='git add'
 
 ###################################################
