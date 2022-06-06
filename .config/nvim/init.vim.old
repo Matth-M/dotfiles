@@ -1,0 +1,68 @@
+"""""""""""
+" Settings
+"""""""""""
+set number
+set rnu
+syntax on
+set mouse=a
+set encoding=utf-8
+set nohlsearch
+set incsearch
+set noerrorbells
+set smartcase
+set hidden
+set tabstop=4 softtabstop=4
+set smartindent
+set cindent shiftwidth=4
+set shiftwidth=4
+set expandtab
+set nowrap  
+set splitbelow splitright
+set background=dark
+set laststatus=2
+set noshowmode "" No need since we use lightline
+set signcolumn=yes
+set directory^=$HOME/.vim/swap// ""Place .swp files in this directory
+set tags=./tags;/;
+"set completeopt-=preview ""Disable preview window when using completion
+"set completeopt+=popup 
+"set completepopup=height:10,width:60,highlight:InfoPopup
+
+"""""""""""
+" Plugins
+"""""""""""
+
+call plug#begin(stdpath('data') . '/plugged')
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+Plug 'psliwka/vim-smoothie'
+
+call plug#end()
+
+""""""""""
+"Plugins settings"
+""""""""""
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_powerline_fonts = 1
+
+let g:webdevicons_enable_airline_tabline = 1
+
+
+"""""""""" 
+" Mapppings
+" """"""""
+
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+let mapleader =" "
+
