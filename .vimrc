@@ -28,6 +28,7 @@ set completeopt+=popup
 set tags=./tags;/;
 set completepopup=height:10,width:60,highlight:InfoPopup
 set autoread
+set cursorline
 
 """""""""""
 " Plugins
