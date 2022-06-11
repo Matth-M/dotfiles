@@ -17,12 +17,16 @@ o.smartcase = true
 o.shiftwidth = 4
 o.scrolloff = 8
 o.sidescrolloff = 12
+o.showmode = false
+o.hidden = true
+o.completeopt= "menu,menuone,noselect"
 
 -- window settings
 wo.number = true
 wo.relativenumber = true
 wo.wrap = false
 wo.cursorline = true
+wo.signcolumn = "yes"
 
 -- buffer settings
 bo.fileencoding = "utf-8"

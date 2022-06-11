@@ -1,2 +1,7 @@
 require('settings')
 require('mappings')
+require('plugins')
+require('lualine_cfg')
+require('indent_blankline_cfg')
+require('nvim-tree_cfg')
+require('cmp')
