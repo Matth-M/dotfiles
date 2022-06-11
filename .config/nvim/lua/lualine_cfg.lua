@@ -1,5 +1,11 @@
+-- local lualine_status_ok, lualine = pcall(require, "lualine")
+-- if not cmp_status_ok then
+--   return
+-- end
+
 local lualine = require('lualine')
-setup{
+
+config = {
   options = {
     icons_enabled = true,
     theme = 'auto',
@@ -28,3 +34,5 @@ setup{
   tabline = {},
   extensions = {}
 }
+
+lualine.setup(config)

@@ -16,5 +16,10 @@ map("n", "<C-j>", "<C-w>j", options)
 map("n", "<C-k>", "<C-w>k", options)
 map("n", "<C-l>", "<C-w>l", options)
 
--- netrw
-map("n", "<leader>e", ":NERDTreeFocus<cr>", options)
+
+map("n", "<leader>r", ":registers<cr>", options)
+
+
+
+----- PLugins --------
+map("n", "<leader>e", ":NvimTreeFocus<cr>", options)
