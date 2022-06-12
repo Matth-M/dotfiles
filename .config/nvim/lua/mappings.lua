@@ -1,4 +1,4 @@
-local map = vim.api.nvim_set_keymap
+local map = vim.api.nvim_set_keymap -- vim.api.nvim_set_keymap({mode}, {keymap}, {mapped to}, {option})
 local options = { noremap = true }
 
 -- map the leader key
@@ -23,3 +23,4 @@ map("n", "<leader>r", ":registers<cr>", options)
 
 ----- PLugins --------
 map("n", "<leader>e", ":NvimTreeFocus<cr>", options)
+map("n", "<leader>ec", ":NvimTreeClose<cr>", options)

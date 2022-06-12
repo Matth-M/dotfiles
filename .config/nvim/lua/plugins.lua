@@ -23,17 +23,16 @@ return packer.startup(function(use)
 
     -- completion
     use "neovim/nvim-lspconfig"
-    use {
-       'hrsh7th/nvim-cmp', -- completion plugin
-       requires = {
-	   {'hrsh7th/cmp-buffer', opt = true}, -- buffer completion
-	   {'hrsh7th/cmp-path', opt = true},  -- path completion
-	   {'hrsh7th/cmp-cmdline', opt = true}, --cmdline completion
-	   {'saadparwaiz1/cmp_luasnip', opt = true} -- snippet completion
-       }
-    }
+    use "hrsh7th/cmp-nvim-lsp"
+    use 'hrsh7th/nvim-cmp' 
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
+       
+    
 
      use "L3MON4D3/LuaSnip"
+     use "saadparwaiz1/cmp_luasnip"
 
     -- exploration
     use {
