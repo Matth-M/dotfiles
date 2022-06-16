@@ -19,8 +19,6 @@ return packer.startup(function(use)
     -- editing
     use "tpope/vim-surround"
     use "jiangmiao/auto-pairs"
-    use "lukas-reineke/indent-blankline.nvim"
-    use "ap/vim-css-color"
 
     -- completion
     use 'hrsh7th/nvim-cmp'
@@ -34,16 +32,16 @@ return packer.startup(function(use)
     use "L3MON4D3/LuaSnip"
     use "saadparwaiz1/cmp_luasnip"
 
---    -- LSP
---    use {
---	{
---	    "williamboman/nvim-lsp-installer",
---	},
---	{
---	    "neovim/nvim-lspconfig",
---	    after = "nvim-lsp-installer",
---	}
---    }
+    -- LSP
+    use {
+        {
+            "williamboman/nvim-lsp-installer",
+        },
+        {
+            "neovim/nvim-lspconfig",
+            after = "nvim-lsp-installer",
+        }
+    }
 
     -- exploration
     use {
@@ -53,11 +51,15 @@ return packer.startup(function(use)
 	},
 	tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
+    use "nvim-telescope/telescope.nvim"
 
+    -- misc
     use {
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     }
     use "p00f/nvim-ts-rainbow"
+    use "lukas-reineke/indent-blankline.nvim"
+    use "ap/vim-css-color"
 
 end)

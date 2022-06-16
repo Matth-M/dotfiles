@@ -5,10 +5,10 @@ end
 
 configs.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "c", "lua"},
+  ensure_installed = { "c", "lua", "python", "javascript", "cpp", "css", "html"},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
-  sync_install = false,
+  sync_install = true,
 
   -- List of parsers to ignore installing (for "all")
   ignore_install = { "" },

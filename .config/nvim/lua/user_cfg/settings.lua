@@ -21,7 +21,7 @@ o.showmode = false
 o.hidden = true
 o.completeopt= "menu,menuone,noselect"
 o.timeout = true
-o.timeoutlen = 300
+o.timeoutlen = 500
 
 -- window settings
 wo.number = true

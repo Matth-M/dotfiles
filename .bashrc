@@ -95,6 +95,7 @@ alias t='tmux'
 alias gs='git status'
 alias graph='git log --oneline --graph --decorate'
 alias ga='git add'
+alias gc='git checkout'
 
 ###################################################
 #  PATH
