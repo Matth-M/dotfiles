@@ -48,7 +48,7 @@ cmp.setup({
 	},
     },
     experimental = {
-	ghost_text = true,
+	ghost_text = false,
 	native_menu = false,
     }
 })
@@ -80,9 +80,8 @@ sources = cmp.config.sources({
 })
 })
 
--- -- Setup lspconfig.
--- local capabilities = require('cmp-nvim-lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
--- -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
--- require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
--- capabilities = capabilities
--- }
+-- Setup lspconfig.
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+--require('lspconfig')['tsserver'].setup {
+--capabilities = capabilities
+--}

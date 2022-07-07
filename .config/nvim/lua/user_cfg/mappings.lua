@@ -8,7 +8,12 @@ vim.g.mapleader = ' '  -- 'vim.g' sets global variables
 
 -- Navigation --
 -- splits
--- Add resize mappings
+-- resize
+map("n", "<A-j>", "<cmd>resize -3<cr>", options)
+map("n", "<A-h>", "<cmd>vertical resize -3<cr>", options)
+map("n", "<A-k>", "<cmd>resize +3<cr>", options)
+map("n", "<A-l>", "<cmd>vertical resize +3<cr>", options)
+-- change split
 map("n", "<C-h>", "<C-w>h", options)
 map("n", "<C-j>", "<C-w>j", options)
 map("n", "<C-k>", "<C-w>k", options)
@@ -21,6 +26,8 @@ map("n", "<leader>e", ":NvimTreeFocus<cr>", options)
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", options)
 
 
+-- Editing --
+map("i", "ii", "<esc>", options)
 
 -- Misc
 map("n", "<leader>s", ":w | source %<cr>", options)

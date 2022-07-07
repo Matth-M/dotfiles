@@ -59,7 +59,7 @@ return packer.startup(function(use)
         run = ":TSUpdate",
     }
     use "p00f/nvim-ts-rainbow"
-    use "lukas-reineke/indent-blankline.nvim"
     use "ap/vim-css-color"
+    use "glepnir/indent-guides.nvim"
 
 end)

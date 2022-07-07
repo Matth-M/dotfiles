@@ -14,7 +14,6 @@ o.showtabline = 2
 o.splitright = true
 o.splitbelow = true
 o.smartcase = true
-o.shiftwidth = 4
 o.scrolloff = 8
 o.sidescrolloff = 12
 o.showmode = false
@@ -29,6 +28,7 @@ wo.relativenumber = true
 wo.wrap = false
 wo.cursorline = true
 wo.signcolumn = "yes"
+wo.cursorlineopt = "number,line"
 
 -- buffer settings
 bo.fileencoding = "utf-8"
@@ -36,3 +36,4 @@ bo.expandtab = true
 bo.swapfile = true
 bo.smartindent = true
 bo.tabstop = 4
+bo.shiftwidth = 4
