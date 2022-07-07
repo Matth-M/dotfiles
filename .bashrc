@@ -90,6 +90,7 @@ alias matlab='bash ~/matlab/bin/matlab'
 alias v='vim'
 alias nv='nvim'
 alias t='tmux'
+alias chrome='/usr/bin/google-chrome-stable'
 
 # git
 alias gs='git status'
@@ -129,3 +130,4 @@ unset __conda_setup
 
 # Prompts a message when new terminal is opened
 figlet TERMINAL
+. "$HOME/.cargo/env"
