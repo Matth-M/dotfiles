@@ -31,5 +31,5 @@ map("i", "ii", "<esc>", options)
 
 -- Misc
 map("n", "<leader>s", ":w | source %<cr>", options)
-map("n", "<leader>nu", "<cmd>set invrnu<cr>", options) -- See help :set-inv
+map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
 
