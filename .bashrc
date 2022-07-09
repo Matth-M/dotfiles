@@ -90,7 +90,6 @@ alias matlab='bash ~/matlab/bin/matlab'
 alias v='vim'
 alias nv='nvim'
 alias t='tmux'
-alias chrome='/usr/bin/google-chrome-stable'
 
 # git
 alias gs='git status'
