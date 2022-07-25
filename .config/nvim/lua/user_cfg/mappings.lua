@@ -28,8 +28,10 @@ map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", options)
 
 -- Editing --
 map("i", "ii", "<esc>", options)
+map("n", "VV", "<esc>ggVG", options)
 
 -- Misc
-map("n", "<leader>s", ":w | source %<cr>", options)
+map("n", "<leader>ss", ":w | source %<cr>", options)
+map("n", "<leader>sp", ":w | source % | PackerSync<cr>", options)
 map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
 
