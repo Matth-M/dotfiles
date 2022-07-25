@@ -32,3 +32,6 @@ o.tabstop = 4
 o.shiftwidth = 4
 o.softtabstop = 0
 o.expandtab = false
+
+
+vim.cmd(':hi WinSeparator guibg=None')

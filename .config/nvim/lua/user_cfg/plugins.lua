@@ -15,6 +15,7 @@ return packer.startup(function(use) -- :PackerSync
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+	use { 'fgheng/winbar.nvim' }
 
     -- editing
     use "tpope/vim-surround"
