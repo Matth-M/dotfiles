@@ -4,7 +4,7 @@ if not status_ok then
   return
 end
 
-return packer.startup(function(use)
+return packer.startup(function(use) -- :PackerSync
     -- utility
     use "wbthomason/packer.nvim"
     use "nvim-lua/plenary.nvim"
