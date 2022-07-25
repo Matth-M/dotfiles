@@ -1,8 +1,5 @@
 local o = vim.o
-local wo = vim.wo
-local bo = vim.bo
 
--- global settings
 o.dir = '/tmp'
 o.laststatus = 3
 o.incsearch = true
@@ -21,19 +18,17 @@ o.hidden = true
 o.completeopt= "menu,menuone,noselect"
 o.timeout = true
 o.timeoutlen = 500
+o.number = true
+o.relativenumber = true
+o.wrap = false
+o.cursorline = true
+o.signcolumn = "yes"
+o.cursorlineopt = "number,line"
+o.fileencoding = "utf-8"
+o.swapfile = true
 
--- window settings
-wo.number = true
-wo.relativenumber = true
-wo.wrap = false
-wo.cursorline = true
-wo.signcolumn = "yes"
-wo.cursorlineopt = "number,line"
-
--- buffer settings
-bo.fileencoding = "utf-8"
-bo.expandtab = true
-bo.swapfile = true
-bo.smartindent = true
-bo.tabstop = 4
-bo.shiftwidth = 4
+o.cindent = true
+o.tabstop = 4
+o.shiftwidth = 4
+o.softtabstop = 0
+o.expandtab = false
