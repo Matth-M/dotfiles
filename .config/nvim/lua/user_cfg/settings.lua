@@ -4,7 +4,7 @@ local bo = vim.bo
 
 -- global settings
 o.dir = '/tmp'
-o.laststatus = 2
+o.laststatus = 3
 o.incsearch = true
 o.ignorecase = true
 o.hlsearch = false
