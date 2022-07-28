@@ -1,13 +1,17 @@
 local o = vim.o
 
 o.dir = '/tmp'
-o.laststatus = 3
 o.incsearch = true
 o.ignorecase = true
 o.hlsearch = false
 o.mouse = "a"
 o.showmode = false
+
+o.laststatus = 3
 o.showtabline = 2
+o.winbar = "%f%m"
+
+
 o.splitright = true
 o.splitbelow = true
 o.smartcase = true
