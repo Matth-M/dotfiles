@@ -11,7 +11,6 @@ o.laststatus = 3
 o.showtabline = 2
 o.winbar = "%f%m"
 
-
 o.splitright = true
 o.splitbelow = true
 o.smartcase = true
