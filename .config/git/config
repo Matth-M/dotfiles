@@ -1,0 +1,13 @@
+[credential]
+	helper = cache
+[init]
+	defaultBranch = main
+    templateDir = ~/.config/git/template
+
+[core]
+	editor = nvim
+	autocrlf = input
+[help]
+	autocorrect = 1
+[commit]
+	template = /home/matth/config/git/.gitCommitMessage.txt
