@@ -10,4 +10,4 @@
 [help]
 	autocorrect = 1
 [commit]
-	template = /home/matth/config/git/.gitCommitMessage.txt
+	template = /home/matth/.config/git/gitCommitMessage.txt
