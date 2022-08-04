@@ -35,7 +35,7 @@ exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/activ
 # Blue light filter
 exec --no-startup-id redshift
 
-set $wallpaper $HOME/Pictures/Wallpapers/wallpapers_cool_oldirrtydoogz_deadpool_whipped_couple_wallpaper.jpg
+set $wallpaper $HOME/Pictures/wallpapers/wallpapers_cool_oldirrtydoogz_deadpool_whipped_couple_wallpaper.jpg
 
 #Loads wallpaper
 exec_always --no-startup-id feh --bg-scale $wallpaper
@@ -239,7 +239,7 @@ mode "resize" {
 # Shut down, restart and locking
 ################################
 
-set $lock_screen_picure $HOME/Pictures/Wallpapers/mountains_over_lake.png 
+set $lock_screen_picure $HOME/Pictures/wallpapers/mountains_over_lake.png 
 bindsym $mod+ctrl+l exec --no-startup-id i3lock --image=$lock_screen_picure
 bindsym $mod+ctrl+s exec --no-startup-id i3lock --image=$lock_screen_picure && systemctl suspend
 bindsym $mod+ctrl+p exec --no-startup-id systemctl poweroff
