@@ -58,6 +58,5 @@ return packer.startup(function(use) -- :PackerSync
     }
     use "p00f/nvim-ts-rainbow"
     use "ap/vim-css-color"
-    use "glepnir/indent-guides.nvim"
 
 end)
