@@ -5,14 +5,15 @@ end
 
 configs.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { 
+  ensure_installed = {
 	"c",
 	"lua",
 	"python",
 	"javascript",
 	"cpp",
 	"css",
-	"html"
+	"html",
+	"typescript",
     },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
