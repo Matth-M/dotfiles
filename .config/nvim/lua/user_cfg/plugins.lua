@@ -23,6 +23,7 @@ return packer.startup(function(use) -- :PackerSync
 
     -- completion
     use 'hrsh7th/nvim-cmp'
+
 	-- cmp sources
     use "hrsh7th/cmp-nvim-lsp"
     use 'hrsh7th/cmp-nvim-lua'

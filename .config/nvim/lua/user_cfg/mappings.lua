@@ -34,4 +34,3 @@ map("n", "VV", "<esc>ggVG", options)
 map("n", "<leader>ss", ":w | source %<cr>", options)
 map("n", "<leader>sp", ":w | source % | PackerSync<cr>", options)
 map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
-
