@@ -44,7 +44,6 @@ return packer.startup(function(use) -- :PackerSync
 	use 'neovim/nvim-lspconfig'
 	use {
 		"williamboman/nvim-lsp-installer",
-		"neovim/nvim-lspconfig",
 	}
 
     -- exploration
