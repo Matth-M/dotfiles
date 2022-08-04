@@ -34,15 +34,11 @@ return packer.startup(function(use) -- :PackerSync
     use "saadparwaiz1/cmp_luasnip"
 
     -- LSP
-    use {
-        {
-            "williamboman/nvim-lsp-installer",
-        },
-        {
-            "neovim/nvim-lspconfig",
-            after = "nvim-lsp-installer",
-        }
-    }
+	use 'neovim/nvim-lspconfig'
+	use {
+		"williamboman/nvim-lsp-installer",
+		"neovim/nvim-lspconfig",
+	}
 
     -- exploration
     use {
