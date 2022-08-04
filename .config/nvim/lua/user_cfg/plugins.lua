@@ -10,12 +10,18 @@ return packer.startup(function(use) -- :PackerSync
     use "nvim-lua/plenary.nvim"
     use "nvim-lua/popup.nvim"
 
-    -- statusline
+    -- Appearance
     use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 	use { 'fgheng/winbar.nvim' }
+	use 'edeneast/nightfox.nvim'
+	use 'sainnhe/sonokai'
+	use 'folke/tokyonight.nvim'
+	use 'Th3Whit3Wolf/onebuddy'
+	use 'tjdevries/colorbuddy.nvim'
+	use 'kyazdani42/blue-moon'
 
     -- editing
     use "tpope/vim-surround"
