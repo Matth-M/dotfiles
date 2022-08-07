@@ -3,7 +3,6 @@
 [init]
 	defaultBranch = main
     templateDir = ~/.config/git/template
-
 [core]
 	editor = nvim
 	autocrlf = input
@@ -11,3 +10,5 @@
 	autocorrect = 1
 [commit]
 	template = /home/matth/.config/git/gitCommitMessage.txt
+[status]
+	showUntrackedFiles = no
