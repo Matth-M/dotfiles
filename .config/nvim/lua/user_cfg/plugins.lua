@@ -16,6 +16,9 @@ return packer.startup(function(use) -- :PackerSync
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 	use { 'fgheng/winbar.nvim' }
+    use "p00f/nvim-ts-rainbow"
+    use "ap/vim-css-color"
+	-- themes
 	use 'edeneast/nightfox.nvim'
 	use 'sainnhe/sonokai'
 	use 'folke/tokyonight.nvim'
@@ -66,8 +69,6 @@ return packer.startup(function(use) -- :PackerSync
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     }
-    use "p00f/nvim-ts-rainbow"
-    use "ap/vim-css-color"
 	use 'JoosepAlviste/nvim-ts-context-commentstring'
 
 	-- git
