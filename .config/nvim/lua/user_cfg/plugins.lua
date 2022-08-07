@@ -28,6 +28,9 @@ return packer.startup(function(use) -- :PackerSync
     -- editing
     use "tpope/vim-surround"
     use "jiangmiao/auto-pairs"
+	use {
+		'numToStr/Comment.nvim',
+	}
 
     -- completion
     use 'hrsh7th/nvim-cmp'
@@ -65,5 +68,9 @@ return packer.startup(function(use) -- :PackerSync
     }
     use "p00f/nvim-ts-rainbow"
     use "ap/vim-css-color"
+	use 'JoosepAlviste/nvim-ts-context-commentstring'
+
+	-- git
+	use 'lewis6991/gitsigns.nvim'
 
 end)
