@@ -22,6 +22,8 @@ return packer.startup(function(use) -- :PackerSync
 	use 'Th3Whit3Wolf/onebuddy'
 	use 'tjdevries/colorbuddy.nvim'
 	use 'kyazdani42/blue-moon'
+	use { "ellisonleao/gruvbox.nvim" }
+	use 'ChristianChiarulli/nvcode-color-schemes.vim'
 
     -- editing
     use "tpope/vim-surround"
