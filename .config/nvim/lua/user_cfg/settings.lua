@@ -38,3 +38,11 @@ o.expandtab = false
 
 
 vim.cmd(':hi WinSeparator guibg=None')
+
+--  Highlight on yank
+vim.cmd[[
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=300}
+augroup END
+]]
