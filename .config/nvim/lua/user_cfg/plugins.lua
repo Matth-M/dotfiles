@@ -18,6 +18,7 @@ return packer.startup(function(use) -- :PackerSync
 	use { 'fgheng/winbar.nvim' }
     use "p00f/nvim-ts-rainbow"
     use "ap/vim-css-color"
+	use 'karb94/neoscroll.nvim'
 	-- themes
 	use 'edeneast/nightfox.nvim'
 	use 'sainnhe/sonokai'
