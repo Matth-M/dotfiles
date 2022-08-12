@@ -36,7 +36,7 @@ o.shiftwidth = 4
 o.softtabstop = 0
 o.expandtab = false
 
-
+-- Make the line separating split thiner
 vim.cmd(':hi WinSeparator guibg=None')
 
 --  Highlight on yank
