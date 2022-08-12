@@ -116,11 +116,11 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Fira Code Nerd Font
+    # family: Fira Code Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     #family: Lekton Nerd Font Complete
-    # family: JetBrains Mono
+    family: JetBrains Mono Nerd Font
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
