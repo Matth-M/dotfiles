@@ -73,7 +73,4 @@ return packer.startup(function(use) -- :PackerSync
     }
 	use 'JoosepAlviste/nvim-ts-context-commentstring'
 
-	-- git
-	use 'lewis6991/gitsigns.nvim'
-
 end)
