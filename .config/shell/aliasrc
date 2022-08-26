@@ -1,0 +1,35 @@
+#ls aliases
+alias ls='ls --color=auto'
+alias ll='ls -AlF'
+alias la='ls -A'
+alias l='ls -CF'
+alias lag='ls -A | grep'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias c='clear'
+
+#Used to store dot files, use 'cfg' instead of 'git'
+alias cfg='/usr/bin/git --git-dir=/home/matth/.cfg/ --work-tree=/home/matth' 
+
+
+alias matlab='bash ~/matlab/bin/matlab'
+
+alias v='vim'
+alias nv='nvim'
+alias t='tmux'
+
+# git
+alias gs='git status'
+alias graph='git log --oneline --graph --decorate'
+alias ga='git add'
+alias gl='git log --oneline'
+
+alias b='sudo brightnessctl s'
+alias s='pactl set-sink-volume @DEFAULT_SINK@'
+
+alias mkcd='function _(){ mkdir $1 && cd $1; }; _'
+
+alias maj='sudo apt-get --yes update && sudo apt-get --yes upgrade'
