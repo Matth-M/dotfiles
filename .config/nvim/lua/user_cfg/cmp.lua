@@ -6,10 +6,8 @@ end
 
 local icons = {
 
-
 }
 -- find more https://www.nerdfonts.com/cheat-sheet
-
 
 cmp.setup({
     snippet = {

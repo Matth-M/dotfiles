@@ -40,8 +40,6 @@ return packer.startup(function(use) -- :PackerSync
 
     -- completion
     use 'hrsh7th/nvim-cmp'
-
-	-- cmp sources
     use "hrsh7th/cmp-nvim-lsp"
     use 'hrsh7th/cmp-nvim-lua'
     use 'hrsh7th/cmp-buffer'
@@ -59,11 +57,11 @@ return packer.startup(function(use) -- :PackerSync
 
     -- exploration
     use {
-	'kyazdani42/nvim-tree.lua',
-	requires = {
-	  'kyazdani42/nvim-web-devicons', -- optional, for file icon
-	},
-	tag = 'nightly' -- optional, updated every week. (see issue #1193)
+		'kyazdani42/nvim-tree.lua',
+		requires = {
+		  'kyazdani42/nvim-web-devicons', -- optional, for file icon
+		},
+		tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
     use "nvim-telescope/telescope.nvim"
 	use { "nvim-telescope/telescope-file-browser.nvim" }
