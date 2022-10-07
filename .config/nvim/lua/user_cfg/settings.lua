@@ -10,6 +10,8 @@ o.showmode = false
 o.laststatus = 3
 o.showtabline = 2
 o.winbar = "%f%m"
+o.list = true
+o.listchars = 'trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂'
 
 o.splitright = true
 o.splitbelow = true
