@@ -75,5 +75,6 @@ return packer.startup(function(use) -- :PackerSync
     }
 	use 'JoosepAlviste/nvim-ts-context-commentstring'
 	use 'nvim-treesitter/nvim-treesitter-context'
+	use "folke/which-key.nvim"
 
 end)
