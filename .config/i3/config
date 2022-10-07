@@ -269,9 +269,29 @@ client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
 
-##################### 
+#####################
 # assigning windows to workspaces
 #####################
 #move specific windows to desired workspaces
 for_window [class="spotify"] move to workspace number $ws7
 assign [class="thunderbird"] move to workspace number $ws8
+
+#####################
+# assigning workspaces to monitors
+#####################
+
+set $primary eDP1
+set $secondary DP1
+
+workspace $ws1 output $primary
+workspace $ws2 output $primary
+workspace $ws3 output $secondary
+workspace $ws4 output $primary
+workspace $ws5 output $primary
+workspace $ws6 output $primary
+workspace $ws7 output $primary
+workspace $ws8 output $primary
+workspace $ws9 output $primary
+workspace $ws10 output $primary
+workspace $ws11 output $primary
+workspace $ws12 output $primary
