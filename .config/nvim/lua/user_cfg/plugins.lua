@@ -36,6 +36,7 @@ return packer.startup(function(use) -- :PackerSync
 		'numToStr/Comment.nvim',
 	}
 	use 'tpope/vim-repeat'
+	use 'mattn/emmet-vim'
 
     -- completion
     use 'hrsh7th/nvim-cmp'
