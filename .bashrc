@@ -64,37 +64,7 @@ PS1="\e[0;32m\]\u: \w \]\e[0m\]\$(parse_git_branch)\[\e[00m\] \n> "
 #  ALIASES
 ###################################################
 
-#ls aliases
-alias ls='ls --color=auto'
-alias ll='ls -AlF'
-alias la='ls -A'
-alias l='ls -CF'
-
-
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-
-alias c='clear'
-
-#Used to store dot files, use 'cfg' instead of 'git'
-alias cfg='/usr/bin/git --git-dir=/home/matth/.cfg/ --work-tree=/home/matth' 
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-alias matlab='bash ~/matlab/bin/matlab'
-
-alias v='vim'
-alias nv='nvim'
-alias t='tmux'
-
-# git
-alias gs='git status'
-alias graph='git log --oneline --graph --decorate'
-alias ga='git add'
-alias gl='git log --oneline'
+source $HOME/.config/shell/aliasrc
 
 ###################################################
 #  PATH
