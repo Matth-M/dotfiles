@@ -260,7 +260,6 @@ smart_borders on
 # colors
 #####################
 
-#ffa500
 
 # class                 border  backgr. text    indicator  child_border
 client.focused          #6495ED #000000 #FFFFFF #7CFC00   #6495ED 
