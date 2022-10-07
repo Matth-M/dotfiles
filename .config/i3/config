@@ -82,6 +82,7 @@ bindsym $mod+t exec kitty
 bindsym $mod+f exec --no-startup-id firefox
 bindsym $mod+n exec --no-startup-id thunar Documents/ISMIN/Cours_ISMIN
 bindsym $mod+m exec --no-startup-id thunderbird
+bindsym $mod+p exec --no-startup-id keepassxc
 
 # kill focused window
 bindsym $mod+Shift+Q kill
