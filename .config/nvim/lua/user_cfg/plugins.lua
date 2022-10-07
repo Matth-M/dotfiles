@@ -66,6 +66,7 @@ return packer.startup(function(use) -- :PackerSync
 	tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
     use "nvim-telescope/telescope.nvim"
+	use { "nvim-telescope/telescope-file-browser.nvim" }
 
     -- misc
     use {
@@ -73,5 +74,6 @@ return packer.startup(function(use) -- :PackerSync
         run = ":TSUpdate",
     }
 	use 'JoosepAlviste/nvim-ts-context-commentstring'
+	use 'nvim-treesitter/nvim-treesitter-context'
 
 end)
