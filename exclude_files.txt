@@ -1,0 +1,15 @@
+.anaconda
+matlab
+.matlab
+BurpSuiteCommunity
+.BurpSuite
+.android
+Android
+.dropbox
+Dropbox
+.rustup
+.snap
+.local/share/nvim
+.local/share/Google
+.local/share/pnpm
+Documents/iso
