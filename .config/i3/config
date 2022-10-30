@@ -249,7 +249,7 @@ bindsym $mod+ctrl+p exec --no-startup-id systemctl poweroff
 
 for_window [class="^.*"] border pixel 2 
 #Space between windows
-gaps inner 1
+gaps inner 5
 #If only one window is opened, no spaces 
 smart_gaps on 
 #When windows is in fullscreen, doesn't display borders
