@@ -35,3 +35,5 @@ alias mkcd='function _(){ mkdir $1 && cd $1; }; _'
 alias maj='sudo apt-get --yes update && sudo apt-get --yes upgrade'
 
 alias copy='xclip -sel c <'
+
+alias py='python3'
