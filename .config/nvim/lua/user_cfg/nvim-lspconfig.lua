@@ -37,10 +37,10 @@ local lsp_flags = {
 }
 
 -- Setup lspconfig.
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 -- Need to call lsp-installer setup before the setup of the servers
-require('nvim-lsp-installer').setup {}
+-- require('nvim-lsp-installer').setup {}
 
 require('lspconfig')['pyright'].setup {
 	on_attach = on_attach,
@@ -52,7 +52,7 @@ require('lspconfig')['tsserver'].setup {
 	flags = lsp_flags,
 	capabilities = capabilities
 }
-require('lspconfig')['ccls'].setup {
+require('lspconfig')['clangd'].setup {
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities
@@ -86,8 +86,5 @@ require('lspconfig')['html'].setup {
 require('lspconfig')['cssls'].setup {
 	on_attach = on_attach,
 	flags = lsp_flags,
-	capabilities = capabilities
-}
-require('lspconfig')['tsserver'].setup {
 	capabilities = capabilities
 }

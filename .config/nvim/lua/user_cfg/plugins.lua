@@ -52,9 +52,8 @@ return packer.startup(function(use) -- :PackerSync
 
     -- LSP
 	use 'neovim/nvim-lspconfig'
-	use {
-		"williamboman/nvim-lsp-installer",
-	}
+	use { "williamboman/mason.nvim" }
+	use { "williamboman/mason-lspconfig.nvim" }
 
     -- exploration
     use {
