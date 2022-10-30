@@ -65,6 +65,7 @@ return packer.startup(function(use) -- :PackerSync
     }
     use "nvim-telescope/telescope.nvim"
 	use { "nvim-telescope/telescope-file-browser.nvim" }
+	use "ThePrimeagen/harpoon"
 
     -- misc
     use {
