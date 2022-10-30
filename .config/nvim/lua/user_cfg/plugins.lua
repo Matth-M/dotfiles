@@ -28,6 +28,7 @@ return packer.startup(function(use) -- :PackerSync
 	use 'kyazdani42/blue-moon'
 	use { "ellisonleao/gruvbox.nvim" }
 	use 'ChristianChiarulli/nvcode-color-schemes.vim'
+	use 'Shatur/neovim-ayu'
 
     -- editing
     use "tpope/vim-surround"

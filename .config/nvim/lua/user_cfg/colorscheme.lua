@@ -34,8 +34,24 @@ vim.cmd[[
 -- })
 -- vim.cmd([[colorscheme gruvbox]])
 
+
+
+-- DARK THEME
 vim.cmd[[
 	let g:nvcode_termcolors=256
 	hi LineNr ctermbg=NONE guibg=NONE
 	colorscheme nvcode
 ]]
+
+
+--LIGHT THEME
+--
+-- require('ayu').setup({
+--     mirage = false, -- Set to `true` to use `mirage` variant instead of `dark` for dark background.
+--     overrides = {}, -- A dictionary of group names, each associated with a dictionary of parameters (`bg`, `fg`, `sp` and `style`) and colors in hex.
+-- })
+--
+-- vim.cmd[[
+-- 	set background=light
+-- 	colorscheme ayu-light
+-- ]]
