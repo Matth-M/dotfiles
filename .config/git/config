@@ -12,3 +12,9 @@
 	template = /home/matth/.config/git/gitCommitMessage.txt
 [status]
 	showUntrackedFiles = no
+[alias]
+	dc = "diff --cached"
+	d = "diff"
+	s = "status"
+	su = "status -u"
+	l = "log --oneline"
