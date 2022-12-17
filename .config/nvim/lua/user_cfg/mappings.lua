@@ -1,4 +1,4 @@
-local map = vim.api.nvim_set_keymap -- vim.api.nvim_set_keymap({mode}, {keymap}, {mapped to}, {option})
+local map = vim.keymap.set -- vim.api.nvim_set_keymap({mode}, {keymap}, {mapped to}, {option})
 local options = { noremap = true }
 
 -- map the leader key
@@ -20,12 +20,18 @@ map("n", "<C-l>", "<C-w>l", options)
 
 map("n", "<C-u>", "<C-u>zz", options)
 map("n", "<C-d>", "<C-d>zz", options)
+map("n", "n", "nzzzv")
+map("n", "N", "Nzzzv")
+
 
 map("n", "<leader>r", ":registers<cr>", options)
 
 -- Editing --
 map("i", "jj", "<esc>", options)
 map("n", "VV", "<esc>ggVG", options)
+map("v", "J", ":m '>+1<CR>gv=gv") -- Moves lines in visual mode
+map("v", "K", ":m '<-2<CR>gv=gv")
+map("n", "J", "mzJ`z`") -- makes cursor stay in place when using J
 
 -- Misc
 map("n", "<leader>ss", ":w | source %<cr>", options)
