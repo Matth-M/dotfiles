@@ -278,9 +278,9 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 #####################
 # assigning windows to workspaces
 #####################
-#move specific windows to desired workspaces
-for_window [class="spotify"] move to workspace number $ws7
-assign [class="thunderbird"] move to workspace number $ws8
+# move specific windows to desired workspaces
+# for_window [class="spotify"] move to workspace number $ws7
+# assign [class="thunderbird"] move to workspace number $ws8
 
 #####################
 # assigning workspaces to monitors
