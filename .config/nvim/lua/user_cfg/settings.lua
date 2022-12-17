@@ -12,6 +12,7 @@ o.showtabline = 2
 o.winbar = "%f%m"
 o.list = true
 o.listchars = 'trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂'
+o.clipboard = 'unnamedplus'
 
 o.splitright = true
 o.splitbelow = true
@@ -31,6 +32,7 @@ o.signcolumn = "yes"
 o.cursorlineopt = "number,line"
 o.fileencoding = "utf-8"
 o.swapfile = true
+o.backupcopy = "yes"
 
 o.cindent = true
 o.tabstop = 4
@@ -39,7 +41,7 @@ o.softtabstop = 0
 o.expandtab = false
 
 -- Make the line separating split thiner
-vim.cmd(':hi WinSeparator guibg=None')
+-- vim.cmd(':hi WinSeparator guibg=None')
 
 --  Highlight on yank
 vim.cmd[[
