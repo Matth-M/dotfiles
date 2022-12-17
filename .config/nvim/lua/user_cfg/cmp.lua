@@ -4,11 +4,6 @@ if not cmp_status_ok then
   return
 end
 
-local icons = {
-
-}
--- find more https://www.nerdfonts.com/cheat-sheet
-
 cmp.setup({
     snippet = {
       -- REQUIRED - you must specify a snippet engine
