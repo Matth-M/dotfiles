@@ -1,4 +1,5 @@
 -- You don't need to set any of these options.
+--
 -- IMPORTANT!: this is only a showcase of how you can set default options!
 require("telescope").setup {
 	extensions = {
@@ -20,3 +21,8 @@ require("telescope").setup {
 -- To get telescope-file-browser loaded and working with telescope,
 -- you need to call load_extension, somewhere after setup function:
 require("telescope").load_extension "file_browser"
+
+local options = { noremap = true }
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", options)
+vim.keymap.set("n", "<leader>fg", "<cmd>Telescope git_files<cr>", options)
+vim.keymap.set("n", "<leader>lg", "<cmd>Telescope live_grep<cr>", options)

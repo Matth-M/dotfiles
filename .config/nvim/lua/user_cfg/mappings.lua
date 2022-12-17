@@ -5,7 +5,6 @@ local options = { noremap = true }
 map('n', '<Space>', '', {})
 vim.g.mapleader = ' ' -- 'vim.g' sets global variables
 
-
 -- Navigation --
 -- splits
 -- resize
@@ -24,12 +23,6 @@ map("n", "<C-d>", "<C-d>zz", options)
 
 map("n", "<leader>r", ":registers<cr>", options)
 
-map("n", "<leader>e", ":NvimTreeFocus<cr>", options)
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", options)
-map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", options)
-map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", options)
-
-
 -- Editing --
 map("i", "jj", "<esc>", options)
 map("n", "VV", "<esc>ggVG", options)
@@ -41,11 +34,6 @@ map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
 
 map("t", "<esc>", "<C-\\><C-n>", options)
 map("n", "<leader>tt", "<cmd>tabnew<cr><cmd>terminal<cr>", options) -- See help :set-inv
-
-
-map("n", "<leader>h", "<cmd>HopWord<cr>", options)
-map("x", "<leader>h", "<cmd>HopWord<cr>", options)
-vim.keymap.set({ "n", "x" }, "<leader>sr", function() require("ssr").open() end)
 
 map("n", "n", "nzz", options)
 map("n", "N", "Nzz", options)
