@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
   fzf = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/fzf",
