@@ -12,7 +12,7 @@ set $mod Mod4
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
-font pango:Ubuntu Mono:style=Bold 12
+font pango:Ubuntu Mono:style=Bold 0
 #font pango:DejaVu Sans
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
@@ -39,6 +39,9 @@ exec --nostartup-id dropbox start
 set $wallpaper $HOME/Pictures/wallpapers/wallpapers_cool_oldirrtydoogz_deadpool_whipped_couple_wallpaper.jpg
 #Loads wallpaper
 exec_always --no-startup-id feh --bg-scale $wallpaper
+
+# default_border pixel 0
+# default_floating_border pixel 0
 
 ##################### 
 # polybar
