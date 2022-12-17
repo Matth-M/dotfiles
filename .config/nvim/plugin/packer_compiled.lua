@@ -169,11 +169,6 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["neovim-ayu"] = {
-    loaded = true,
-    path = "/home/matth/.local/share/nvim/site/pack/packer/start/neovim-ayu",
-    url = "https://github.com/Shatur/neovim-ayu"
-  },
   ["nvcode-color-schemes.vim"] = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim",
