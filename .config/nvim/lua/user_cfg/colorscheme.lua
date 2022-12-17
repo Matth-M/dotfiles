@@ -5,17 +5,7 @@ vim.cmd[[
 	endif
 ]]
 
--- require('colorbuddy').colorscheme('onebuddy')
-
--- vim.cmd[[
--- 	" The configuration options should be placed before `colorscheme sonokai`.
--- 	let g:sonokai_style = 'andromeda'
--- 	let g:sonokai_better_performance = 1
--- 	colorscheme sonokai
--- ]]
-
--- vim.cmd[[colorscheme blue-moon]]
-
+-- GRUVBOX --
 -- vim.o.background = "dark" -- or "light" for light mode
 -- -- setup must be called before loading the colorscheme
 -- require("gruvbox").setup({
@@ -34,14 +24,17 @@ vim.cmd[[
 -- })
 -- vim.cmd([[colorscheme gruvbox]])
 
+vim.cmd[[
+colorscheme tokyonight-storm
+]]
 
 
 -- DARK THEME
-vim.cmd[[
-	let g:nvcode_termcolors=256
-	hi LineNr ctermbg=NONE guibg=NONE
-	colorscheme nvcode
-]]
+-- vim.cmd[[
+-- 	let g:nvcode_termcolors=256
+-- 	hi LineNr ctermbg=NONE guibg=NONE
+-- 	colorscheme nvcode
+-- ]]
 
 
 --LIGHT THEME
