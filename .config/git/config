@@ -21,3 +21,4 @@
 	lg = "log --oneline --graph --decorate"
 	rs = "restore --staged"
 	cm = "commit -m"
+	ap = "add -p"
