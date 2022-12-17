@@ -1,12 +1,11 @@
 .anaconda
+anaconda*
 matlab
 .matlab
 BurpSuiteCommunity
 .BurpSuite
 .android
 Android
-.dropbox
-Dropbox
 .rustup
 share/SDL
 snap
@@ -27,3 +26,9 @@ snap
 .npm
 Documents/iso
 Documents/Perso/a_garder.tar.gz
+home.tar.gz
+.dropbox*
+Games
+Downloads
+.cache
+home*
