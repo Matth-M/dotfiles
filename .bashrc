@@ -72,6 +72,9 @@ source $HOME/.config/shell/aliasrc
 
 export PATH=$PATH:/home/matth/.local/bin
 export PATH=$PATH:/home/matth/.local/bin/scripts
+export PATH=$PATH:/home/matth/.local/bin/flutter/bin
+export PATH=$PATH:/home/matth/.local/bin/android-studio/bin
+export PATH=$PATH:/home/matth/Android/sdk/cmdline-tools/latest/bin
 
 
 ###################################################
@@ -97,7 +100,8 @@ unset __conda_setup
 ###################################################
 
 # Prompts a message when new terminal is opened
-figlet TERMINAL
+# figlet TERMINAL
+
 . "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
@@ -105,6 +109,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # pnpm
-export PNPM_HOME="$HOME/.local/share/pnpm"
+export PNPM_HOME="/home/matth/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# GNAT
+export GNAT_BIN="/home/matth/opt/GNAT/2021/bin"
+export PATH="$PATH:$GNAT_BIN"
+# end GNAT
