@@ -1,7 +1,7 @@
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
-  return
+	return
 end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
@@ -14,19 +14,20 @@ vim.cmd [[
 ]]
 
 return packer.startup(function(use) -- :PackerSync
-    -- utility
-    use "wbthomason/packer.nvim"
-    use "nvim-lua/plenary.nvim"
-    use "nvim-lua/popup.nvim"
+	-- utility
+	use "wbthomason/packer.nvim"
+	use "nvim-lua/plenary.nvim"
+	use "nvim-lua/popup.nvim"
 
-    -- Appearance
-    use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
+	-- Appearance
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+	}
+	use 'kyazdani42/nvim-web-devicons'
 	use { 'fgheng/winbar.nvim' }
-    use "p00f/nvim-ts-rainbow"
 	use 'karb94/neoscroll.nvim'
+	use "p00f/nvim-ts-rainbow"
 	use 'norcalli/nvim-colorizer.lua'
 	-- themes
 	use 'edeneast/nightfox.nvim'
@@ -39,48 +40,48 @@ return packer.startup(function(use) -- :PackerSync
 	use 'ChristianChiarulli/nvcode-color-schemes.vim'
 	use 'Shatur/neovim-ayu'
 
-    -- editing
-    use "tpope/vim-surround"
-    use "jiangmiao/auto-pairs"
+	-- editing
+	use "tpope/vim-surround"
+	use "jiangmiao/auto-pairs"
 	use {
 		'numToStr/Comment.nvim',
 	}
 	use 'tpope/vim-repeat'
 	use 'mattn/emmet-vim'
 
-    -- completion
-    use 'hrsh7th/nvim-cmp'
-    use "hrsh7th/cmp-nvim-lsp"
-    use 'hrsh7th/cmp-nvim-lua'
-    use 'hrsh7th/cmp-buffer'
-    use 'hrsh7th/cmp-path'
-    use 'hrsh7th/cmp-cmdline'
+	-- completion
+	use 'hrsh7th/nvim-cmp'
+	use "hrsh7th/cmp-nvim-lsp"
+	use 'hrsh7th/cmp-nvim-lua'
+	use 'hrsh7th/cmp-buffer'
+	use 'hrsh7th/cmp-path'
+	use 'hrsh7th/cmp-cmdline'
 
-    use "L3MON4D3/LuaSnip"
-    use "saadparwaiz1/cmp_luasnip"
+	use "L3MON4D3/LuaSnip"
+	use "saadparwaiz1/cmp_luasnip"
 
-    -- LSP
+	-- LSP
 	use 'neovim/nvim-lspconfig'
 	use { "williamboman/mason.nvim" }
 	use { "williamboman/mason-lspconfig.nvim" }
 
-    -- exploration
-    use {
+	-- exploration
+	use {
 		'kyazdani42/nvim-tree.lua',
 		requires = {
-		  'kyazdani42/nvim-web-devicons', -- optional, for file icon
+			'kyazdani42/nvim-web-devicons', -- optional, for file icon
 		},
 		tag = 'nightly' -- optional, updated every week. (see issue #1193)
-    }
-    use "nvim-telescope/telescope.nvim"
+	}
+	use "nvim-telescope/telescope.nvim"
 	use { "nvim-telescope/telescope-file-browser.nvim" }
 	use "ThePrimeagen/harpoon"
 
-    -- misc
-    use {
-        "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
-    }
+	-- misc
+	use {
+		"nvim-treesitter/nvim-treesitter",
+		run = ":TSUpdate",
+	}
 	use 'JoosepAlviste/nvim-ts-context-commentstring'
 	use 'nvim-treesitter/nvim-treesitter-context'
 
