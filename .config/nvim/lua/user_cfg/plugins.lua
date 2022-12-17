@@ -80,5 +80,15 @@ return packer.startup(function(use) -- :PackerSync
 	}
 	use 'JoosepAlviste/nvim-ts-context-commentstring'
 	use 'nvim-treesitter/nvim-treesitter-context'
+	use { 'kevinhwang91/nvim-bqf', ft = 'qf' }
+
+	--git
+	use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+
+	-- optional
+	use { 'junegunn/fzf', run = function()
+		vim.fn['fzf#install']()
+	end
+	}
 
 end)
