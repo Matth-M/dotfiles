@@ -32,8 +32,12 @@ alias s='pactl set-sink-volume @DEFAULT_SINK@'
 
 alias mkcd='function _(){ mkdir $1 && cd $1; }; _'
 
-alias maj='sudo apt-get --yes update && sudo apt-get --yes upgrade'
+alias maj='sudo dnf -y update && sudo dnf -y upgrade && sudo dnf autoremove'
 
 alias copy='xclip -sel c <'
 
 alias py='python3'
+
+alias pn='pnpm'
+
+alias cours='cd ~/Documents/ISMIN/Cours_ISMIN/'
