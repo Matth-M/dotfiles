@@ -41,6 +41,7 @@ return packer.startup(function(use) -- :PackerSync
 	use 'tpope/vim-repeat'
 	use 'mattn/emmet-vim'
 	use 'cshuaimin/ssr.nvim'
+	use 'mbbill/undotree'
 
 	-- completion
 	use 'hrsh7th/nvim-cmp'
