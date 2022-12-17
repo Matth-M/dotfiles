@@ -5,7 +5,6 @@ if not status_ok then
 end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
-
 vim.cmd [[
   augroup packer_user_config
     autocmd!
@@ -28,11 +27,10 @@ return packer.startup(function(use) -- :PackerSync
 	use { 'fgheng/winbar.nvim' }
 	use "p00f/nvim-ts-rainbow"
 	use 'norcalli/nvim-colorizer.lua'
+	use "lukas-reineke/indent-blankline.nvim"
 	-- themes
 	use 'ChristianChiarulli/nvcode-color-schemes.vim'
 	use 'folke/tokyonight.nvim'
-	use 'Shatur/neovim-ayu'
-	use "lukas-reineke/indent-blankline.nvim"
 
 	-- editing
 	use "tpope/vim-surround"
