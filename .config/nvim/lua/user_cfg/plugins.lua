@@ -32,6 +32,7 @@ return packer.startup(function(use) -- :PackerSync
 	use 'ChristianChiarulli/nvcode-color-schemes.vim'
 	use 'folke/tokyonight.nvim'
 	use 'Shatur/neovim-ayu'
+	use "lukas-reineke/indent-blankline.nvim"
 
 	-- editing
 	use "tpope/vim-surround"
