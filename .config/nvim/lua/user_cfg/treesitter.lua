@@ -14,6 +14,7 @@ configs.setup {
 	"css",
 	"html",
 	"typescript",
+	"json",
     },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
