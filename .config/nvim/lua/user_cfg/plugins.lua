@@ -30,14 +30,8 @@ return packer.startup(function(use) -- :PackerSync
 	use "p00f/nvim-ts-rainbow"
 	use 'norcalli/nvim-colorizer.lua'
 	-- themes
-	use 'edeneast/nightfox.nvim'
-	use 'sainnhe/sonokai'
-	use 'folke/tokyonight.nvim'
-	use 'Th3Whit3Wolf/onebuddy'
-	use 'tjdevries/colorbuddy.nvim'
-	use 'kyazdani42/blue-moon'
-	use { "ellisonleao/gruvbox.nvim" }
 	use 'ChristianChiarulli/nvcode-color-schemes.vim'
+	use 'folke/tokyonight.nvim'
 	use 'Shatur/neovim-ayu'
 
 	-- editing
