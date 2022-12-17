@@ -10,6 +10,7 @@ require('user_cfg.colorscheme')
 require('user_cfg.colorizer')
 require('user_cfg.lualine')
 require('user_cfg.nvim-ts-rainbow')
+require('user_cfg.indent_blankline')
 
 --treesitter
 require('user_cfg.treesitter')
@@ -26,3 +27,4 @@ require('user_cfg.neoscroll')
 require('user_cfg.telescope')
 require('user_cfg.emmet')
 -- require('user_cfg.harpoon')
+require('user_cfg.hop')
