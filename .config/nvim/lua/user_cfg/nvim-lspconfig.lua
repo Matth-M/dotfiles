@@ -49,16 +49,25 @@ require('lspconfig')['pyright'].setup {
 	flags = lsp_flags,
 	capabilities = capabilities
 }
+
+require('lspconfig')['jsonls'].setup {
+	on_attach = on_attach,
+	flags = lsp_flags,
+	capabilities = capabilities
+}
+
 require('lspconfig')['tsserver'].setup {
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities
 }
+
 require('lspconfig')['clangd'].setup {
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities
 }
+
 require('lspconfig')['sumneko_lua'].setup {
 	on_attach = on_attach,
 	flags = lsp_flags,
@@ -80,12 +89,32 @@ require('lspconfig')['sumneko_lua'].setup {
 		},
 	},
 }
+
 require('lspconfig')['html'].setup {
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities
 }
+
 require('lspconfig')['cssls'].setup {
+	on_attach = on_attach,
+	flags = lsp_flags,
+	capabilities = capabilities
+}
+
+require('lspconfig')['bashls'].setup {
+	on_attach = on_attach,
+	flags = lsp_flags,
+	capabilities = capabilities
+}
+
+require('lspconfig')['ltex'].setup {
+	on_attach = on_attach,
+	flags = lsp_flags,
+	capabilities = capabilities
+}
+
+require('lspconfig')['ghdl_ls'].setup {
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities
