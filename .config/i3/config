@@ -81,9 +81,9 @@ bindcode 232 exec --no-startup-id brightnessctl set "2%-"
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec kitty
+bindsym $mod+t exec kitty ~
 bindsym $mod+f exec --no-startup-id firefox
-bindsym $mod+n exec --no-startup-id thunar Documents/ISMIN/Cours_ISMIN
+bindsym $mod+n exec --no-startup-id thunar ~/Documents/ISMIN/Cours_ISMIN
 bindsym $mod+m exec --no-startup-id thunderbird
 bindsym $mod+p exec --no-startup-id keepassxc
 
@@ -104,6 +104,9 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+bindsym $mod+Tab focus next
+bindsym $mod+Shift+Tab focus prev
+
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
