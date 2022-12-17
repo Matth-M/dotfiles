@@ -19,6 +19,8 @@ map("n", "<C-j>", "<C-w>j", options)
 map("n", "<C-k>", "<C-w>k", options)
 map("n", "<C-l>", "<C-w>l", options)
 
+map("n", "<C-u>", "<C-u>zz", options)
+map("n", "<C-d>", "<C-d>zz", options)
 
 map("n", "<leader>r", ":registers<cr>", options)
 
@@ -34,9 +36,16 @@ map("n", "VV", "<esc>ggVG", options)
 
 -- Misc
 map("n", "<leader>ss", ":w | source %<cr>", options)
-map("n", "<leader>sp", ":w | source % | PackerSync<cr>", options)
 map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
 
 
-map("t", "<esc>", "<C-\\><C-n>", options) -- See help :set-inv
+map("t", "<esc>", "<C-\\><C-n>", options)
 map("n", "<leader>tt", "<cmd>tabnew<cr><cmd>terminal<cr>", options) -- See help :set-inv
+
+
+map("n", "<leader>h", "<cmd>HopWord<cr>", options)
+map("x", "<leader>h", "<cmd>HopWord<cr>", options)
+vim.keymap.set({ "n", "x" }, "<leader>sr", function() require("ssr").open() end)
+
+map("n", "n", "nzz", options)
+map("n", "N", "Nzz", options)
