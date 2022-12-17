@@ -1,0 +1,11 @@
+#!/bin/bash
+algoprog_dir=$HOME/Documents/ISMIN/Cours_ISMIN/algo_prog/S7/
+session_name=algoTP
+
+tmux has-session -t $session_name 
+if [[ $? != 0 ]] 
+ then
+    tmux new-session -s $session_name  -d -c $algoprog_dir
+fi
+tmux attach -t $session_name
+tmux select-window -t $session_name:1
