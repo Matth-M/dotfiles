@@ -23,8 +23,6 @@ require('user_cfg.mason-lspconfig')
 
 --utility
 require('user_cfg.comment')
-require('user_cfg.neoscroll')
 require('user_cfg.telescope')
 require('user_cfg.emmet')
--- require('user_cfg.harpoon')
 require('user_cfg.hop')
