@@ -23,6 +23,20 @@ $packet_manager_install ninja-build libtool autoconf automake cmake gcc gcc-c++ 
 
 # Build
 git clone https://github.com/neovim/neovim ~/git/neovim
-cd ~/git/neovim
-make CMAKE_BUILD_TYPE=RelWithDebInfo
-sudo make install
+if !$ ; then
+	cd ~/git/neovim
+	make CMAKE_BUILD_TYPE=RelWithDebInfo
+	sudo make install
+fi
+
+#### RUST ######
+
+# Install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Check that cargo is installed
+if ! cargo --version ; then
+
+	# Install onefetch
+	cargo install onefetch
+fi
