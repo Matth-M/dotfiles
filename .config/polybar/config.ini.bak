@@ -22,21 +22,20 @@ background-alt = #373B41
 foreground = #C5C8C6
 primary = #F0C674
 secondary = #8ABEB7
-alert = #a30808
+alert = #A54242
 disabled = #707880
 
-[bar/default]
-monitor = ${env:MONITOR}
+[bar/example]
 width = 100%
-height = 3%
-radius = 0
+height = 2.5%
+radius = 6
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 3
 
-border-size = 0.1
+border-size = 4
 border-color = #00000000
 
 padding-left = 0
@@ -49,9 +48,9 @@ separator-foreground = ${colors.disabled}
 
 font-0 = monospace;2
 
-modules-left = xworkspaces ;xwindow
-modules-right =  pulseaudio battery  memory cpu date
-;filesystem xkeyboard
+modules-left = xworkspaces xwindow
+modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth date
+
 cursor-click = pointer
 cursor-scroll = ns-resize
 
@@ -61,7 +60,7 @@ enable-ipc = true
 
 ; wm-restack = generic
 ; wm-restack = bspwm
- wm-restack = i3
+; wm-restack = i3
 
 ; override-redirect = true
 
@@ -123,29 +122,6 @@ label-indicator-margin = 1
 label-indicator-foreground = ${colors.background}
 label-indicator-background = ${colors.secondary}
 
-
-[module/battery]
-type = internal/battery
-
-; This is useful in case the battery never reports 100% charge
-full-at = 99
-
-; Use the following command to list batteries and adapters:
-; $ ls -1 /sys/class/power_supply/
-battery = BAT0
-adapter = ADP1
-
-; If an inotify event haven't been reported in this many
-; seconds, manually poll for new values.
-;
-; Needed as a fallback for systems that don't report events
-; on sysfs/procfs.
-;
-; Disable polling by setting the interval to 0.
-;
-; Default: 5
-poll-interval = 5
-
 [module/memory]
 type = internal/memory
 interval = 2
@@ -181,8 +157,8 @@ label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 type = internal/date
 interval = 1
 
-date = %d-%m %H:%M
-date-alt = %d-%m-%Y %H:%M:%S
+date = %H:%M
+date-alt = %Y-%m-%d %H:%M:%S
 
 label = %date%
 label-foreground = ${colors.primary}
