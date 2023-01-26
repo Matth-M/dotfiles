@@ -20,18 +20,22 @@ map("n", "<C-l>", "<C-w>l", options)
 
 map("n", "<C-u>", "<C-u>zz", options)
 map("n", "<C-d>", "<C-d>zz", options)
+map("n", "<C-t>", "<C-t>zz", options)
+map("n", "<C-o>", "<C-o>zz", options)
+map("n", "<C-i>", "<C-i>zz", options)
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
+
+map("n", "<M-t>", "<cmd>:tabclose<cr>", options)
 
 
 map("n", "<leader>r", ":registers<cr>", options)
 
 -- Editing --
-map("i", "jj", "<esc>", options)
+-- map("i", "jj", "<esc>", options)
 map("n", "VV", "<esc>ggVG", options)
 map("v", "J", ":m '>+1<CR>gv=gv") -- Moves lines in visual mode
 map("v", "K", ":m '<-2<CR>gv=gv")
-map("n", "J", "mzJ`z`") -- makes cursor stay in place when using J
 
 -- Misc
 map("n", "<leader>ss", ":w | source %<cr>", options)

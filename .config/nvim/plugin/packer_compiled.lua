@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["auto-pairs"] = {
-    loaded = true,
-    path = "/home/matth/.local/share/nvim/site/pack/packer/start/auto-pairs",
-    url = "https://github.com/jiangmiao/auto-pairs"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -124,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/emmet-vim",
@@ -138,6 +138,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/fzf",
     url = "https://github.com/junegunn/fzf"
+  },
+  ["git-worktree.nvim"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/git-worktree.nvim",
+    url = "https://github.com/ThePrimeagen/git-worktree.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   harpoon = {
     loaded = true,
@@ -169,10 +179,25 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvcode-color-schemes.vim"] = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim",
     url = "https://github.com/ChristianChiarulli/nvcode-color-schemes.vim"
+  },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-bqf"] = {
     loaded = false,
@@ -190,6 +215,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -226,6 +256,11 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -240,6 +275,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["refactoring.nvim"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
+    url = "https://github.com/ThePrimeagen/refactoring.nvim"
   },
   ["ssr.nvim"] = {
     loaded = true,
@@ -266,6 +306,11 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-repeat"] = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/vim-repeat",
@@ -275,6 +320,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   },
   ["winbar.nvim"] = {
     loaded = true,

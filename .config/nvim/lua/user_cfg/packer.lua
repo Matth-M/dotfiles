@@ -4,14 +4,6 @@ if not status_ok then
 	return
 end
 
--- Autocommand that reloads neovim whenever you save the plugins.lua file
-vim.cmd [[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
-]]
-
 return packer.startup(function(use) -- :PackerSync
 	-- utility
 	use "wbthomason/packer.nvim"
@@ -31,10 +23,14 @@ return packer.startup(function(use) -- :PackerSync
 	-- themes
 	use 'ChristianChiarulli/nvcode-color-schemes.vim'
 	use 'folke/tokyonight.nvim'
+	use 'navarasu/onedark.nvim'
+	use 'Mofiqul/dracula.nvim'
+	use 'Mofiqul/vscode.nvim'
+	use "EdenEast/nightfox.nvim"
 
 	-- editing
 	use "tpope/vim-surround"
-	use "jiangmiao/auto-pairs"
+	use "windwp/nvim-autopairs"
 	use {
 		'numToStr/Comment.nvim',
 	}
@@ -60,6 +56,14 @@ return packer.startup(function(use) -- :PackerSync
 	use 'neovim/nvim-lspconfig'
 	use { "williamboman/mason.nvim" }
 	use { "williamboman/mason-lspconfig.nvim" }
+	use 'jose-elias-alvarez/null-ls.nvim'
+	use {
+		"ThePrimeagen/refactoring.nvim",
+		requires = {
+			{ "nvim-lua/plenary.nvim" },
+			{ "nvim-treesitter/nvim-treesitter" }
+		}
+	}
 
 	-- exploration
 	use {
@@ -82,9 +86,16 @@ return packer.startup(function(use) -- :PackerSync
 	use 'JoosepAlviste/nvim-ts-context-commentstring'
 	use 'nvim-treesitter/nvim-treesitter-context'
 	use { 'kevinhwang91/nvim-bqf', ft = 'qf' }
+	use 'mfussenegger/nvim-dap'
 
 	--git
 	use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+	use 'tpope/vim-fugitive'
+	use 'ThePrimeagen/git-worktree.nvim'
+	use {
+		'lewis6991/gitsigns.nvim',
+		-- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
+	}
 
 	-- optional
 	use { 'junegunn/fzf', run = function()
