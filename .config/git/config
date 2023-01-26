@@ -22,3 +22,6 @@
 	rs = "restore --staged"
 	cm = "commit -m"
 	ap = "add -p"
+	can = "commit --amend --no-edit"
+	cb = "checkout -b"
+	ls = "log --oneline -15"
