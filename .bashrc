@@ -3,13 +3,13 @@
 # for examples
 
 ###################################################
-#  OPTIONS 
+#  OPTIONS
 ###################################################
 
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
-      *) return;;
+    *) return ;;
 esac
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -83,18 +83,20 @@ export PATH=$PATH:/home/matth/Android/sdk/cmdline-tools/latest/bin
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/matth/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/usr/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/matth/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/matth/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+        . "/usr/etc/profile.d/conda.sh"
     else
-        export PATH="/home/matth/anaconda3/bin:$PATH"
+        export PATH="/usr/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+#
+export PATH="/home/matth/anaconda3/bin:$PATH"
 ###################################################
 #  STYLE
 ###################################################
