@@ -15,22 +15,22 @@ plug "zsh-users/zsh-autosuggestions"
 #Example plugin pinned to specifc commit or branch, just pass the git reference
 plug "zsh-users/zsh-syntax-highlighting"
 
-# Example theme
-plug "zap-zsh/zap-prompt"
-
-# Example install completion
+plug "zap-zsh/completions"
 plug "esc/conda-zsh-completion"
 
 plug "hlissner/zsh-autopair"
 plug "Aloxaf/fzf-tab"
 
+# starship prompt
+eval "$(starship init zsh)"
 
 
-export PATH=$PATH:/home/matth/.local/bin
-export PATH=$PATH:/home/matth/.local/bin/scripts
-export PATH=$PATH:/home/matth/.local/bin/flutter/bin
-export PATH=$PATH:/home/matth/.local/bin/android-studio/bin
-export PATH=$PATH:/home/matth/Android/sdk/cmdline-tools/latest/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin/scripts
+export PATH=$PATH:$HOME/.local/bin/flutter/bin
+export PATH=$PATH:$HOME/.local/bin/android-studio/bin
+export PATH=$PATH:$HOME/Android/sdk/cmdline-tools/latest/bin
+export PATH=$PATH:$HOME/anaconda3/bin
 
 . "$HOME/.cargo/env"
 
