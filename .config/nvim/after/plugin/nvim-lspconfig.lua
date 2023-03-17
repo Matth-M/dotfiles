@@ -53,6 +53,8 @@ require("lspconfig")["pyright"].setup({
 	capabilities = capabilities,
 })
 
+require("lspconfig").pylsp.setup({})
+
 require("lspconfig")["jsonls"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
@@ -143,6 +145,8 @@ require("lspconfig").sqlls.setup({})
 require("lspconfig").dartls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
 require("lspconfig").rust_analyzer.setup({})
+
+require("lspconfig").intelephense.setup({})
 
 -- Format on save
 vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
