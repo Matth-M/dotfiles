@@ -9,8 +9,8 @@ then
 	stt=$(echo $stta)
 	if [ "$stt" == "yes" ]
 	then
- 		echo ""
+ 		echo " "
 	fi
 else
-	echo ""
+	echo " "
 fi
