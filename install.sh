@@ -2,15 +2,15 @@
 
 DISTRO=$(lsb_release -is) #Install lsb_release before hand
 if [[ $DISTRO == "Fedora" ]] then
-	packet_manager_install='dnf install -y'
-elif [[ $DISTRO == "Ubuntu" ]] then
-	packet_manager_install='apt-get install -y'
+    packet_manager_install='dnf install -y'
+    elif [[ $DISTRO == "Ubuntu" ]] then
+    packet_manager_install='apt-get install -y'
 fi
 
 # Packages
 sudo $packet_manager_install firefox vlc gcc g++ vim i3-gaps thunderbird
 redshift steam keepassxc polybar brightnessctl @virtualization rofi \
-feh neofetch blueman ranger ipython3 htop pnpm exa ripgrep fzf
+    feh neofetch blueman ranger ipython3 htop pnpm exa ripgrep fzf
 
 pnpm install -g vtop
 
@@ -24,9 +24,9 @@ $packet_manager_install ninja-build libtool autoconf automake cmake gcc gcc-c++ 
 # Build
 git clone https://github.com/neovim/neovim ~/git/neovim
 if !$ ; then
-	cd ~/git/neovim
-	make CMAKE_BUILD_TYPE=RelWithDebInfo
-	sudo make install
+    cd ~/git/neovim
+    make CMAKE_BUILD_TYPE=RelWithDebInfo
+    sudo make install
 fi
 
 #### RUST ######
@@ -37,6 +37,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Check that cargo is installed
 if ! cargo --version ; then
 
-	# Install onefetch
-	cargo install onefetch
+    # Install onefetch
+    cargo install onefetch
 fi
