@@ -140,6 +140,7 @@ require("lspconfig")["emmet_ls"].setup({
 })
 
 require("lspconfig").sqlls.setup({})
+require("lspconfig").dartls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
 require("lspconfig").rust_analyzer.setup({})
 
