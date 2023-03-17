@@ -4,6 +4,8 @@ if not cmp_status_ok then
 	return
 end
 
+require("luasnip.loaders.from_lua").lazy_load()
+
 cmp.setup({
 	snippet = {
 		-- REQUIRED - you must specify a snippet engine
