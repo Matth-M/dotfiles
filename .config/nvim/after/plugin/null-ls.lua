@@ -15,11 +15,8 @@ null_ls.setup({
 		formatting.beautysh,
 		formatting.dart_format,
 
-		diagnostics.eslint_d,
+		diagnostics.eslint,
 		diagnostics.checkmake,
 		diagnostics.flake8,
-
-		code_actions.eslint_d,
-		code_actions.refactoring,
 	},
 })
