@@ -27,10 +27,19 @@ eval "$(starship init zsh)"
 
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.local/bin/scripts
-export PATH=$PATH:$HOME/.local/bin/flutter/bin
-export PATH=$PATH:$HOME/.local/bin/android-studio/bin
-export PATH=$PATH:$HOME/Android/sdk/cmdline-tools/latest/bin
+export PATH=$PATH:/usr/local/flutter/bin
 export PATH=$PATH:$HOME/anaconda3/bin
+export ANDROID_INSTALL_FOLDER=/usr/local/android-studio
+export PATH=$PATH:$ANDROID_INSTALL_FOLDER/bin
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# XAMPP
+export LAMPP_HOME=/opt/lampp
+export PATH=$PATH:$LAMPP_HOME/bin/
 
 . "$HOME/.cargo/env"
 
