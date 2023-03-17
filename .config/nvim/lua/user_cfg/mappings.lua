@@ -2,8 +2,8 @@ local map = vim.keymap.set -- vim.api.nvim_set_keymap({mode}, {keymap}, {mapped 
 local options = { noremap = true }
 
 -- map the leader key
-map('n', '<Space>', '', {})
-vim.g.mapleader = ' ' -- 'vim.g' sets global variables
+map("n", "<Space>", "", {})
+vim.g.mapleader = " " -- 'vim.g' sets global variables
 
 -- Navigation --
 -- splits
@@ -28,7 +28,6 @@ map("n", "N", "Nzzzv")
 
 map("n", "<M-t>", "<cmd>:tabclose<cr>", options)
 
-
 map("n", "<leader>r", ":registers<cr>", options)
 
 -- Editing --
@@ -41,9 +40,8 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 map("n", "<leader>ss", ":w | source %<cr>", options)
 map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
 
-
 map("t", "<esc>", "<C-\\><C-n>", options)
-map("n", "<leader>tt", "<cmd>tabnew<cr><cmd>terminal<cr>", options) -- See help :set-inv
+-- map("n", "<leader>tt", "<cmd>tabnew<cr><cmd>terminal<cr>", options) -- See help :set-inv
 
 map("n", "n", "nzz", options)
 map("n", "N", "Nzz", options)

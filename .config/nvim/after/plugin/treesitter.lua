@@ -3,7 +3,7 @@ if not status_ok then
 	return
 end
 
-configs.setup {
+configs.setup({
 	-- A list of parser names, or "all"
 	ensure_installed = {
 		"c",
@@ -16,15 +16,14 @@ configs.setup {
 		"typescript",
 		"json",
 		"rust",
+		"dart",
 	},
-
 	-- Install parsers synchronously (only applied to `ensure_installed`)
 	sync_install = true,
-
 	-- List of parsers to ignore installing (for "all")
 	ignore_install = { "" },
 	context_commentstring = {
-		enable = true
+		enable = true,
 	},
 	highlight = {
 		-- `false` will disable the whole extension
@@ -43,9 +42,8 @@ configs.setup {
 		-- Using this option may slow down your editor, and you may see some duplicate highlights.
 		-- Instead of true it can also be a list of languages
 		additional_vim_regex_highlighting = false,
-
 	},
 	indent = {
 		enable = false,
 	},
-}
+})
