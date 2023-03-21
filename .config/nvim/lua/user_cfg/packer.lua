@@ -64,7 +64,6 @@ return packer.startup(function(use) -- :PackerSync
 			{ "nvim-treesitter/nvim-treesitter" },
 		},
 	})
-	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
 
 	-- exploration
 	use({
