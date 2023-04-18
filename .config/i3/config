@@ -191,6 +191,8 @@ bindsym $mod+ccedilla workspace number $ws9
 bindsym $mod+agrave workspace number $ws10
 bindsym $mod+control+ampersand workspace number $ws11
 bindsym $mod+control+eacute workspace number $ws12
+bindsym $mod+control+quotedbl workspace number $ws13
+bindsym $mod+control+apostrophe workspace number $ws14
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -205,6 +207,8 @@ bindsym $mod+Shift+ccedilla move container to workspace number $ws9
 bindsym $mod+Shift+agrave move container to workspace number $ws10
 bindsym $mod+Shift+control+ampersand move container to workspace number $ws11
 bindsym $mod+Shift+control+eacute move container to workspace number $ws12
+bindsym $mod+Shift+control+quotedbl move container to workspace number $ws13
+bindsym $mod+Shift+control+apostrophe move container to workspace number $ws14
 
 
 
