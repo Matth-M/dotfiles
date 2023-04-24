@@ -18,6 +18,10 @@ map("n", "<C-j>", "<C-w>j", options)
 map("n", "<C-k>", "<C-w>k", options)
 map("n", "<C-l>", "<C-w>l", options)
 
+-- Go start, end of line
+map("n", "H", "_", options)
+map("n", "L", "$", options)
+
 map("n", "<C-u>", "<C-u>zz", options)
 map("n", "<C-d>", "<C-d>zz", options)
 map("n", "<C-t>", "<C-t>zz", options)
@@ -25,6 +29,8 @@ map("n", "<C-o>", "<C-o>zz", options)
 map("n", "<C-i>", "<C-i>zz", options)
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
+
+map("n", "<leader><leader>", "<C-^>", options)
 
 map("n", "<M-t>", "<cmd>:tabclose<cr>", options)
 
