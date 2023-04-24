@@ -119,12 +119,6 @@ require("lspconfig")["bashls"].setup({
 	capabilities = capabilities,
 })
 
-require("lspconfig")["ltex"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-	capabilities = capabilities,
-})
-
 local capabilitiesEmmet = vim.lsp.protocol.make_client_capabilities()
 capabilitiesEmmet.textDocument.completion.completionItem.snippetSupport = true
 require("lspconfig")["emmet_ls"].setup({
@@ -141,12 +135,13 @@ require("lspconfig")["emmet_ls"].setup({
 	},
 })
 
-require("lspconfig").sqlls.setup({})
+require("lspconfig").sqlls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 require("lspconfig").dartls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
-require("lspconfig").rust_analyzer.setup({})
+require("lspconfig").rust_analyzer.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
-require("lspconfig").intelephense.setup({})
+require("lspconfig").intelephense.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
+require("lspconfig").gopls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
 -- Format on save
 vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
