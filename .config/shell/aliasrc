@@ -43,3 +43,4 @@ alias pn='pnpm'
 
 alias cours='cd ~/Documents/ISMIN/Cours_ISMIN/'
 alias dev='cd ~/Documents/code/'
+alias wiz='cd ~/Documents/ISMIN/Cours_ISMIN/PI/code/'
