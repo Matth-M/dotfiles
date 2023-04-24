@@ -24,8 +24,8 @@ snap
 .mozilla
 .nvm
 .npm
-Documents/iso
-Documents/Perso/a_garder.tar.gz
+~/Documents/iso
+~/Documents/Perso/a_garder.tar.gz
 home.tar.gz
 .dropbox*
 Games
