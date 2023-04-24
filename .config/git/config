@@ -25,3 +25,4 @@
 	can = "commit --amend --no-edit"
 	cb = "checkout -b"
 	ls = "log --oneline -15"
+	ch = "checkout"
