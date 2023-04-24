@@ -37,6 +37,9 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# Go
+export PATH=$PATH:/usr/local/go/bin
+
 # XAMPP
 export LAMPP_HOME=/opt/lampp
 export PATH=$PATH:$LAMPP_HOME/bin/
