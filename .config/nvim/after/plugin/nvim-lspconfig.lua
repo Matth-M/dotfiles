@@ -53,7 +53,6 @@ require("lspconfig")["pyright"].setup({
 	capabilities = capabilities,
 })
 
-require("lspconfig").pylsp.setup({})
 
 require("lspconfig")["jsonls"].setup({
 	on_attach = on_attach,

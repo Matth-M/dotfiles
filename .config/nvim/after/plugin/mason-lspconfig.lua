@@ -1,9 +1,15 @@
+require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = {
-		-- "jedi_language_server", --python
-		-- "tsserver",
-		-- "lua_ls",
-		-- "clangd",
-		-- "cssls",
+		"tsserver",
+		"lua_ls",
+		"clangd",
+		"cssls",
+		"cmake",
+		"gopls",
+		"eslint",
+		"pyright",
+		"html",
+		"bashls",
 	},
 })
