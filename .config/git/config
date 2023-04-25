@@ -26,3 +26,6 @@
 	cb = "checkout -b"
 	ls = "log --oneline -15"
 	ch = "checkout"
+
+# Show lists of alias:
+# git config --list | grep alias | cut -d '.' -f2 | awk '$1=$1' OFS='\t' FS='='
