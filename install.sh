@@ -10,9 +10,13 @@ fi
 # Packages
 sudo $packet_manager_install firefox vlc gcc g++ vim i3-gaps thunderbird
 redshift steam keepassxc polybar brightnessctl @virtualization rofi \
-    feh neofetch blueman ranger ipython3 htop pnpm exa ripgrep fzf
+    feh neofetch blueman ranger ipython3 htop pnpm exa ripgrep fzf zsh \
+	make cmake acpi
 
 pnpm install -g vtop
+
+# Change default shell to zsh
+chsh -s /bin/zsh $USER
 
 # Install kitty terminal emulator
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
@@ -23,7 +27,7 @@ $packet_manager_install ninja-build libtool autoconf automake cmake gcc gcc-c++ 
 
 # Build
 git clone https://github.com/neovim/neovim ~/git/neovim
-if !$ ; then
+if $? ; then
     cd ~/git/neovim
     make CMAKE_BUILD_TYPE=RelWithDebInfo
     sudo make install
