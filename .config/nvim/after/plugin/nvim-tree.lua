@@ -3,14 +3,10 @@
 require("nvim-tree").setup({
 	-- BEGIN_DEFAULT_OPTS
 	auto_reload_on_write = true,
-	create_in_closed_folder = false,
-	disable_netrw = false,
+	disable_netrw = true,
 	hijack_cursor = false,
 	hijack_netrw = true,
 	hijack_unnamed_buffer_when_opening = true,
-	ignore_buffer_on_setup = false,
-	open_on_setup = true,
-	open_on_setup_file = false,
 	open_on_tab = true,
 	sort_by = "name",
 	update_cwd = false,
@@ -137,7 +133,6 @@ require("nvim-tree").setup({
 		update_cwd = false,
 		ignore_list = {},
 	},
-	ignore_ft_on_setup = {},
 	system_open = {
 		cmd = "",
 		args = {},
@@ -216,3 +211,10 @@ require("nvim-tree").setup({
 }) -- END_DEFAULT_OPTS
 
 vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<cr>", {})
+
+local function open_nvim_tree()
+	-- open the tree
+	require("nvim-tree.api").tree.open()
+end
+
+vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
