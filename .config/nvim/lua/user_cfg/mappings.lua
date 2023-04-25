@@ -19,8 +19,8 @@ map("n", "<C-k>", "<C-w>k", options)
 map("n", "<C-l>", "<C-w>l", options)
 
 -- Go start, end of line
-map("n", "H", "_", options)
-map("n", "L", "$", options)
+map({ "n", "v" }, "H", "_", options)
+map({ "n", "v" }, "L", "$", options)
 
 map("n", "<C-u>", "<C-u>zz", options)
 map("n", "<C-d>", "<C-d>zz", options)
