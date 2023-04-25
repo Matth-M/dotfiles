@@ -21,12 +21,15 @@ return packer.startup(function(use) -- :PackerSync
 	use("norcalli/nvim-colorizer.lua")
 	use("lukas-reineke/indent-blankline.nvim")
 	-- themes
+	use { "catppuccin/nvim", as = "catppuccin" }
 	use("ChristianChiarulli/nvcode-color-schemes.vim")
 	use("folke/tokyonight.nvim")
 	use("navarasu/onedark.nvim")
 	use("Mofiqul/dracula.nvim")
 	use("Mofiqul/vscode.nvim")
 	use("EdenEast/nightfox.nvim")
+	use "rebelot/kanagawa.nvim"
+	use({ 'rose-pine/neovim', as = 'rose-pine' })
 
 	-- editing
 	use("tpope/vim-surround")
