@@ -1,5 +1,5 @@
 #!/bin/bash
-session_name=cfg
+session_name=ordi
 tmux has-session -t $session_name 
 if [[ $? != 0 ]] 
  then
