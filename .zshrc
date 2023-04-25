@@ -36,6 +36,7 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$HOME/.local/bin/kitty.app/bin/
 
 # Go
 export PATH=$PATH:/usr/local/go/bin
@@ -52,7 +53,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # pnpm
 export PNPM_HOME="/home/matth/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end
 
 # GNAT
