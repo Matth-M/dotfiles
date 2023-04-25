@@ -74,7 +74,7 @@ return packer.startup(function(use) -- :PackerSync
 		requires = {
 			"kyazdani42/nvim-web-devicons", -- optional, for file icon
 		},
-		tag = "nightly", -- optional, updated every week. (see issue #1193)
+		tag = "nightly",           -- optional, updated every week. (see issue #1193)
 	})
 	use("nvim-telescope/telescope.nvim")
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
