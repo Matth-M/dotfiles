@@ -86,7 +86,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set "2%-"
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec kitty ~
+# bindsym $mod+t exec kitty ~
+bindsym $mod+t exec ~/.local/bin/kitty.app/bin/kitty ~
 bindsym $mod+f exec --no-startup-id firefox
 bindsym $mod+n exec --no-startup-id nautilus ~/Documents/ISMIN/Cours_ISMIN
 bindsym $mod+m exec --no-startup-id thunderbird
