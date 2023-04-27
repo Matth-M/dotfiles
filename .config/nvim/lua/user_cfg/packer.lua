@@ -80,6 +80,7 @@ return packer.startup(function(use) -- :PackerSync
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
 	use("ThePrimeagen/harpoon")
 	use("phaazon/hop.nvim")
+	use("alexghergh/nvim-tmux-navigation")
 
 	-- misc
 	use({

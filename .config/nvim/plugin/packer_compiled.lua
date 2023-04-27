@@ -231,6 +231,11 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tmux-navigation"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvim-tmux-navigation",
+    url = "https://github.com/alexghergh/nvim-tmux-navigation"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
