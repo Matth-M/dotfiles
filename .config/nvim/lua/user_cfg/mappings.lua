@@ -8,15 +8,15 @@ vim.g.mapleader = " " -- 'vim.g' sets global variables
 -- Navigation --
 -- splits
 -- resize
-map("n", "<A-j>", "<cmd>resize -3<cr>", options)
-map("n", "<A-h>", "<cmd>vertical resize -3<cr>", options)
-map("n", "<A-k>", "<cmd>resize +3<cr>", options)
-map("n", "<A-l>", "<cmd>vertical resize +3<cr>", options)
+map("n", "<C-j>", "<cmd>resize -3<cr>", options)
+map("n", "<C-h>", "<cmd>vertical resize -3<cr>", options)
+map("n", "<C-k>", "<cmd>resize +3<cr>", options)
+map("n", "<C-l>", "<cmd>vertical resize +3<cr>", options)
 -- change split
-map("n", "<C-h>", "<C-w>h", options)
-map("n", "<C-j>", "<C-w>j", options)
-map("n", "<C-k>", "<C-w>k", options)
-map("n", "<C-l>", "<C-w>l", options)
+map("n", "<A-h>", "<C-w>h", options)
+map("n", "<A-j>", "<C-w>j", options)
+map("n", "<A-k>", "<C-w>k", options)
+map("n", "<A-l>", "<C-w>l", options)
 
 -- Go start, end of line
 map({ "n", "v" }, "H", "_", options)
