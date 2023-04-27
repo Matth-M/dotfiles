@@ -11,7 +11,7 @@ fi
 sudo $packet_manager_install firefox vlc gcc g++ vim i3-gaps thunderbird
 redshift steam keepassxc polybar brightnessctl @virtualization rofi \
     feh neofetch blueman ranger ipython3 htop pnpm exa ripgrep fzf zsh \
-	make cmake acpi
+	make cmake acpi xsel xclip
 
 pnpm install -g vtop
 
