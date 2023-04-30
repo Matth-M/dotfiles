@@ -45,3 +45,10 @@ configs.setup({
 		enable = false,
 	},
 })
+
+vim.keymap.set(
+	"n",
+	"<leader>tsr",
+	"<cmd>TSDisable rainbow | TSDisable highlight | TSEnable rainbow | TSEnable highlight<CR>",
+	{ noremap = true }
+)
