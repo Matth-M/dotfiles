@@ -102,9 +102,8 @@ require("lspconfig")["html"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
-	filetypes = { "html", "htmldjango" },
+	filetypes = { "html" },
 })
--- require'lspconfig'.html.setup{}
 
 require("lspconfig")["cssls"].setup({
 	on_attach = on_attach,
@@ -133,6 +132,8 @@ require("lspconfig")["emmet_ls"].setup({
 		},
 	},
 })
+
+require("lspconfig").tailwindcss.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
 require("lspconfig").sqlls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 require("lspconfig").dartls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
