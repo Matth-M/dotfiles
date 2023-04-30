@@ -27,7 +27,7 @@ eval "$(starship init zsh)"
 
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.local/bin/scripts
-export PATH=$PATH:/usr/local/flutter/bin
+export PATH=$PATH:$HOME/.local/bin/flutter/bin
 export PATH=$PATH:$HOME/anaconda3/bin
 export ANDROID_INSTALL_FOLDER=/usr/local/android-studio
 export PATH=$PATH:$ANDROID_INSTALL_FOLDER/bin
