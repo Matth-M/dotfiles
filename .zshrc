@@ -59,3 +59,5 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# This allows the use of Ctrl-s to change the way of an i-search
+stty -ixon
