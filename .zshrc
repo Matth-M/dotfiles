@@ -59,7 +59,3 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# GNAT
-export GNAT_BIN="/home/matth/opt/GNAT/2021/bin"
-export PATH="$PATH:$GNAT_BIN"
-# end GNAT
