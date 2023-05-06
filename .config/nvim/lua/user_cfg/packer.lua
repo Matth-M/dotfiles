@@ -104,10 +104,5 @@ return packer.startup(function(use) -- :PackerSync
 	})
 
 	-- optional
-	use({
-		"junegunn/fzf",
-		run = function()
-			vim.fn["fzf#install"]()
-		end,
-	})
+	use("junegunn/fzf")
 end)
