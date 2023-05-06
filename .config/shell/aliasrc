@@ -44,3 +44,6 @@ alias pn='pnpm'
 alias cours='cd ~/Documents/ISMIN/Cours_ISMIN/'
 alias dev='cd ~/Documents/code/'
 alias wiz='cd ~/Documents/ISMIN/Cours_ISMIN/PI/code/'
+
+SONY_HEADPHONES_ID='94:DB:56:AB:52:8E'
+alias blue='bluetoothctl connect $SONY_HEADPHONES_ID'
