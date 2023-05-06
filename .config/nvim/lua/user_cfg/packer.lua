@@ -91,6 +91,7 @@ return packer.startup(function(use) -- :PackerSync
 	use("nvim-treesitter/nvim-treesitter-context")
 	use({ "kevinhwang91/nvim-bqf", ft = "qf" })
 	use("mfussenegger/nvim-dap")
+	use("rcarriga/nvim-dap-ui")
 	use({ "akinsho/toggleterm.nvim", tag = "*" })
 
 	--git
