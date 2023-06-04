@@ -86,6 +86,7 @@ bindsym $mod+t exec ~/.local/bin/kitty.app/bin/kitty ~
 bindsym $mod+f exec --no-startup-id firefox
 bindsym $mod+n exec --no-startup-id nautilus ~/Documents/ISMIN/Cours_ISMIN
 bindsym $mod+m exec --no-startup-id thunderbird
+bindsym $mod+o exec  /usr/local/bin/Obisdian
 
 # kill focused window
 bindsym $mod+Shift+Q kill
