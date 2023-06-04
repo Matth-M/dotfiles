@@ -8,7 +8,7 @@ vim.keymap.set("n", "<leader>dg", vim.diagnostic.get, opts)
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
-local on_attach = function(_, bufnr)
+local on_attach = function(client, bufnr)
 	-- Enable completion triggered by <c-x><c-o>
 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
 
@@ -30,6 +30,8 @@ local on_attach = function(_, bufnr)
 	vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
 	vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
 	vim.keymap.set("n", "<leader>F", vim.lsp.buf.format, bufopts)
+
+	require("lsp-format").on_attach(client)
 end
 
 local lsp_flags = {
@@ -44,10 +46,24 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 require("mason").setup()
 require("mason-lspconfig").setup()
 
+-- Format plugin
+require("lsp-format").setup({ sync = true })
+
 -- Setup lspconfig.
 -- local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-require("lspconfig")["pyright"].setup({
+-- require("lspconfig")["ruff_lsp"].setup({
+-- 	on_attach = on_attach,
+-- 	flags = lsp_flags,
+-- 	capabilities = capabilities,
+-- })
+
+-- require("lspconfig")["pyright"].setup({
+-- 	on_attach = on_attach,
+-- 	flags = lsp_flags,
+-- 	capabilities = capabilities,
+-- })
+require("lspconfig")["pylsp"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
@@ -141,6 +157,7 @@ require("lspconfig").rust_analyzer.setup({ on_attach = on_attach, flags = lsp_fl
 
 require("lspconfig").intelephense.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 require("lspconfig").gopls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
+require("lspconfig").csharp_ls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
 -- Format on save
-vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
+-- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])

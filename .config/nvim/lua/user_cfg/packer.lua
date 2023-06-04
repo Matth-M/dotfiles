@@ -22,7 +22,6 @@ return packer.startup(function(use) -- :PackerSync
 	use("lukas-reineke/indent-blankline.nvim")
 	-- themes
 	use({ "catppuccin/nvim", as = "catppuccin" })
-	use("ChristianChiarulli/nvcode-color-schemes.vim")
 	use("folke/tokyonight.nvim")
 	use("navarasu/onedark.nvim")
 	use("Mofiqul/dracula.nvim")
@@ -90,9 +89,15 @@ return packer.startup(function(use) -- :PackerSync
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use("nvim-treesitter/nvim-treesitter-context")
 	use({ "kevinhwang91/nvim-bqf", ft = "qf" })
+	use({ "akinsho/toggleterm.nvim", tag = "*" })
+	use("lukas-reineke/lsp-format.nvim")
+
+	-- debugging
 	use("mfussenegger/nvim-dap")
 	use("rcarriga/nvim-dap-ui")
-	use({ "akinsho/toggleterm.nvim", tag = "*" })
+	use("mfussenegger/nvim-dap-python")
+	use("nvim-telescope/telescope-dap.nvim")
+	use("theHamsta/nvim-dap-virtual-text")
 
 	--git
 	-- use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })

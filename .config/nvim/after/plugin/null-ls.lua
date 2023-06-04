@@ -7,7 +7,7 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup({
 	sources = {
 		formatting.prettier,
-		formatting.black,
+		formatting.autopep8,
 		formatting.djlint,
 		formatting.fixjson,
 		formatting.stylua,
@@ -16,9 +16,13 @@ null_ls.setup({
 		formatting.beautysh,
 		formatting.dart_format,
 		formatting.gofmt,
+		formatting.autoflake,
+		formatting.csharpier,
+		formatting.phpcbf,
 
 		diagnostics.eslint,
 		diagnostics.cmake_lint,
 		diagnostics.flake8,
+		diagnostics.phpstan,
 	},
 })

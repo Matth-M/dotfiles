@@ -3,9 +3,8 @@
 -- vim.cmd([[ colorscheme tokyonight-storm ]])
 -- vim.cmd[[ colorscheme nightfox ]]
 
--- vim.cmd([[colorscheme nvcode]])
---
+vim.cmd([[colorscheme vscode]])
 -- vim.cmd[[colorscheme dracula]]
-vim.cmd([[colorscheme rose-pine-moon]])
+-- vim.cmd([[colorscheme rose-pine-moon]])
 -- vim.cmd([[colorscheme catppuccin-mocha]])
 -- vim.cmd([[colorscheme kanagawa]])

@@ -39,6 +39,7 @@ map("n", "<leader>r", ":registers<cr>", options)
 -- Editing --
 -- map("i", "jj", "<esc>", options)
 map("n", "VV", "<esc>ggVG", options)
+map("n", "Y", "<cmd>%y+<CR>", options)
 map("v", "J", ":m '>+1<CR>gv=gv") -- Moves lines in visual mode
 map("v", "K", ":m '<-2<CR>gv=gv")
 
@@ -51,3 +52,6 @@ map("t", "<esc>", "<C-\\><C-n>", options)
 
 map("n", "n", "nzz", options)
 map("n", "N", "Nzz", options)
+
+map({ "n", "v" }, "<leader>d", [["_d]])
+map("x", "<leader>p", [["_dP]])

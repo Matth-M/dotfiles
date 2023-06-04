@@ -8,7 +8,6 @@ require("mason-lspconfig").setup({
 		"cmake",
 		"gopls",
 		"eslint",
-		"pyright",
 		"html",
 		"bashls",
 	},
