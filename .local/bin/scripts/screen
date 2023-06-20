@@ -1,0 +1,39 @@
+#!/bin/bash
+
+primary="eDP-1"
+secondary="DP-1"
+
+display_count=$(xrandr --query | grep '\bconnected\b' | awk '{print $1}' | wc -l)
+
+if [[ $display_count -gt 1 ]]; then
+  xrandr --auto
+else
+  direction="above"
+
+  while getopts ":d:" opt; do
+    case $opt in
+      d)
+        case $OPTARG in
+          u) direction="above" ;;
+          d) direction="below" ;;
+          l) direction="left-of" ;;
+          r) direction="right-of" ;;
+          *)
+            echo "Invalid direction: $OPTARG" >&2
+            exit 1
+            ;;
+        esac
+        ;;
+      \?)
+        echo "Invalid option: -$OPTARG" >&2
+        exit 1
+        ;;
+      :)
+        echo "Option -$OPTARG requires an argument." >&2
+        exit 1
+        ;;
+    esac
+  done
+
+  xrandr --output $secondary --$direction $primary --auto
+fi
