@@ -5,21 +5,29 @@ secondary="DP-1"
 
 display_count=$(xrandr --query | grep '\bconnected\b' | awk '{print $1}' | wc -l)
 
-if [[ $display_count -gt 1 ]]; then
+if [[ $display_count -eq 1 ]]; then
   xrandr --auto
 else
   direction="above"
 
   while getopts ":d:" opt; do
+  echo "$opt"
     case $opt in
       d)
+        if [ -z "$OPTARG" ]; then
+          echo "Option -$opt requires an argument." >&2
+			echo "Valid directions: a (above), b (below), l (left-of), r (right-of)" >&2
+          exit 1
+        fi
+
         case $OPTARG in
-          u) direction="above" ;;
-          d) direction="below" ;;
+          a) direction="above" ;;
+          b) direction="below" ;;
           l) direction="left-of" ;;
           r) direction="right-of" ;;
           *)
             echo "Invalid direction: $OPTARG" >&2
+			echo "Valid directions: a (above), b (below), l (left-of), r (right-of)" >&2
             exit 1
             ;;
         esac
