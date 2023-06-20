@@ -1,3 +1,8 @@
+local status_ok, nvim_lsp = pcall(require, "lspconfig")
+if not status_ok then
+	return
+end
+
 -- Mappings
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap = true, silent = true }
@@ -63,31 +68,33 @@ require("lsp-format").setup({ sync = true })
 -- 	flags = lsp_flags,
 -- 	capabilities = capabilities,
 -- })
-require("lspconfig")["pylsp"].setup({
+nvim_lsp["pylsp"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
 })
 
-require("lspconfig")["jsonls"].setup({
+nvim_lsp["jsonls"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
 })
 
-require("lspconfig")["tsserver"].setup({
+nvim_lsp["tsserver"].setup({
+	on_attach = on_attach,
+	flags = lsp_flags,
+	capabilities = capabilities,
+	cmd = { "typescript-language-server", "--stdio" },
+	filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+})
+
+nvim_lsp["clangd"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
 })
 
-require("lspconfig")["clangd"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-	capabilities = capabilities,
-})
-
-require("lspconfig")["lua_ls"].setup({
+nvim_lsp["lua_ls"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
@@ -113,20 +120,20 @@ require("lspconfig")["lua_ls"].setup({
 -- local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-require("lspconfig")["html"].setup({
+nvim_lsp["html"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
 	filetypes = { "html" },
 })
 
-require("lspconfig")["cssls"].setup({
+nvim_lsp["cssls"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
 })
 
-require("lspconfig")["bashls"].setup({
+nvim_lsp["bashls"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
@@ -134,7 +141,7 @@ require("lspconfig")["bashls"].setup({
 
 local capabilitiesEmmet = vim.lsp.protocol.make_client_capabilities()
 capabilitiesEmmet.textDocument.completion.completionItem.snippetSupport = true
-require("lspconfig")["emmet_ls"].setup({
+nvim_lsp["emmet_ls"].setup({
 	-- on_attach = on_attach,
 	capabilities = capabilitiesEmmet,
 	filetypes = { "html", "typescriptreact", "javascriptreact", "htmldjango" },
@@ -148,16 +155,16 @@ require("lspconfig")["emmet_ls"].setup({
 	},
 })
 
-require("lspconfig").tailwindcss.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
+nvim_lsp.tailwindcss.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
-require("lspconfig").sqlls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
-require("lspconfig").dartls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
+nvim_lsp.sqlls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
+nvim_lsp.dartls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
-require("lspconfig").rust_analyzer.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
+nvim_lsp.rust_analyzer.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
-require("lspconfig").intelephense.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
-require("lspconfig").gopls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
-require("lspconfig").csharp_ls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
+nvim_lsp.intelephense.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
+nvim_lsp.gopls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
+nvim_lsp.csharp_ls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
 -- Format on save
 -- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])

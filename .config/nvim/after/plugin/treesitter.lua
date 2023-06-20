@@ -44,6 +44,9 @@ configs.setup({
 	indent = {
 		enable = false,
 	},
+	autotag = {
+		enable = true,
+	},
 })
 
 vim.keymap.set(

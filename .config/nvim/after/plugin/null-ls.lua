@@ -20,9 +20,10 @@ null_ls.setup({
 		formatting.csharpier,
 		formatting.phpcbf,
 
-		diagnostics.eslint,
+		-- diagnostics.eslint_d,
 		diagnostics.cmake_lint,
 		diagnostics.flake8,
 		diagnostics.phpstan,
+		diagnostics.selene,
 	},
 })

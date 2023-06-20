@@ -20,6 +20,7 @@ return packer.startup(function(use) -- :PackerSync
 	use("p00f/nvim-ts-rainbow")
 	use("norcalli/nvim-colorizer.lua")
 	use("lukas-reineke/indent-blankline.nvim")
+	use("onsails/lspkind.nvim")
 	-- themes
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use("folke/tokyonight.nvim")
@@ -33,6 +34,7 @@ return packer.startup(function(use) -- :PackerSync
 	-- editing
 	use("tpope/vim-surround")
 	use("windwp/nvim-autopairs")
+	use("windwp/nvim-ts-autotag")
 	use({
 		"numToStr/Comment.nvim",
 	})
@@ -49,9 +51,9 @@ return packer.startup(function(use) -- :PackerSync
 	use("hrsh7th/cmp-path")
 	use("hrsh7th/cmp-cmdline")
 
+	-- Snippets
 	use("L3MON4D3/LuaSnip")
 	use("saadparwaiz1/cmp_luasnip")
-	-- Packer
 	use("rafamadriz/friendly-snippets")
 
 	-- LSP
@@ -91,6 +93,7 @@ return packer.startup(function(use) -- :PackerSync
 	use({ "kevinhwang91/nvim-bqf", ft = "qf" })
 	use({ "akinsho/toggleterm.nvim", tag = "*" })
 	use("lukas-reineke/lsp-format.nvim")
+	use('MunifTanjim/prettier.nvim')
 
 	-- debugging
 	use("mfussenegger/nvim-dap")

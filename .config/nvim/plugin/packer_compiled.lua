@@ -174,6 +174,11 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/lsp-format.nvim",
     url = "https://github.com/lukas-reineke/lsp-format.nvim"
   },
+  ["lspkind.nvim"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
+    url = "https://github.com/onsails/lspkind.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -266,6 +271,11 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
   ["nvim-ts-context-commentstring"] = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
@@ -300,6 +310,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/home/matth/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
   },
   ["refactoring.nvim"] = {
     loaded = true,

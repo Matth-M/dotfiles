@@ -3,6 +3,7 @@ local cmp_status_ok, cmp = pcall(require, "cmp")
 if not cmp_status_ok then
 	return
 end
+local lspkind = require("lspkind")
 
 require("luasnip.loaders.from_lua").lazy_load()
 
@@ -41,13 +42,16 @@ cmp.setup({
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" }, -- For luasnip users.
-		{ name = "buffer" },
 		{ name = "path" },
+		{ name = "buffer" },
 	}),
 	experimental = {
 		ghost_text = false,
 		native_menu = false,
 	},
+	formatting = {
+		format = lspkind.cmp_format({ with_text = false, maxwidth = 50, mode = 'symbol', ellipsis_char = '...', })
+	}
 })
 
 -- Set configuration for specific filetype.
