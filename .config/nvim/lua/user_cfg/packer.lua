@@ -29,7 +29,6 @@ return packer.startup(function(use) -- :PackerSync
 	use("Mofiqul/vscode.nvim")
 	use("EdenEast/nightfox.nvim")
 	use("rebelot/kanagawa.nvim")
-	use({ "rose-pine/neovim", as = "rose-pine" })
 
 	-- editing
 	use("tpope/vim-surround")
@@ -50,6 +49,7 @@ return packer.startup(function(use) -- :PackerSync
 	use("hrsh7th/cmp-buffer")
 	use("hrsh7th/cmp-path")
 	use("hrsh7th/cmp-cmdline")
+	use("hrsh7th/cmp-nvim-lsp-signature-help")
 
 	-- Snippets
 	use("L3MON4D3/LuaSnip")
@@ -93,7 +93,13 @@ return packer.startup(function(use) -- :PackerSync
 	use({ "kevinhwang91/nvim-bqf", ft = "qf" })
 	use({ "akinsho/toggleterm.nvim", tag = "*" })
 	use("lukas-reineke/lsp-format.nvim")
-	use('MunifTanjim/prettier.nvim')
+	use("MunifTanjim/prettier.nvim")
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
 
 	-- debugging
 	use("mfussenegger/nvim-dap")

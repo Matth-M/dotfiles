@@ -5,13 +5,13 @@ if not cmp_status_ok then
 end
 local lspkind = require("lspkind")
 
-require("luasnip.loaders.from_lua").lazy_load()
+local luasnip = require("luasnip")
 
 cmp.setup({
 	snippet = {
 		-- REQUIRED - you must specify a snippet engine
 		expand = function(args)
-			require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
+			luasnip.lsp_expand(args.body) -- For `luasnip` users.
 		end,
 	},
 	window = {
@@ -19,20 +19,26 @@ cmp.setup({
 		documentation = cmp.config.window.bordered(),
 	},
 	mapping = cmp.mapping.preset.insert({
-		["<Tab>"] = function(fallback)
+		["<Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
+			elseif luasnip.expand_or_jumpable() then
+				luasnip.expand_or_jump()
+			elseif cmp.has_words_before() then
+				cmp.complete()
 			else
 				fallback()
 			end
-		end,
-		["<S-Tab>"] = function(fallback)
+		end, { "i", "s" }),
+		["<S-Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_prev_item()
+			elseif luasnip.jumpable(-1) then
+				luasnip.jump(-1)
 			else
 				fallback()
 			end
-		end,
+		end, { "i", "s" }),
 		["<C-b>"] = cmp.mapping.scroll_docs(-4),
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(),
@@ -44,14 +50,15 @@ cmp.setup({
 		{ name = "luasnip" }, -- For luasnip users.
 		{ name = "path" },
 		{ name = "buffer" },
+		{ name = "nvim_lsp_signature_help" },
 	}),
 	experimental = {
 		ghost_text = false,
 		native_menu = false,
 	},
 	formatting = {
-		format = lspkind.cmp_format({ with_text = false, maxwidth = 50, mode = 'symbol', ellipsis_char = '...', })
-	}
+		format = lspkind.cmp_format({ with_text = false, maxwidth = 50, mode = "symbol", ellipsis_char = "..." }),
+	},
 })
 
 -- Set configuration for specific filetype.

@@ -144,7 +144,7 @@ capabilitiesEmmet.textDocument.completion.completionItem.snippetSupport = true
 nvim_lsp["emmet_ls"].setup({
 	-- on_attach = on_attach,
 	capabilities = capabilitiesEmmet,
-	filetypes = { "html", "typescriptreact", "javascriptreact", "htmldjango" },
+	filetypes = { "html", "typescriptreact", "javascriptreact", "htmldjango", "php", },
 	init_options = {
 		html = {
 			options = {

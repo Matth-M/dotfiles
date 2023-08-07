@@ -22,6 +22,7 @@ map("n", "<A-l>", "<C-w>l", options)
 map({ "n", "v" }, "H", "_", options)
 map({ "n", "v" }, "L", "$", options)
 
+-- Center screen when moving
 map("n", "<C-u>", "<C-u>zz", options)
 map("n", "<C-d>", "<C-d>zz", options)
 map("n", "<C-t>", "<C-t>zz", options)
@@ -34,15 +35,13 @@ map("n", "<leader><leader>", "<C-^>", options)
 
 map("n", "<M-t>", "<cmd>:tabclose<cr>", options)
 
-map("n", "<leader>r", ":registers<cr>", options)
-
 -- Editing --
--- map("i", "jj", "<esc>", options)
 map("n", "VV", "<esc>ggVG", options)
 map("n", "Y", "<cmd>%y+<CR>", options)
 map("v", "J", ":m '>+1<CR>gv=gv") -- Moves lines in visual mode
 map("v", "K", ":m '<-2<CR>gv=gv")
-
+map({ "i", "s" }, "<c-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", options)
+map({ "i", "s" }, "<c-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", options)
 -- Misc
 map("n", "<leader>ss", ":w | source %<cr>", options)
 map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
