@@ -1,0 +1,4 @@
+#!/bin/bash
+stylus_id=$(xsetwacom list devices | grep stylus | awk '{print $9}')
+xsetwacom set $stylus_id MapToOutput 1920x1080+1920+0
+xsetwacom set $stylus_id Area 0 0 15200 8550
