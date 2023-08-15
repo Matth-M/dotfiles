@@ -2,6 +2,7 @@ local status_ok, nvim_lsp = pcall(require, "lspconfig")
 if not status_ok then
 	return
 end
+local util = require("lspconfig/util")
 
 -- Mappings
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -144,7 +145,7 @@ capabilitiesEmmet.textDocument.completion.completionItem.snippetSupport = true
 nvim_lsp["emmet_ls"].setup({
 	-- on_attach = on_attach,
 	capabilities = capabilitiesEmmet,
-	filetypes = { "html", "typescriptreact", "javascriptreact", "htmldjango", "php", },
+	filetypes = { "html", "typescriptreact", "javascriptreact", "htmldjango", "php" },
 	init_options = {
 		html = {
 			options = {
@@ -160,7 +161,19 @@ nvim_lsp.tailwindcss.setup({ on_attach = on_attach, flags = lsp_flags, capabilit
 nvim_lsp.sqlls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 nvim_lsp.dartls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 
-nvim_lsp.rust_analyzer.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
+nvim_lsp.rust_analyzer.setup({
+	on_attach = on_attach,
+	flags = lsp_flags,
+	capabilities = capabilities,
+	root_dir = util.root_pattern("Cargo.toml"),
+	settings = {
+		["rust_analyzer"] = {
+			cargo = {
+				allFeatures = true,
+			},
+		},
+	},
+})
 
 nvim_lsp.intelephense.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
 nvim_lsp.gopls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })

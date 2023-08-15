@@ -4,7 +4,7 @@ if not status_ok then
 	return
 end
 
-return packer.startup(function(use) -- :PackerSync
+return packer.startup(function(use)
 	-- utility
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
@@ -17,7 +17,7 @@ return packer.startup(function(use) -- :PackerSync
 	})
 	use("kyazdani42/nvim-web-devicons")
 	use({ "fgheng/winbar.nvim" })
-	use("p00f/nvim-ts-rainbow")
+	use("hiphish/rainbow-delimiters.nvim")
 	use("norcalli/nvim-colorizer.lua")
 	use("lukas-reineke/indent-blankline.nvim")
 	use("onsails/lspkind.nvim")
@@ -68,6 +68,7 @@ return packer.startup(function(use) -- :PackerSync
 			{ "nvim-treesitter/nvim-treesitter" },
 		},
 	})
+	use("simrat39/rust-tools.nvim")
 
 	-- exploration
 	use({
@@ -100,7 +101,6 @@ return packer.startup(function(use) -- :PackerSync
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
-
 	-- debugging
 	use("mfussenegger/nvim-dap")
 	use("rcarriga/nvim-dap-ui")
