@@ -1,0 +1,4 @@
+#!/bin/bash
+
+SSID=$(nmcli dev wifi list | awk '!/^\*/ && $2 != "BSSID" {print $2}' | fzf)
+sudo nmcli --ask dev wifi connect $SSID
