@@ -47,5 +47,4 @@ else
 fi
 
 # Update wacom tablet settings when changing screen
-scripts_folder=$HOME/.local/bin/scripts
-$scripts_folder/wacom
+wacom
