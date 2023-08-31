@@ -24,6 +24,7 @@
 .local/include
 .local/kitty.app
 .local/lib
+.local/share
 .local/share/Google
 .local/share/Steam
 .local/share/Trash
@@ -33,7 +34,6 @@
 .local/share/pnpm
 .local/state
 .matlab
-.mozilla
 .npm
 .nuget
 .nvm
