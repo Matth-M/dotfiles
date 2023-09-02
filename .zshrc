@@ -61,3 +61,7 @@ esac
 
 # This allows the use of Ctrl-s to change the way of an i-search
 stty -ixon
+
+# Modelsim
+export MODELSIM_HOME=$HOME/intelFPGA/20.1/modelsim_ase
+export PATH=$PATH:$MODELSIM_HOME/linux

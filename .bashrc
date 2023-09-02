@@ -114,8 +114,3 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="/home/matth/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
-
-# GNAT
-export GNAT_BIN="/home/matth/opt/GNAT/2021/bin"
-export PATH="$PATH:$GNAT_BIN"
-# end GNAT
