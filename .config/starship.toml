@@ -1,0 +1,29 @@
+format = """
+$directory$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+	\n[❯](bold green) 
+"""
+add_newline = true
+
+[aws]
+symbol = "  "
+
+[directory]
+read_only = " 󰌾"
+truncation_length = 0
+truncate_to_repo = false
+
+[docker_context]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
