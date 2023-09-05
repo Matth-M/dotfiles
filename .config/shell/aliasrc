@@ -41,7 +41,7 @@ alias py='python3'
 
 alias pn='pnpm'
 
-alias cours='cd ~/Documents/ISMIN/Cours_ISMIN/'
+alias cours='cd ~/Documents/ISMIN/3A'
 alias dev='cd ~/Documents/code/'
 alias wiz='cd ~/Documents/ISMIN/Cours_ISMIN/PI/code/'
 

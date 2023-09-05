@@ -6,8 +6,14 @@ sudo dnf install -y firefox vlc gcc g++ vim i3-gaps thunderbird \
     feh neofetch blueman ranger ipython3 htop pnpm exa ripgrep fzf zsh \
     make cmake acpi xsel xclip spectacle xrandr util-linux-user nodejs \
     xclip feh rofi polybar brightnessctl bridge-utils libvirt virt-install \
-    qemu-kvm
-# Change default shell to zsh
+    qemu-kvm libvirt-devel virt-top libguestfs-tools guestfs-tools virt-manager\
+    unixODBC-libs unixODBC ncurses ncurses-libs libzmq3 libXext alsa-lib libXtst libXft libxml2 libedit libX11 libXi\
+    make libX11.i686 libXau.i686 libXdmcp.i686 libXext.i686 libXft-devel.i686 libXft.i686 libXrender.i686 libXt.i686 libXtst.i686\
+    xrandr\
+
+
+
+    # Change default shell to zsh
 chsh -s /bin/zsh $USER
 
 # Install Zap
