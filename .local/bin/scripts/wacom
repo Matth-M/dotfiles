@@ -1,0 +1,7 @@
+#!/bin/bash
+stylus_id=$(xsetwacom list devices | grep stylus | awk '{print $9}')
+primary_screen_format=$(xrandr | grep eDP-1 | awk '{print $4}')
+xsetwacom set $stylus_id MapToOutput $primary_screen_format
+xsetwacom set $stylus_id Area 0 0 15200 8550
+# Rotate 180° tablet -> usb port to the right
+xsetwacom --set "Wacom One by Wacom S Pen stylus" Rotate half

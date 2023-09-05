@@ -1,0 +1,23 @@
+#!/bin/bash
+session_name=ordi
+tmux has-session -t $session_name
+if [[ $? != 0 ]]
+then
+    tmux new-session -s $session_name  -d -n Downloads -c $HOME/Downloads
+    tmux new-window -t $session_name -n nvim -c $HOME/.config/nvim/
+    tmux new-window -t $session_name -n shell -c $HOME/.config/shell/
+    tmux new-window -t $session_name -n i3config -c $HOME/.config/i3/
+    tmux new-window -t $session_name -n terminal -c $HOME/.config/kitty/
+    tmux new-window -t $session_name -n git -c  $HOME/.config/git/
+    tmux new-window -t $session_name -n tmux -c  $HOME/.config/tmux/
+    tmux new-window -t $session_name -n scripts -c $HOME/.local/bin/scripts
+    tmux new-window -t $session_name -n home -c $HOME/
+
+fi
+tmux attach -t $session_name
+tmux select-window -t $session_name:1
+
+#tmux send-keys -t cfg 'vim $HOME/.vimrc' C-m
+#tmux send-keys -t cfg 'vim $HOME/.bashrc' C-m
+#tmux send-keys -t cfg 'vim $HOME/.config/i3/config' C-m
+#tmux send-keys -t cfg 'vim $HOME/.tmux.conf' C-m
