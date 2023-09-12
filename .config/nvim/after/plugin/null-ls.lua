@@ -14,14 +14,13 @@ require("mason-null-ls").setup({
 		"dart_format",
 		"gofmt",
 		"autoflake",
-		"csharpier",
 		"phpcbf",
 		"eslint",
 		"cmake_lint",
 		"flake8",
 		"phpstan",
 		"selene",
-	}
+	},
 })
 
 local formatting = null_ls.builtins.formatting

@@ -55,6 +55,7 @@ Games
 STM32Cube
 STM32CubeIDE
 Unity
+Xilinx
 anaconda*
 env/
 git

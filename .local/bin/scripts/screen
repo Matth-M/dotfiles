@@ -8,7 +8,7 @@ display_count=$(xrandr --query | grep '\bconnected\b' | awk '{print $1}' | wc -l
 if [[ $display_count -eq 1 ]]; then
     xrandr --auto
 else
-    direction="left-of"
+    direction="above"
 
     while getopts ":d:" opt; do
         echo "$opt"
