@@ -11,9 +11,10 @@ sudo dnf install -y firefox vlc gcc g++ vim i3-gaps thunderbird \
     make libX11.i686 libXau.i686 libXdmcp.i686 libXext.i686 libXft-devel.i686 libXft.i686 libXrender.i686 libXt.i686 libXtst.i686\
     xrandr\
 
+    sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-
-    # Change default shell to zsh
+# Change default shell to zsh
 chsh -s /bin/zsh $USER
 
 # Install Zap
