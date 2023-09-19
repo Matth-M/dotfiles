@@ -65,3 +65,7 @@ stty -ixon
 # Modelsim
 export MODELSIM_HOME=$HOME/intelFPGA/20.1/modelsim_ase
 export PATH=$PATH:$MODELSIM_HOME/linux
+
+
+# Dev
+export DEV_FOLDER=$HOME/dev
