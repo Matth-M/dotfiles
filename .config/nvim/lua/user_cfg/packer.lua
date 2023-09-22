@@ -39,7 +39,6 @@ return packer.startup(function(use)
 	})
 	use("tpope/vim-repeat")
 	use("mattn/emmet-vim")
-	use("cshuaimin/ssr.nvim")
 	use("mbbill/undotree")
 
 	-- completion

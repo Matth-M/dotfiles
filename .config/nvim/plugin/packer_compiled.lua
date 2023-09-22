@@ -341,11 +341,6 @@ _G.packer_plugins = {
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
   },
-  ["ssr.nvim"] = {
-    loaded = true,
-    path = "/home/matth/.local/share/nvim/site/pack/packer/start/ssr.nvim",
-    url = "https://github.com/cshuaimin/ssr.nvim"
-  },
   ["telescope-dap.nvim"] = {
     loaded = true,
     path = "/home/matth/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",

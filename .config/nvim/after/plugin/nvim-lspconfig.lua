@@ -93,6 +93,10 @@ nvim_lsp["clangd"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
+	cmd = {
+		"clangd",
+		"--offset-encoding=utf-16",
+	},
 })
 
 nvim_lsp["lua_ls"].setup({
