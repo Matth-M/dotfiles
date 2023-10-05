@@ -104,7 +104,6 @@ export PATH="/home/matth/anaconda3/bin:$PATH"
 # Prompts a message when new terminal is opened
 # figlet TERMINAL
 
-. "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -114,3 +113,4 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="/home/matth/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+. "$HOME/.cargo/env"
