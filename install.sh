@@ -9,7 +9,8 @@ sudo dnf install -y firefox vlc gcc g++ vim i3-gaps thunderbird \
     qemu-kvm libvirt-devel virt-top libguestfs-tools guestfs-tools virt-manager\
     unixODBC-libs unixODBC ncurses ncurses-libs libzmq3 libXext alsa-lib libXtst libXft libxml2 libedit libX11 libXi\
     make libX11.i686 libXau.i686 libXdmcp.i686 libXext.i686 libXft-devel.i686 libXft.i686 libXrender.i686 libXt.i686 libXtst.i686\
-    xrandr\
+    xrandr glibc-devel.i686\
+
 
     sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
