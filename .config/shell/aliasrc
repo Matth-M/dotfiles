@@ -47,6 +47,6 @@ alias wiz='cd ~/Documents/ISMIN/Cours_ISMIN/PI/code/'
 
 SONY_HEADPHONES_ID='94:DB:56:AB:52:8E'
 JBL_EARBUDS='78:5E:A2:7C:A8:44'
-alias blue='bluetoothctl disconnect $SONY_HEADPHONES_ID; bluetoothctl connect $SONY_HEADPHONES_ID'
+alias sony='bluetoothctl disconnect $SONY_HEADPHONES_ID; bluetoothctl connect $SONY_HEADPHONES_ID'
 alias jbl='bluetoothctl disconnect $JBL_EARBUDS; bluetoothctl connect $JBL_EARBUDS'
 alias save='cfg commit -a -m "update" && cfg push'

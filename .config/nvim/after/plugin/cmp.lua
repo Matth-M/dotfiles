@@ -24,8 +24,8 @@ cmp.setup({
 				cmp.select_next_item()
 			elseif luasnip.expand_or_jumpable() then
 				luasnip.expand_or_jump()
-			elseif cmp.has_words_before() then
-				cmp.complete()
+				-- elseif cmp.has_words_before() then
+				-- 	cmp.complete()
 			else
 				fallback()
 			end
