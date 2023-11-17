@@ -17,7 +17,7 @@ require("nvim-tree").setup({
 		-- centralize_selection = false,
 		width = 40,
 		hide_root_folder = false,
-		side = "left",
+		side = "right",
 		preserve_window_proportions = false,
 		number = true,
 		relativenumber = true,
@@ -210,7 +210,7 @@ require("nvim-tree").setup({
 	},
 }) -- END_DEFAULT_OPTS
 
-vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<cr>", {})
+vim.keymap.set("n", "<C-e>", ":NvimTreeToggle<cr>", {})
 
 local function open_nvim_tree()
 	-- open the tree

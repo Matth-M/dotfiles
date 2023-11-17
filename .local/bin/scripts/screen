@@ -47,4 +47,4 @@ else
 fi
 
 # Update wacom tablet settings when changing screen
-wacom
+# wacom

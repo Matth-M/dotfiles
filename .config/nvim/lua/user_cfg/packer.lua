@@ -19,7 +19,6 @@ return packer.startup(function(use)
 	use({ "fgheng/winbar.nvim" })
 	use("hiphish/rainbow-delimiters.nvim")
 	use("norcalli/nvim-colorizer.lua")
-	use("lukas-reineke/indent-blankline.nvim")
 	use("onsails/lspkind.nvim")
 	-- themes
 	use({ "catppuccin/nvim", as = "catppuccin" })

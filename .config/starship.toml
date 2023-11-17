@@ -27,3 +27,6 @@ symbol = " "
 
 [hostname]
 ssh_symbol = " "
+
+[python]
+format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
