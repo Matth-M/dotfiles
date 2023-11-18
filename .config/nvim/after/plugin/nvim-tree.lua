@@ -212,9 +212,9 @@ require("nvim-tree").setup({
 
 vim.keymap.set("n", "<C-e>", ":NvimTreeToggle<cr>", {})
 
-local function open_nvim_tree()
-	-- open the tree
-	require("nvim-tree.api").tree.toggle(false, true)
-end
-
-vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
+-- local function open_nvim_tree()
+-- 	-- open the tree
+-- 	require("nvim-tree.api").tree.toggle(false, true)
+-- end
+--
+-- vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })

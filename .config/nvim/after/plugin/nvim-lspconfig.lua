@@ -52,6 +52,20 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 require("mason").setup()
 require("mason-lspconfig").setup()
 
+-- local configs = require("plugins.configs.lspconfig")
+-- local on_attach = configs.on_attach
+-- local capabilities = configs.capabilities
+
+local lspconfig = require("lspconfig")
+local servers = { "html", "cssls", "clangd" }
+
+for _, lsp in ipairs(servers) do
+	lspconfig[lsp].setup({
+		on_attach = on_attach,
+		capabilities = capabilities,
+	})
+end
+
 -- Format plugin
 require("lsp-format").setup({ sync = true })
 

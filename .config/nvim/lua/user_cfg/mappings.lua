@@ -17,6 +17,9 @@ map("n", "<A-h>", "<C-w>h", options)
 map("n", "<A-j>", "<C-w>j", options)
 map("n", "<A-k>", "<C-w>k", options)
 map("n", "<A-l>", "<C-w>l", options)
+-- create splits
+map("n", "ss", "<cmd>split<cr>", options)
+map("n", "sv", "<cmd>vs<cr>", options)
 
 -- Go start, end of line
 map({ "n", "v" }, "H", "_", options)
@@ -43,7 +46,6 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 map({ "i", "s" }, "<c-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", options)
 map({ "i", "s" }, "<c-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", options)
 -- Misc
-map("n", "<leader>ss", ":w | source %<cr>", options)
 map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
 
 map("t", "<esc>", "<C-\\><C-n>", options)

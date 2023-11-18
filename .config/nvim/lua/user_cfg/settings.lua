@@ -1,6 +1,6 @@
 local o = vim.o
 
-o.dir = '/tmp'
+o.dir = "/tmp"
 o.incsearch = true
 o.ignorecase = true
 o.hlsearch = false
@@ -10,9 +10,9 @@ o.showmode = false
 o.laststatus = 3
 o.showtabline = 2
 o.winbar = "%f%m"
-o.list = true
-o.listchars = 'trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂'
-o.clipboard = 'unnamedplus'
+-- o.list = true
+-- o.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
+o.clipboard = "unnamedplus"
 
 o.splitright = true
 o.splitbelow = true
@@ -21,7 +21,7 @@ o.scrolloff = 8
 o.sidescrolloff = 12
 o.showmode = false
 o.hidden = true
-o.completeopt= "menu,menuone,noselect"
+o.completeopt = "menu,menuone,noselect"
 o.timeout = true
 o.timeoutlen = 500
 o.number = true
@@ -44,15 +44,15 @@ o.expandtab = false
 -- vim.cmd(':hi WinSeparator guibg=None')
 
 --  Highlight on yank
-vim.cmd[[
+vim.cmd([[
 augroup highlight_yank
     autocmd!
     au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=300}
 augroup END
-]]
+]])
 
-vim.cmd[[
+vim.cmd([[
 	if has('termguicolors')
 		set termguicolors
 	endif
-]]
+]])
