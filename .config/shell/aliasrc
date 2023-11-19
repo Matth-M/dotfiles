@@ -50,3 +50,5 @@ JBL_EARBUDS='78:5E:A2:7C:A8:44'
 alias sony='bluetoothctl disconnect $SONY_HEADPHONES_ID; bluetoothctl connect $SONY_HEADPHONES_ID'
 alias jbl='bluetoothctl disconnect $JBL_EARBUDS; bluetoothctl connect $JBL_EARBUDS'
 alias dot_save='cfg commit -a -m "update" && cfg push'
+alias lnv='NVIM_APPNAME=lazy_nvim nvim'
+

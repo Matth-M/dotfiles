@@ -15,9 +15,6 @@ vim.keymap.set("n", "<leader>dg", vim.diagnostic.get, opts)
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
-	-- Enable completion triggered by <c-x><c-o>
-	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
-
 	-- Mappings.
 	-- See `:help vim.lsp.*` for documentation on any of the below functions
 	local bufopts = { noremap = true, silent = true, buffer = bufnr }
@@ -46,62 +43,39 @@ local lsp_flags = {
 }
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
+--Enable (broadcasting) snippet capability for completion
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 -- Need to call lsp-installer setup before the setup of the servers
 require("mason").setup()
 require("mason-lspconfig").setup()
 
--- local configs = require("plugins.configs.lspconfig")
--- local on_attach = configs.on_attach
--- local capabilities = configs.capabilities
-
 local lspconfig = require("lspconfig")
-local servers = { "html", "cssls", "clangd" }
+local servers = {
+	"html",
+	"cssls",
+	"clangd",
+	"pylsp",
+	"jsonls",
+	"tsserver",
+	"bashls",
+	"tailwindcss",
+	"sqlls",
+	"dartls",
+	"intelephense",
+	"gopls",
+}
 
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({
 		on_attach = on_attach,
 		capabilities = capabilities,
+		lsp_flags = lsp_flags,
 	})
 end
 
 -- Format plugin
 require("lsp-format").setup({ sync = true })
-
--- Setup lspconfig.
--- local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
-
--- require("lspconfig")["ruff_lsp"].setup({
--- 	on_attach = on_attach,
--- 	flags = lsp_flags,
--- 	capabilities = capabilities,
--- })
-
--- require("lspconfig")["pyright"].setup({
--- 	on_attach = on_attach,
--- 	flags = lsp_flags,
--- 	capabilities = capabilities,
--- })
-nvim_lsp["pylsp"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-	capabilities = capabilities,
-})
-
-nvim_lsp["jsonls"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-	capabilities = capabilities,
-})
-
-nvim_lsp["tsserver"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-	capabilities = capabilities,
-	cmd = { "typescript-language-server", "--stdio" },
-	filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-})
 
 nvim_lsp["clangd"].setup({
 	on_attach = on_attach,
@@ -134,28 +108,12 @@ nvim_lsp["lua_ls"].setup({
 		},
 	},
 })
---Enable (broadcasting) snippet capability for completion
-
--- local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 nvim_lsp["html"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 	capabilities = capabilities,
 	filetypes = { "html" },
-})
-
-nvim_lsp["cssls"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-	capabilities = capabilities,
-})
-
-nvim_lsp["bashls"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-	capabilities = capabilities,
 })
 
 local capabilitiesEmmet = vim.lsp.protocol.make_client_capabilities()
@@ -174,11 +132,6 @@ nvim_lsp["emmet_ls"].setup({
 	},
 })
 
-nvim_lsp.tailwindcss.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
-
-nvim_lsp.sqlls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
-nvim_lsp.dartls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
-
 nvim_lsp.rust_analyzer.setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
@@ -192,10 +145,3 @@ nvim_lsp.rust_analyzer.setup({
 		},
 	},
 })
-
-nvim_lsp.intelephense.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
-nvim_lsp.gopls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
-nvim_lsp.csharp_ls.setup({ on_attach = on_attach, flags = lsp_flags, capabilities = capabilities })
-
--- Format on save
--- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
