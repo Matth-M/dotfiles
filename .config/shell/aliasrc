@@ -33,7 +33,7 @@ alias s='pactl set-sink-volume @DEFAULT_SINK@'
 
 alias mkcd='function _(){ mkdir $1 && cd $1; }; _'
 
-alias maj='sudo dnf -y update && sudo dnf -y upgrade && sudo dnf autoremove'
+alias maj='sudo dnf --assumeyes update && sudo dnf --assumeyes upgrade && sudo dnf --assumeyes	autoremove'
 
 alias copy='xclip -sel c <'
 
@@ -50,5 +50,5 @@ JBL_EARBUDS='78:5E:A2:7C:A8:44'
 alias sony='bluetoothctl disconnect $SONY_HEADPHONES_ID; bluetoothctl connect $SONY_HEADPHONES_ID'
 alias jbl='bluetoothctl disconnect $JBL_EARBUDS; bluetoothctl connect $JBL_EARBUDS'
 alias dot_save='cfg commit -a -m "update" && cfg push'
-alias lnv='NVIM_APPNAME=lazy_nvim nvim'
-
+alias nvl='NVIM_APPNAME=lazy_nvim nvim'
+alias nvp='NVIM_APPNAME=nvim_packer nvim'

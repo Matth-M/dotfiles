@@ -29,4 +29,8 @@ symbol = " "
 ssh_symbol = " "
 
 [python]
-format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = "via [${symbol}${version}${virtualenv}]"
+style = "bold yellow"
+symbol = " "
+pyenv_version_name = "pyenv"
+virtualenv_symbol = "venv "
