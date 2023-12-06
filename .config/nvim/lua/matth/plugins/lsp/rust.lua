@@ -62,9 +62,6 @@ return {
 						opts.desc = "Show buffer diagnostics"
 						vim.keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
 
-						opts.desc = "Show line diagnostics"
-						vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
-
 						opts.desc = "Go to previous diagnostic"
 						vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer
 
@@ -82,19 +79,6 @@ return {
 					adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path),
 				},
 			})
-		end,
-	},
-	{
-		"saecki/crates.nvim",
-		ft = { "toml" },
-		config = function(_, opts)
-			local crates = require("crates")
-			crates.setup(opts)
-			require("cmp").setup.buffer({
-				sources = { { name = "crates" } },
-			})
-			crates.show()
-			require("core.utils").load_mappings("crates")
 		end,
 	},
 }

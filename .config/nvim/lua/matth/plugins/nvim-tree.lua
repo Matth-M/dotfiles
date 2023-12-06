@@ -26,6 +26,7 @@ return {
 			vim.keymap.set("n", "?", api.tree.toggle_help, opts("Help"))
 			vim.keymap.set("n", "c", api.tree.change_root_to_node, opts("cd"))
 			vim.keymap.set("n", "u", api.tree.change_root_to_parent, opts("dir up"))
+			vim.keymap.set("n", "<esc>", api.tree.close, opts("close"))
 			vim.keymap.del("n", "<C-e>", { buffer = bufnr })
 		end
 

@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
-vim.keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Open Lazy.nvim ui" })
+vim.keymap.set("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "Open Lazy.nvim ui" })
 
 local opts = {
 	install = {

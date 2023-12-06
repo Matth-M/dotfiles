@@ -52,9 +52,6 @@ return {
 			opts.desc = "Show buffer diagnostics"
 			vim.keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
 
-			opts.desc = "Show line diagnostics"
-			vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
-
 			opts.desc = "Go to previous diagnostic"
 			vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer
 
@@ -86,6 +83,7 @@ return {
 			"tailwindcss",
 			"sqlls",
 			"gopls",
+			"verible",
 		}
 
 		for _, lsp in ipairs(servers) do
@@ -115,5 +113,6 @@ return {
 				},
 			},
 		})
+		vim.keymap.set("n", "<leader>il", "<cmd>LspInfo<cr>", { noremap = true, desc = "LspInfo" })
 	end,
 }

@@ -30,6 +30,7 @@ return {
 					"tsx",
 					"yaml",
 					"toml",
+					"verilog",
 					"html",
 					"css",
 					"markdown",

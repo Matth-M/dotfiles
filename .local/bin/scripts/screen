@@ -46,5 +46,5 @@ else
     xrandr --output $secondary --$direction $primary --auto
 fi
 
-# Update wacom tablet settings when changing screen
-# wacom
+# Ensure i3 status bar is displayed on secondary screens
+i3 restart

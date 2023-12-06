@@ -29,12 +29,10 @@ return {
 			ensure_installed = {
 				"tsserver",
 				"html",
-				"cpptools",
 				"cssls",
 				"tailwindcss",
 				"lua_ls",
 				"pyright",
-				"codelldb",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
@@ -48,9 +46,11 @@ return {
 				"black", -- python formatter
 				"pylint", -- python linter
 				"eslint_d", -- js linter
+				"cpptools",
+				"codelldb",
 			},
 		})
 
-		vim.keymap.set("n", "<leader>m", "<cmd>Mason<cr>", { desc = "Open Mason UI" })
+		vim.keymap.set("n", "<leader>lm", "<cmd>Mason<cr>", { desc = "Open Mason UI" })
 	end,
 }

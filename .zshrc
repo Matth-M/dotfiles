@@ -54,8 +54,8 @@ export NVM_DIR="$HOME/.nvm"
 # pnpm
 export PNPM_HOME="/home/matth/.local/share/pnpm"
 case ":$PATH:" in
-    *":$PNPM_HOME:"*) ;;
-    *) export PATH="$PNPM_HOME:$PATH" ;;
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
 
