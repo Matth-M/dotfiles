@@ -10,6 +10,9 @@ return {
 			python = { "isort", "black" },
 			javascript = { { "prettierd", "prettier" } },
 			rust = { "rustfmt" },
+			golang = { "gofmt" },
+			bash = { "beautysh" },
+			systemverilog = { "verible" },
 		},
 		-- Set up format-on-save
 		format_on_save = { timeout_ms = 500, lsp_fallback = true },

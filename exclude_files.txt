@@ -7,7 +7,7 @@
 .android
 .cache
 .cargo
-.cargo .dartserver
+.dartserver
 .cert
 .cfg
 .config/unity3d/cache
@@ -24,9 +24,11 @@
 .local/include
 .local/kitty.app
 .local/lib
-.local/share
 .local/share/Google
-.local/share/Steam
+.local/share/nvim_packer
+~/.local/share/nvim
+~/.local/share/lazy_nvim/
+~/.local/share/Steam
 .local/share/Trash
 .local/share/fish
 .local/share/flatpak
@@ -60,7 +62,6 @@ anaconda*
 env/
 git
 go
-home*
 home.tar.gz
 matlab
 share/SDL

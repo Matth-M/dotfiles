@@ -16,7 +16,7 @@ return {
 			dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
 			dashboard.button("f", "  Search file", "<cmd>Telescope find_files<cr>"),
 			dashboard.button("r", " Recent", "<cmd>Telescope oldfiles<cr>"),
-			dashboard.button("c", " Config", "<cmd>lua require('matth.utils').telescope_find_config_files()<cr>"),
+			dashboard.button("c", " Config", "<cmd>lua require('utils').telescope_find_config_files()<cr>"),
 			dashboard.button("g", " Grep", "<cmd>Telescope live_grep<cr>"),
 			dashboard.button("l", "󰒲 Lazy", "<cmd>Lazy<cr>"),
 			dashboard.button("m", " Mason", "<cmd>Mason<cr>"),

@@ -17,7 +17,7 @@ return {
 		local lualine_require = require("lualine_require")
 		lualine_require.require = require
 
-		local icons = require("matth.config").icons
+		local icons = require("config").icons
 
 		vim.o.laststatus = vim.g.lualine_laststatus
 
@@ -63,7 +63,7 @@ return {
 					},
 				},
 				lualine_y = {
-					{ "progress", separator = " ", padding = { left = 1, right = 0 } },
+					{ "progress", separator = " ",                  padding = { left = 1, right = 0 } },
 					{ "location", padding = { left = 0, right = 1 } },
 				},
 			},
