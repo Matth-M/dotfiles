@@ -1,9 +1,9 @@
 tt.*
-.tests
+*.tests
 doc/tags
 debug
-.repro
+*.repro
 foo.*
 *.log
 data
-.txt
+*.txt
