@@ -57,5 +57,13 @@ vim.cmd([[
 	endif
 ]])
 
+vim.cmd([[
+" Open help in vertical buffer by default
+autocmd! FileType help :wincmd L
+]])
+
 -- https://github.com/lewis6991/impatient.nvim#notice
 vim.loader.enable()
+
+-- https://github.com/JoosepAlviste/nvim-ts-context-commentstring
+vim.g.skip_ts_context_commentstring_module = true
