@@ -121,6 +121,16 @@ return {
 		end,
 	},
 	{
+		"leoluz/nvim-dap-go",
+		ft = "go",
+		dependencies = {
+			"mfussenegger/nvim-dap",
+		},
+		config = function()
+			require("dap-go").setup()
+		end,
+	},
+	{
 		"ldelossa/nvim-dap-projects",
 		dependencies = {
 			"mfussenegger/nvim-dap",

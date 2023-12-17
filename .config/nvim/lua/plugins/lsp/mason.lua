@@ -51,6 +51,6 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "<leader>lm", "<cmd>Mason<cr>", { desc = "Open Mason UI" })
+		vim.keymap.set("n", "<leader>im", "<cmd>Mason<cr>", { desc = "Open Mason UI" })
 	end,
 }
