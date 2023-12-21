@@ -47,4 +47,4 @@ else
 fi
 
 # Ensure i3 status bar is displayed on secondary screens
-i3 restart
+# i3 restart
