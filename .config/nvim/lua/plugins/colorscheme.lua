@@ -65,5 +65,12 @@ return {
 			})
 		end,
 	},
-	{ "sonph/onehalf" },
+	{
+		"sonph/onehalf",
+		config = function()
+			-- load the colorscheme here
+			-- vim.cmd([[colorscheme onehalfdark]])
+			-- vim.cmd([[colorscheme onehalflight]])
+		end,
+	},
 }
