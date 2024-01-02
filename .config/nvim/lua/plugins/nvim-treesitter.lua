@@ -42,6 +42,7 @@ return {
 					"gitignore",
 					"rust",
 					"python",
+					"cpp",
 				},
 				incremental_selection = {
 					enable = true,
