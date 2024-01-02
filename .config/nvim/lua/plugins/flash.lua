@@ -1,13 +1,19 @@
 return {
 	"folke/flash.nvim",
 	event = "VeryLazy",
-	---@type Flash.Config
-	opts = { modes = {
-		char = {
-			jump_labels = true,
-		},
-	} },
-	-- config = function()
-	-- 	-- require("flash").toggle(false) -- disables search functionality
-	-- end,
+	config = function()
+		---@type Flash.Config
+		local opts = {
+			modes = {
+				char = {
+					jump_labels = true,
+					multi_line = false,
+				},
+				search = {
+					highlight = { backdrop = true },
+				},
+			},
+		}
+		require("flash").setup(opts)
+	end,
 }
