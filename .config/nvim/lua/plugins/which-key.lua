@@ -12,7 +12,31 @@ return {
 	},
 	config = function()
 		-- you can configure Hop the way you like here; see :h hop-config
-		require("which-key").setup({ keys = "etovxqpdygfblzhckisuran" })
+		local wk = require("which-key")
+		wk.setup({ keys = "etovxqpdygfblzhckisuran" })
 		vim.keymap.set("n", "<leader>w", "<cmd>WhichKey<cr>", { desc = "WhichKey" })
+		wk.register({
+			i = {
+				name = "info", -- optional group name
+			},
+			x = {
+				name = "Trouble", -- optional group name
+			},
+			t = {
+				name = "toggle", -- optional group name
+			},
+			f = {
+				name = "Telescope", -- optional group name
+			},
+			h = {
+				name = "harpoon", -- optional group name
+			},
+			b = {
+				name = "buffers", -- optional group name
+			},
+			d = {
+				name = "debug", -- optional group name
+			},
+		}, { prefix = "<leader>" })
 	end,
 }

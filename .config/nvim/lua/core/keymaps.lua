@@ -8,15 +8,11 @@ vim.g.mapleader = " " -- 'vim.g' sets global variables
 ----------------
 -- NAVIGATION --
 ----------------
+-- change split
 map("n", "<A-r>h", "<cmd>vertical resize -3<cr>", options)
 map("n", "<A-r>j", "<cmd>resize -3<cr>", options)
 map("n", "<A-r>k", "<cmd>resize +3<cr>", options)
 map("n", "<A-r>l", "<cmd>vertical resize +3<cr>", options)
--- change split
-map("n", "<A-h>", "<C-w>h", options)
-map("n", "<A-j>", "<C-w>j", options)
-map("n", "<A-k>", "<C-w>k", options)
-map("n", "<A-l>", "<C-w>l", options)
 -- create splits
 map("n", "ss", "<cmd>split<cr>", options)
 map("n", "sv", "<cmd>vs<cr>", options)
@@ -61,7 +57,6 @@ map("t", "<esc>", "<C-\\><C-n>", options)
 -- use C-j/k to get next/previous command lines input
 map("c", "<C-k>", "<up>", options)
 map("c", "<C-j>", "<down>", options)
--- Saner behavior of n and N
 -- n goes always forwards, N backwards
 vim.cmd([[
 nnoremap <expr> n  'Nn'[v:searchforward]

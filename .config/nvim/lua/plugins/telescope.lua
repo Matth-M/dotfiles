@@ -26,8 +26,6 @@ return {
 			})
 
 			telescope.load_extension("fzf")
-			-- set keymaps
-			local keymap = vim.keymap -- for conciseness
 		end,
 		keys = {
 			{ "<leader>fc", "<cmd>Telescope colorscheme enable_preview=true<cr>", desc = "Colorscheme" },

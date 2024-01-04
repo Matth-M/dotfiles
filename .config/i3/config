@@ -39,7 +39,7 @@ exec --no-startup-id redshift
 
 exec --nostartup-id dropbox start
 # set $wallpaper $HOME/Pictures/wallpapers/wallpapers_cool_oldirrtydoogz_deadpool_whipped_couple_wallpaper.jpg
-set $wallpaper $HOME/Pictures/wallpapers/japan_street_at_night.png
+set $wallpaper $HOME/Pictures/wallpapers/wallhaven-rrpp6m_1920x1080.png
 # set $wallpaper $HOME/Pictures/wallpapers/neon_shallows.png
 # set $wallpaper $HOME/Pictures/wallpapers/dragon.png
 
@@ -287,7 +287,7 @@ mode "resize" {
 # Shut down, restart and locking
 ################################
 
-set $lock_screen_picure $HOME/Pictures/wallpapers/mountains_over_lake.png 
+set $lock_screen_picure $HOME/Pictures/wallpapers/wallhaven-4oo5l5_1920x1080.png 
 bindsym $mod+ctrl+l exec --no-startup-id i3lock --image=$lock_screen_picure
 bindsym $mod+ctrl+s exec --no-startup-id i3lock --image=$lock_screen_picure && systemctl suspend
 

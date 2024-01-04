@@ -84,6 +84,7 @@ return {
 			"sqlls",
 			"gopls",
 			"verible",
+			"htmx",
 		}
 
 		for _, lsp in ipairs(servers) do
@@ -93,7 +94,7 @@ return {
 			})
 		end
 
-		-- example to setup lua_ls and enable call snippets
+		-- specific configurations
 		lspconfig.lua_ls.setup({
 			settings = {
 				Lua = {

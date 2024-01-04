@@ -26,7 +26,5 @@ return {
 		dashboard.config.opts.noautocmd = true
 		alpha.setup(dashboard.opts)
 		alpha.setup(dashboard.config)
-		vim.cmd([[autocmd User AlphaReady echo 'ready']])
-		vim.keymap.set("n", "<leader>A", "<cmd>Alpha<cr>", {})
 	end,
 }
