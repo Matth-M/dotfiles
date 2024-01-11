@@ -11,6 +11,7 @@ vim.o.winbar = "%f%m"
 -- o.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
 vim.o.clipboard = "unnamedplus"
 
+vim.o.conceallevel = 1
 vim.o.splitright = true
 vim.o.splitbelow = true
 vim.o.smartcase = true

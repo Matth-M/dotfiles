@@ -1,4 +1,4 @@
-setlocal spell spelllang=en
+setlocal spell spelllang=en,fr
 set wrap
 
 " Natural movement on wrapped lines
