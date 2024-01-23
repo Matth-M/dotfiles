@@ -49,6 +49,9 @@ exec_always --no-startup-id feh --bg-scale $wallpaper
 # default_border pixel 0
 # default_floating_border pixel 0
 
+# Watch for kepass database changes in Nextcloud folder to save them in syncthing
+exec --no-startup-id ~/.local/bin/scripts/sync.sh
+
 # Remap caps lock to left control
 exec_always --no-startup-id xmodmap -e "remove lock = Caps_Lock"
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape"
