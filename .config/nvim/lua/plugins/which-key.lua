@@ -17,25 +17,31 @@ return {
 		vim.keymap.set("n", "<leader>w", "<cmd>WhichKey<cr>", { desc = "WhichKey" })
 		wk.register({
 			i = {
-				name = "info", -- optional group name
+				name = "Info", -- optional group name
 			},
 			x = {
 				name = "Trouble", -- optional group name
 			},
 			t = {
-				name = "toggle", -- optional group name
+				name = "Toggle", -- optional group name
 			},
 			f = {
 				name = "Telescope", -- optional group name
 			},
 			h = {
-				name = "harpoon", -- optional group name
+				name = "Harpoon", -- optional group name
 			},
 			b = {
-				name = "buffers", -- optional group name
+				name = "Buffers", -- optional group name
 			},
 			d = {
-				name = "debug", -- optional group name
+				name = "Debug", -- optional group name
+			},
+			g = {
+				name = "Git", -- optional group name
+			},
+			gd = {
+				name = "DiffView", -- optional group name
 			},
 		}, { prefix = "<leader>" })
 	end,

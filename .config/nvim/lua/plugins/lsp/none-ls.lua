@@ -21,12 +21,11 @@ return {
 				ensure_installed = {
 					"prettier", -- prettier formatter
 					"stylua", -- lua formatter
-					"black", -- python formatter
-					"pylint", -- python linter
+					-- "black", -- python formatter
+					-- "pylint", -- python linter
 					"beautysh",
-					"mypy",
+					-- "mypy",
 					"ruff",
-					"eslint_d", -- js linter
 					"verible_verilog_format",
 				},
 			})
@@ -51,22 +50,15 @@ return {
 					}), -- js/ts formatter
 					formatting.stylua, -- lua formatter
 					formatting.isort,
-					formatting.black,
-					formatting.beautysh,
+					-- formatting.black,
+					formatting.shfmt,
 					formatting.verible_verilog_format,
-					diagnostics.pylint.with({
-						extra_args = {
-							"--disable=C0111,C0103",
-						},
-					}),
+					-- diagnostics.pylint.with({
+					-- 	extra_args = {
+					-- 		"--disable=C0111,C0103",
+					-- 	},
+					-- }),
 					diagnostics.mypy,
-					diagnostics.shellcheck,
-					diagnostics.ruff,
-					diagnostics.eslint_d.with({ -- js/ts linter
-						condition = function(utils)
-							return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs
-						end,
-					}),
 				},
 				-- configure format on save
 				on_attach = function(current_client, bufnr)

@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# Set your paths
-original="$HOME/Nextcloud/Database.kdbx"
-syncthing_copy="$HOME/sync/Database.kdbx"
+original="$HOME/sync/Database.kdbx"
+copy2="$HOME/Documents/Database.kdbx"
+copy1="$HOME/Nextcloud/Database.kdbx"
 
 while true; do
     inotifywait -e modify "$original"
-    rsync -av "$original" "$syncthing_copy"
+    rsync -av "$original" "$copy1"
+    rsync -av "$original" "$copy2"
 done

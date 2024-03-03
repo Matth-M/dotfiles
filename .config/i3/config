@@ -63,13 +63,11 @@ bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout fr
 
 ##################### 
-# polybar
+# Status bar
 #####################
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh 
 
-#exec --nostartup-id $HOME/.config/polybar/launch.sh
-#exec_always --nostartup-id polybar  default 
 
 ##################### 
 # Audio

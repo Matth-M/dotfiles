@@ -54,8 +54,8 @@ export NVM_DIR="$HOME/.nvm"
 # pnpm
 export PNPM_HOME="/home/matth/.local/share/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+    *":$PNPM_HOME:"*) ;;
+    *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
 
@@ -71,3 +71,6 @@ export PATH=$PATH:$MODELSIM_HOME/linux
 export DEV_FOLDER=$HOME/dev
 
 export tallinn_home='matthieu.matsima@tallinn.emse.fr:/eleves/home/matthieu.matsima/3A'
+
+# Ghidra
+# export PATH=$PATH:$HOME/install/ghidra-Ghidra_11.0.1_build/

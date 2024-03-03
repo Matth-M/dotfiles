@@ -27,6 +27,7 @@ return {
 			})
 
 			telescope.load_extension("fzf")
+			telescope.load_extension("notify")
 		end,
 		keys = {
 			{ "<leader>fc", "<cmd>Telescope colorscheme enable_preview=true<cr>", desc = "Colorscheme" },
@@ -38,6 +39,7 @@ return {
 			{ "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find string under cursor in cwd" } },
 			{ "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find string under cursor in cwd" } },
 			{ "<leader>fg", "<cmd>Telescope git_files<cr>", { desc = "Search git files" } },
+			{ "<leader>fg", "<cmd>Telescope notify<cr>", { desc = "Search Notifications" } },
 		},
 	},
 }

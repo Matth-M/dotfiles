@@ -114,3 +114,5 @@ export PNPM_HOME="/home/matth/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 . "$HOME/.cargo/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh

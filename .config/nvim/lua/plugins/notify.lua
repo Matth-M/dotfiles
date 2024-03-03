@@ -1,0 +1,15 @@
+return {
+	"rcarriga/nvim-notify",
+	opts = {
+		background_colour = "NotifyBackground",
+		fps = 60,
+		level = 2,
+		render = "compact",
+		stages = "fade",
+		timeout = 1000,
+		top_down = false,
+	},
+	config = function(_, opts)
+		require("notify").setup(opts)
+	end,
+}

@@ -86,6 +86,7 @@ return {
 			"verible",
 			"htmx",
 			"marksman",
+			"ruff_lsp",
 		}
 
 		for _, lsp in ipairs(servers) do
