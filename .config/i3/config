@@ -13,7 +13,7 @@ set $mod Mod4
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 # font pango:Ubuntu Mono:style=Bold 10
-font  pango:Hack Nerd Font Mono:style=Medium 10
+font  pango:Hack Nerd Font Mono:style=Medium 11
 #font pango:DejaVu Sans
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
@@ -98,7 +98,7 @@ floating_modifier $mod
 # bindsym $mod+t exec kitty ~
 bindsym $mod+t exec ~/.local/bin/kitty ~
 bindsym $mod+f exec --no-startup-id firefox
-bindsym $mod+n exec --no-startup-id thunar ~/Documents/ISMIN/3A/
+bindsym $mod+n exec --no-startup-id nautilus ~/Documents/ISMIN/3A/
 bindsym $mod+m exec --no-startup-id thunderbird
 
 # kill focused window
