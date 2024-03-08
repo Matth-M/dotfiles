@@ -74,6 +74,7 @@ export PATH=$PATH:/home/matth/.local/bin
 export PATH=$PATH:/home/matth/.local/bin/scripts
 export PATH=$PATH:/home/matth/.local/bin/flutter/bin
 export PATH=$PATH:/home/matth/.local/bin/android-studio/bin
+export PATH=$PATH:/usr/local/lib/nodejs/node-v20.11.1-linux-x64/bin
 export PATH=$PATH:/home/matth/Android/sdk/cmdline-tools/latest/bin
 
 

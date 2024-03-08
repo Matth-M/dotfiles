@@ -11,8 +11,7 @@ alias egrep='egrep --color=auto'
 
 alias c='clear'
 
-#Used to store dot files, use 'cfg' instead of 'git'
-alias dotfiles='/usr/bin/git --git-dir=/home/matth/.cfg/ --work-tree=/home/matth' 
+alias dotfiles='/usr/bin/git --git-dir=/home/matth/.dotfiles/ --work-tree=/home/matth' 
 
 
 alias matlab='bash ~/matlab/bin/matlab'
