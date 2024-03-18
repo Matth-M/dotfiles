@@ -1,0 +1,10 @@
+#!/bin/sh
+
+DIR_PATH=$(find ~/dev/projects -maxdepth 1 | sort | awk NR\>1 | fzf)
+SESSION_NAME="$(basename "${DIR_PATH}")"
+
+cd "$DIR_PATH" || exit
+tmux new-session -d -s "$SESSION_NAME"
+tmux new-window -d -t "$SESSION_NAME"
+tmux switch -t "$SESSION_NAME":1
+tmux send-keys -l -t "$SESSION_NAME" 'nvim'
