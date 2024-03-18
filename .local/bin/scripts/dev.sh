@@ -3,6 +3,10 @@
 DIR_PATH=$(find ~/dev/projects -maxdepth 1 | sort | awk NR\>1 | fzf)
 SESSION_NAME="$(basename "${DIR_PATH}")"
 
+if [ -z "$SESSION_NAME" ]; then
+	exit
+fi
+
 cd "$DIR_PATH" || exit
 tmux new-session -d -s "$SESSION_NAME"
 tmux new-window -d -t "$SESSION_NAME"
