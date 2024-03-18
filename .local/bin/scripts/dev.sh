@@ -3,7 +3,11 @@
 DIR_PATH=$(find ~/dev/projects -maxdepth 1 | sort | awk NR\>1 | fzf)
 SESSION_NAME="$(basename "${DIR_PATH}")"
 
+# No session name given
 if [ -z "$SESSION_NAME" ]; then
+	exit
+# Session already exists
+elif tmux has-session -t "$SESSION_NAME"; then
 	exit
 fi
 
