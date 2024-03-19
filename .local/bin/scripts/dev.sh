@@ -8,6 +8,7 @@ if [ -z "$SESSION_NAME" ]; then
 	exit
 # Session already exists
 elif tmux has-session -t "$SESSION_NAME"; then
+	tmux switch -t "$SESSION_NAME":1
 	exit
 fi
 
