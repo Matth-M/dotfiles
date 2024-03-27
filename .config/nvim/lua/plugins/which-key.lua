@@ -40,6 +40,9 @@ return {
 			g = {
 				name = "Git", -- optional group name
 			},
+			p = {
+				name = "Python", -- optional group name
+			},
 			gd = {
 				name = "DiffView", -- optional group name
 			},

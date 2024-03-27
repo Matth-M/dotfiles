@@ -38,6 +38,11 @@ export PATH=$PATH:$ANDROID_HOME/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$HOME/.local/bin/kitty.app/bin/
 
+# nnn
+export NNN_PLUG="p:preview-tabbed"
+# export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
+export NNN_FIFO=/tmp/nnn.fifo
+
 # Go
 export PATH=$PATH:/usr/local/go/bin
 

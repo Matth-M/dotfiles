@@ -15,6 +15,7 @@
 [alias]
 	dc = "diff --cached"
 	d = "diff"
+	dft="difftool"
 	s = "status"
 	su = "status -u"
 	l = "log --oneline"
@@ -33,3 +34,16 @@
 [user]
 	email = matthieu.matsima@gmail.com
 	name = Matth-M
+
+[diff]
+	tool = difftastic
+
+[difftool]
+	prompt = false
+
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+	difftool = true
+

@@ -94,11 +94,12 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set "2%-"
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-# bindsym $mod+t exec kitty ~
-bindsym $mod+t exec ~/.local/bin/kitty ~
+set $terminal ~/.local/bin/kitty
+set $start_dir ~/Documents/ISMIN/3A/
+bindsym $mod+t exec $terminal ~
 bindsym $mod+f exec --no-startup-id firefox
-bindsym $mod+n exec --no-startup-id nautilus ~/Documents/ISMIN/3A/
+bindsym $mod+b exec --no-startup-id nautilus $start_dir
+bindsym $mod+n exec  $terminal nnn $start_dir
 bindsym $mod+m exec --no-startup-id thunderbird
 
 # kill focused window
@@ -110,8 +111,8 @@ bindsym $mod+Shift+Q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec rofi -show drun
-bindsym $mod+Shift+d exec rofi -show combi
+bindsym $mod+d exec rofi -show drun -terminal $terminal
+bindsym $mod+Shift+d exec rofi -show combi -terminal $terminal
 
 # change focus
 bindsym $mod+h focus left
