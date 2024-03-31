@@ -330,8 +330,8 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 # assigning workspaces to monitors
 #####################
 
-set $primary eDP-1
-set $secondary DP-1
+set $primary eDP1
+set $secondary DP1
 
 workspace $ws1 output $primary
 workspace $ws2 output $primary

@@ -1,49 +1,49 @@
 #!/bin/bash
 
-primary="eDP-1"
-secondary="DP-1"
+primary="eDP1"
+secondary="DP1"
 
 display_count=$(xrandr --query | grep '\bconnected\b' | awk '{print $1}' | wc -l)
 
 if [[ $display_count -eq 1 ]]; then
-    xrandr --auto
+	xrandr --auto
 else
-    direction="above"
+	direction="right-of"
 
-    while getopts ":d:" opt; do
-        echo "$opt"
-        case $opt in
-            d)
-                if [ -z "$OPTARG" ]; then
-                    echo "Option -$opt requires an argument." >&2
-                    echo "Valid directions: a (above), b (below), l (left-of), r (right-of)" >&2
-                    exit 1
-                fi
+	while getopts ":d:" opt; do
+		echo "$opt"
+		case $opt in
+		d)
+			if [ -z "$OPTARG" ]; then
+				echo "Option -$opt requires an argument." >&2
+				echo "Valid directions: a (above), b (below), l (left-of), r (right-of)" >&2
+				exit 1
+			fi
 
-                case $OPTARG in
-                    a) direction="above" ;;
-                    b) direction="below" ;;
-                    l) direction="left-of" ;;
-                    r) direction="right-of" ;;
-                    *)
-                        echo "Invalid direction: $OPTARG" >&2
-                        echo "Valid directions: a (above), b (below), l (left-of), r (right-of)" >&2
-                        exit 1
-                        ;;
-                esac
-                ;;
-            \?)
-                echo "Invalid option: -$OPTARG" >&2
-                exit 1
-                ;;
-            :)
-                echo "Option -$OPTARG requires an argument." >&2
-                exit 1
-                ;;
-        esac
-    done
+			case $OPTARG in
+			a) direction="above" ;;
+			b) direction="below" ;;
+			l) direction="left-of" ;;
+			r) direction="right-of" ;;
+			*)
+				echo "Invalid direction: $OPTARG" >&2
+				echo "Valid directions: a (above), b (below), l (left-of), r (right-of)" >&2
+				exit 1
+				;;
+			esac
+			;;
+		\?)
+			echo "Invalid option: -$OPTARG" >&2
+			exit 1
+			;;
+		:)
+			echo "Option -$OPTARG requires an argument." >&2
+			exit 1
+			;;
+		esac
+	done
 
-    xrandr --output $secondary --$direction $primary --auto
+	xrandr --output $secondary --$direction $primary --auto
 fi
 
 # Ensure i3 status bar is displayed on secondary screens
