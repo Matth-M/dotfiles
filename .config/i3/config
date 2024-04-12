@@ -59,7 +59,7 @@ exec_always --no-startup-id xmodmap -e "keycode 66 = Escape"
 
 
 # Keyboard Layout
-exec_always --no-startup-id setxkbmap -layout fr -variant us
+# exec_always --no-startup-id setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout fr
 
