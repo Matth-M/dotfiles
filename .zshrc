@@ -17,11 +17,12 @@ plug "zsh-users/zsh-syntax-highlighting"
 
 plug "zap-zsh/completions"
 plug "esc/conda-zsh-completion"
-
 plug "hlissner/zsh-autopair"
 plug "Aloxaf/fzf-tab"
 
-# starship prompt
+bindkey '^ ' autosuggest-accept 
+
+# Starship prompt
 eval "$(starship init zsh)"
 
 
