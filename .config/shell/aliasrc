@@ -50,5 +50,6 @@ alias sony='bluetoothctl disconnect $SONY_HEADPHONES_ID; bluetoothctl connect $S
 alias jbl='bluetoothctl disconnect $JBL_EARBUDS; bluetoothctl connect $JBL_EARBUDS'
 alias nvl='NVIM_APPNAME=lazy_nvim nvim'
 alias nvp='NVIM_APPNAME=nvim_packer nvim'
+alias nvv='NVIM_APPNAME=nvim_vanilla nvim'
 
 alias reload='source ~/.zshrc'
