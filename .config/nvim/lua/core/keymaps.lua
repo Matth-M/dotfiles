@@ -28,7 +28,6 @@ map("n", "<C-i>", "<C-i>zz", options)
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 map("n", "<leader><leader>", "<C-^>", options)
-map("n", "<M-t>", "<cmd>:tabclose<cr>", options)
 
 ----------------
 -- Editing --
@@ -42,9 +41,6 @@ map("x", ">", ">gv")
 map("i", "<c-c>", "<esc>", options)
 map({ "n", "v" }, "D", [["_d]], options)
 map("x", "<leader>p", [["_dP]])
--- add space before or after line
-map("n", "[<space>", "O<esc>", options)
-map("n", "]<space>", "o<esc>", options)
 
 ----------------
 -- Misc

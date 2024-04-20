@@ -27,7 +27,7 @@ return {
 			})
 
 			telescope.load_extension("fzf")
-			telescope.load_extension("notify")
+			-- telescope.load_extension("notify")
 		end,
 		keys = {
 			{ "<leader>fc", "<cmd>Telescope colorscheme enable_preview=true<cr>", desc = "Colorscheme" },
