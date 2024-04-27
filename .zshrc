@@ -86,3 +86,7 @@ export tallinn_home='matthieu.matsima@tallinn.emse.fr:/eleves/home/matthieu.mats
 
 # Ghidra
 # export PATH=$PATH:$HOME/install/ghidra-Ghidra_11.0.1_build/
+
+
+# cd works like pushd
+setopt auto_pushd

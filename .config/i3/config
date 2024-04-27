@@ -16,8 +16,12 @@ set $mod Mod4
 font  pango:Hack Nerd Font Mono:style=Medium 11
 #font pango:DejaVu Sans
 
+# Firefox
+exec dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
+
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -59,7 +63,7 @@ exec_always --no-startup-id xmodmap -e "keycode 66 = Escape"
 
 
 # Keyboard Layout
-# exec_always --no-startup-id setxkbmap -layout fr -variant us
+exec_always --no-startup-id setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout fr
 

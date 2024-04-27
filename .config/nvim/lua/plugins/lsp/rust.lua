@@ -1,5 +1,6 @@
 return {
 	{
+		-- Change to https://github.com/mrcjkb/rustaceanvim
 		"simrat39/rust-tools.nvim",
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {

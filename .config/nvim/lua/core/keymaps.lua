@@ -13,9 +13,6 @@ map("n", "<A-r>h", "<cmd>vertical resize -3<cr>", options)
 map("n", "<A-r>j", "<cmd>resize -3<cr>", options)
 map("n", "<A-r>k", "<cmd>resize +3<cr>", options)
 map("n", "<A-r>l", "<cmd>vertical resize +3<cr>", options)
--- create splits
-map("n", "ss", "<cmd>split<cr>", options)
-map("n", "sv", "<cmd>vs<cr>", options)
 -- Go start, end of line
 map({ "n", "v" }, "H", "_", options)
 map({ "n", "v" }, "L", "$", options)
