@@ -1,7 +1,15 @@
 return {
 	-- Install without configuration
 	{ "projekt0n/github-nvim-theme" },
-
+	-- {
+	-- 	dependencies = {
+	-- 		"tjdevries/colorbuddy.vim",
+	-- 	},
+	-- 	"Th3Whit3Wolf/onebuddy",
+	-- 	config = function()
+	-- 		require("colorbuddy").colorscheme("onebuddy")
+	-- 	end,
+	-- },
 	{
 		"bluz71/vim-nightfly-guicolors",
 		config = function()
@@ -43,7 +51,7 @@ return {
 				end,
 			})
 			-- load the colorscheme here
-			-- vim.cmd([[colorscheme tokyonight]])
+			-- vim.cmd([[colorscheme tokyonight-night]])
 		end,
 	},
 	-- catppuccin
@@ -55,7 +63,12 @@ return {
 			vim.cmd([[colorscheme catppuccin]])
 		end,
 	},
-	{ "rose-pine/neovim" },
+	{
+		"rose-pine/neovim",
+		cofig = function()
+			-- vim.cmd([[colorscheme rose-pine]])
+		end,
+	},
 	{
 		"NvChad/nvim-colorizer.lua",
 		event = { "BufReadPre", "BufNewFile" },

@@ -28,7 +28,7 @@
 	ls = "log --oneline -15"
 	ch = "checkout"
 	dmb = !git branch --merged | grep -v 'main' | xargs -I {} git branch -d {}
-	wk = "worktree"
+	wt = "worktree"
 
 # Show lists of alias:
 # git config --list | grep alias | cut -d '.' -f2 | awk '$1=$1' OFS='\t' FS='='
