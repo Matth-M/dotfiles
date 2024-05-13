@@ -90,3 +90,5 @@ export tallinn_home='matthieu.matsima@tallinn.emse.fr:/eleves/home/matthieu.mats
 
 # cd works like pushd
 setopt auto_pushd
+
+export QSYS_ROOTDIR="/home/matth/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/23.1/quartus/sopc_builder/bin"

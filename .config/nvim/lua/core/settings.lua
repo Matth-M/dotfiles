@@ -1,11 +1,12 @@
 vim.o.dir = "/tmp"
 vim.o.incsearch = true
+vim.o.inccommand = "nosplit"
 vim.o.ignorecase = true
 vim.o.hlsearch = false
 vim.o.mouse = "a"
 vim.o.showmode = false
 vim.o.laststatus = 3
-vim.o.showtabline = 2
+vim.o.showtabline = 1
 vim.o.winbar = "%f%m"
 -- o.list = true
 -- o.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"

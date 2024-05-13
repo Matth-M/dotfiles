@@ -39,6 +39,10 @@ map("i", "<c-c>", "<esc>", options)
 map({ "n", "v" }, "D", [["_d]], options)
 map("x", "<leader>p", [["_dP]])
 
+-- Go to end/start of line in edit mode
+map("i", "<C-e>", "<C-o>$")
+map("i", "<C-a>", "<C-o>_")
+
 ----------------
 -- Misc
 ----------------

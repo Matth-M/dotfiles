@@ -3,6 +3,17 @@ return {
 	event = { "BufWritePre" },
 	cmd = { "ConformInfo" },
 	-- Everything in opts will be passed to setup()
+	keys = {
+		{
+			-- Customize or remove this keymap to your liking
+			"<leader>F",
+			function()
+				require("conform").format({ async = true, lsp_fallback = true })
+			end,
+			mode = "",
+			desc = "Format buffer",
+		},
+	},
 	opts = {
 		-- Define your formatters
 		formatters_by_ft = {
@@ -15,7 +26,7 @@ return {
 			systemverilog = { "verible" },
 		},
 		-- Set up format-on-save
-		format_on_save = { timeout_ms = 500, lsp_fallback = true },
+		-- format_on_save = { timeout_ms = 500, lsp_fallback = true },
 		-- Customize formatters
 		formatters = {
 			shfmt = {

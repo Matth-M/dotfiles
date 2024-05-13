@@ -116,3 +116,5 @@ export PATH="$PNPM_HOME:$PATH"
 . "$HOME/.cargo/env"
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+
+export QSYS_ROOTDIR="/home/matth/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/23.1/quartus/sopc_builder/bin"
