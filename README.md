@@ -9,8 +9,11 @@ dotfiles config status.showUntrackedFiles no
 # Import on new system
 
 ```bash
- git clone --bare <git-repo-url> $HOME/.dotfiles
+git clone --bare https://github.com/Matth-M/dotfiles.git $HOME/.dotfiles
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+mkdir -p ~/.dotfiles-backup && \
+dotfiles checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+xargs -I{} mv {} .dotfiles-backup/{}
 dotfiles checkout
 dotfiles config --local status.showUntrackedFiles no
 ```

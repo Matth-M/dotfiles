@@ -16,9 +16,6 @@ set $mod Mod4
 font  pango:Hack Nerd Font Mono:style=Medium 11
 #font pango:DejaVu Sans
 
-# Firefox
-exec dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
-
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -34,7 +31,7 @@ exec --no-startup-id xset dpms 0 0 3600 &
 exec --no-startup-id nm-applet
 
 # Restore GNOME's settings
-exec --no-startup-id /usr/libexec/gnome-settings-daemon-localeexec
+# exec --no-startup-id /usr/libexec/gnome-settings-daemon-localeexec
 
 # Fix a bug in gnome-settings-daemon: http://feeding.cloud.geek.nz/posts/creating-a-modern-tiling-desktop-environment-using-i3/
 exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/active false
@@ -42,7 +39,7 @@ exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/activ
 # Blue light filter
 exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
 
-exec --nostartup-id dropbox start
+# exec --nostartup-id dropbox start
 # set $wallpaper $HOME/Pictures/wallpapers/wallpapers_cool_oldirrtydoogz_deadpool_whipped_couple_wallpaper.jpg
 set $wallpaper $HOME/Pictures/wallpapers/wallhaven-rrpp6m_1920x1080.png
 # set $wallpaper $HOME/Pictures/wallpapers/neon_shallows.png
@@ -60,6 +57,9 @@ exec --no-startup-id ~/.local/bin/scripts/sync.sh
 # Remap caps lock to left control
 exec_always --no-startup-id xmodmap -e "remove lock = Caps_Lock"
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape"
+
+# Key repeat rate and delay
+exec --no-startup-id xset r rate 250 40
 
 
 # Keyboard Layout
