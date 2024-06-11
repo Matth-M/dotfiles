@@ -14,8 +14,8 @@ map("n", "<A-r>j", "<cmd>resize -3<cr>", options)
 map("n", "<A-r>k", "<cmd>resize +3<cr>", options)
 map("n", "<A-r>l", "<cmd>vertical resize +3<cr>", options)
 -- Go start, end of line
-map({ "n", "v" }, "H", "_", options)
-map({ "n", "v" }, "L", "$", options)
+map({ "n", "x" }, "H", "_", options)
+map({ "n", "x" }, "L", "$", options)
 -- Center screen when moving
 map("n", "<C-u>", "<C-u>zz", options)
 map("n", "<C-d>", "<C-d>zz", options)

@@ -59,7 +59,7 @@ exec_always --no-startup-id xmodmap -e "remove lock = Caps_Lock"
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape"
 
 # Key repeat rate and delay
-exec --no-startup-id xset r rate 250 40
+exec_always --no-startup-id xset r rate 250 40
 
 
 # Keyboard Layout

@@ -4,6 +4,7 @@ return {
 	config = function()
 		local alpha = require("alpha")
 		local dashboard = require("alpha.themes.dashboard")
+		_ = require("telescope")
 		dashboard.section.header.val = {
 			[[                               __                ]],
 			[[  ___     ___    ___   __  __ /\_\    ___ ___    ]],

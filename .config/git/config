@@ -25,8 +25,10 @@
 	can = "commit --amend --no-edit"
 	cb = "checkout -b"
 	ls = "log --oneline --graph -15"
+	cmp = "log --oneline --graph HEAD"
 	ch = "checkout"
 	dmb = !git branch --merged | grep -v 'main' | xargs -I {} git branch -d {}
+	b = "branch"
 	wt = "worktree"
 
 # Show lists of alias:

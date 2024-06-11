@@ -53,3 +53,6 @@ alias nvp='NVIM_APPNAME=nvim_packer nvim'
 alias nvv='NVIM_APPNAME=nvim_vanilla nvim'
 
 alias reload='source ~/.zshrc'
+alias bt='bluetoothctl'
+
+alias zig='~/install/zig-linux-x86_64-0.13.0-dev.365+332fbb4b0/zig'

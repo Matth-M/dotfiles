@@ -30,8 +30,8 @@ return {
 			vim.keymap.del("n", "<C-e>", { buffer = bufnr })
 		end
 
-		local HEIGHT_RATIO = 0.8 -- You can change this
-		local WIDTH_RATIO = 0.5 -- You can change this too
+		-- local HEIGHT_RATIO = 0.8 -- You can change this
+		-- local WIDTH_RATIO = 0.5 -- You can change this too
 		-- configure nvim-tree
 		nvimtree.setup({
 			view = {
