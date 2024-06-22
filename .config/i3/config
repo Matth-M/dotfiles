@@ -98,9 +98,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set "2%-"
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-set $terminal ~/.local/bin/kitty
+# set $terminal ~/.local/bin/kitty
+set $terminal /sbin/alacritty
 set $start_dir ~/Documents/ISMIN/3A/
-bindsym $mod+t exec $terminal ~
+bindsym $mod+t exec --no-startup-id $terminal
 bindsym $mod+f exec --no-startup-id firefox
 bindsym $mod+b exec --no-startup-id nautilus $start_dir
 bindsym $mod+n exec  $terminal nnn $start_dir

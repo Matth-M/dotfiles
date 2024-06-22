@@ -29,27 +29,27 @@ return {
 				})
 				:find()
 		end
-		vim.keymap.set("n", "<C-n>", function()
+		vim.keymap.set("n", "<C-h>", function()
 			harpoon:list():add()
 		end, { desc = "Mark file with harpoon" })
 
 		vim.keymap.set("n", "<C-e>", function()
-			toggle_telescope(harpoon:list())
+			harpoon.ui:toggle_quick_menu(harpoon:list())
 		end, { desc = "Toggle Harpoon quick menu" })
 
-		vim.keymap.set("n", "<C-h>", function()
+		vim.keymap.set("n", "<C-j>", function()
 			harpoon:list():select(1)
 		end, { desc = "Select file" })
 
-		vim.keymap.set("n", "<C-j>", function()
+		vim.keymap.set("n", "<C-k>", function()
 			harpoon:list():select(2)
 		end, { desc = "Select file" })
 
-		vim.keymap.set("n", "<C-k>", function()
+		vim.keymap.set("n", "<C-l>", function()
 			harpoon:list():select(3)
 		end, { desc = "Select file" })
 
-		vim.keymap.set("n", "<C-l>", function()
+		vim.keymap.set("n", "<C-f>", function()
 			harpoon:list():select(4)
 		end, { desc = "Select file" })
 	end,

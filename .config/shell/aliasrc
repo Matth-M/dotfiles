@@ -1,9 +1,10 @@
-#ls aliases
 alias ls='ls --color=auto'
 alias ll='ls -AlF'
 alias la='ls -A'
 alias l='ls -CF'
 alias lg='ls -A | grep'
+
+alias rm='rm -I'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'

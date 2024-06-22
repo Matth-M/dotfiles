@@ -16,15 +16,18 @@
 	dc = "diff --cached"
 	d = "diff"
 	dft="difftool"
+	dftc="difftool --cached"
 	s = "status"
 	su = "status -u"
 	l = "log --oneline --graph"
 	rs = "restore --staged"
 	cm = "commit -m"
 	ap = "add -p"
+	ai = "add -i"
 	can = "commit --amend --no-edit"
 	cb = "checkout -b"
 	ls = "log --oneline --graph -15"
+	la = "log --oneline --graph --all"
 	cmp = "log --oneline --graph HEAD"
 	ch = "checkout"
 	dmb = !git branch --merged | grep -v 'main' | xargs -I {} git branch -d {}
@@ -37,13 +40,14 @@
 	email = matthieu.matsima@gmail.com
 	name = Matth-M
 
+[merge]
+	tool = nvimdiff
+
 [diff]
 	tool = difftastic
 [difftool]
 	prompt = false
-
 [difftool "difftastic"]
 	cmd = difft "$LOCAL" "$REMOTE"
-
 [pager]
 	difftool = true
