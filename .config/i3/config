@@ -23,7 +23,7 @@ font  pango:Hack Nerd Font Mono:style=Medium 11
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xset s off
-exec --no-startup-id xset dpms 0 0 3600 &
+exec_always --no-startup-id xset dpms 0 0 0 &
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --image=$lock_screen_picure
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -104,7 +104,7 @@ set $start_dir ~/Documents/ISMIN/3A/
 bindsym $mod+t exec --no-startup-id $terminal
 bindsym $mod+f exec --no-startup-id firefox
 bindsym $mod+b exec --no-startup-id nautilus $start_dir
-bindsym $mod+n exec  $terminal nnn $start_dir
+# bindsym $mod+n exec  $terminal nnn $start_dir
 bindsym $mod+m exec --no-startup-id thunderbird
 
 # kill focused window
@@ -146,6 +146,8 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# Locate cursor
+bindsym $mod+ctrl+w exec "DISPLAY=:0 find-cursor -c orange -f"
 
 # split in vertical orientation
 bindsym $mod+v split toggle 

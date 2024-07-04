@@ -77,3 +77,4 @@
 ~/Documents/iso
 */virtualbox
 */vmware
+*/.wine

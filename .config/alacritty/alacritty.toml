@@ -4,11 +4,13 @@ import = [
 	# "~/.config/alacritty/fonts/Ubuntu.toml",
 	# "~/.config/alacritty/fonts/JetBrains.toml",
 	# "~/.config/alacritty/fonts/Sarasa.toml",
-	"~/.config/alacritty/fonts/Hack.toml",
+	# "~/.config/alacritty/fonts/Hack.toml",
 	# "~/.config/alacritty/fonts/Terminess.toml",
-	# "~/.config/alacritty/fonts/FiraCode.toml",
+	"~/.config/alacritty/fonts/FiraCode.toml",
 ]
 
+[font]
+size=6
 [colors]
 draw_bold_text_with_bright_colors = false
 

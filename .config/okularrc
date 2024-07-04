@@ -1,0 +1,141 @@
+[ColorEffects:Disabled]
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65000000000000002
+ContrastEffect=1
+IntensityAmount=0.10000000000000001
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=112,111,110
+ColorAmount=0.025000000000000001
+ColorEffect=2
+ContrastAmount=0.10000000000000001
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=64,69,82
+BackgroundNormal=64,69,82
+DecorationFocus=68,74,88
+DecorationHover=68,74,88
+ForegroundActive=61,174,233
+ForegroundInactive=189,195,199
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[Colors:Selection]
+BackgroundAlternate=29,153,243
+BackgroundNormal=82,148,226
+DecorationFocus=68,74,88
+DecorationHover=68,74,88
+ForegroundActive=252,252,252
+ForegroundInactive=239,240,241
+ForegroundLink=253,188,75
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=39,174,96
+ForegroundVisited=189,195,199
+
+[Colors:Tooltip]
+BackgroundAlternate=56,60,74
+BackgroundNormal=56,60,74
+DecorationFocus=68,74,88
+DecorationHover=68,74,88
+ForegroundActive=61,174,233
+ForegroundInactive=189,195,199
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[Colors:View]
+BackgroundAlternate=64,69,82
+BackgroundNormal=64,69,82
+DecorationFocus=68,74,88
+DecorationHover=68,74,88
+ForegroundActive=61,174,233
+ForegroundInactive=189,195,199
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[Colors:Window]
+BackgroundAlternate=56,60,74
+BackgroundNormal=56,60,74
+DecorationFocus=68,74,88
+DecorationHover=68,74,88
+ForegroundActive=61,174,233
+ForegroundInactive=189,195,199
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=179,189,203
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[Desktop Entry]
+FullScreen=false
+
+[General]
+ColorScheme=Arc Dark
+LockSidebar=true
+Name=Arc Dark
+ShowSidebar=true
+shadeSortColumn=true
+
+[KDE]
+contrast=4
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Nextcloud/books/learn_opengl_graphics_programming.pdf
+File10[$e]=$HOME/Nextcloud/books/CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
+File2[$e]=$HOME/Nextcloud/books/rust-in-action.pdf
+File3[$e]=$HOME/Nextcloud/books/David J. Griffiths-Introduction to Electrodynamics-Addison-Wesley (2012).pdf
+File4[$e]=$HOME/Documents/Administratif/Livret de famille REGNARD.pdf
+File5[$e]=$HOME/Documents/Administratif/Logement/residence_font_de_garach_Gardanne/edl_entree.pdf
+File6[$e]=$HOME/Documents/Administratif/Logement/residence_font_de_garach_Gardanne/bail.pdf
+File7[$e]=$HOME/Nextcloud/books/Stewart_Calculus_6ed.pdf
+File8[$e]=$HOME/Nextcloud/books/microelectronic_circuits_by_Sedra_Smith,7th.pdf
+File9[$e]=$HOME/Nextcloud/books/CRC press - VLSI Handbook.pdf
+Name1[$e]=learn_opengl_graphics_programming.pdf
+Name10[$e]=CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
+Name2[$e]=rust-in-action.pdf
+Name3[$e]=David J. Griffiths-Introduction to Electrodynamics-Addison-Wesley (2012).pdf
+Name4[$e]=Livret de famille REGNARD.pdf
+Name5[$e]=edl_entree.pdf
+Name6[$e]=bail.pdf
+Name7[$e]=Stewart_Calculus_6ed.pdf
+Name8[$e]=microelectronic_circuits_by_Sedra_Smith,7th.pdf
+Name9[$e]=CRC press - VLSI Handbook.pdf
+
+[Shortcut Schemes]
+Current Scheme=Default
+
+[UiSettings]
+ColorScheme=
+
+[WM]
+activeBackground=56,60,74
+activeBlend=255,255,255
+activeForeground=239,240,241
+inactiveBackground=56,60,74
+inactiveBlend=56,60,74
+inactiveForeground=127,140,141
