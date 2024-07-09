@@ -105,26 +105,26 @@ contrast=4
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Nextcloud/books/learn_opengl_graphics_programming.pdf
-File10[$e]=$HOME/Nextcloud/books/CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
-File2[$e]=$HOME/Nextcloud/books/rust-in-action.pdf
-File3[$e]=$HOME/Nextcloud/books/David J. Griffiths-Introduction to Electrodynamics-Addison-Wesley (2012).pdf
-File4[$e]=$HOME/Documents/Administratif/Livret de famille REGNARD.pdf
-File5[$e]=$HOME/Documents/Administratif/Logement/residence_font_de_garach_Gardanne/edl_entree.pdf
-File6[$e]=$HOME/Documents/Administratif/Logement/residence_font_de_garach_Gardanne/bail.pdf
-File7[$e]=$HOME/Nextcloud/books/Stewart_Calculus_6ed.pdf
-File8[$e]=$HOME/Nextcloud/books/microelectronic_circuits_by_Sedra_Smith,7th.pdf
-File9[$e]=$HOME/Nextcloud/books/CRC press - VLSI Handbook.pdf
-Name1[$e]=learn_opengl_graphics_programming.pdf
-Name10[$e]=CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
-Name2[$e]=rust-in-action.pdf
-Name3[$e]=David J. Griffiths-Introduction to Electrodynamics-Addison-Wesley (2012).pdf
-Name4[$e]=Livret de famille REGNARD.pdf
-Name5[$e]=edl_entree.pdf
-Name6[$e]=bail.pdf
-Name7[$e]=Stewart_Calculus_6ed.pdf
-Name8[$e]=microelectronic_circuits_by_Sedra_Smith,7th.pdf
-Name9[$e]=CRC press - VLSI Handbook.pdf
+File1[$e]=$HOME/Documents/Administratif/Livret de famille REGNARD.pdf
+File10[$e]=$HOME/Nextcloud/books/David J. Griffiths-Introduction to Electrodynamics-Addison-Wesley (2012).pdf
+File2[$e]=$HOME/Documents/Administratif/Logement/residence_font_de_garach_Gardanne/edl_entree.pdf
+File3[$e]=$HOME/Documents/Administratif/Logement/residence_font_de_garach_Gardanne/bail.pdf
+File4[$e]=$HOME/Nextcloud/books/Stewart_Calculus_6ed.pdf
+File5[$e]=$HOME/Nextcloud/books/microelectronic_circuits_by_Sedra_Smith,7th.pdf
+File6[$e]=$HOME/Nextcloud/books/CRC press - VLSI Handbook.pdf
+File7[$e]=$HOME/Nextcloud/books/CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
+File8[$e]=$HOME/Documents/stage/Guide méthodologique rapport de stage 2024.pdf
+File9[$e]=$HOME/Nextcloud/books/Classical_Electrodynamics_Jackson_1a_Edicion.pdf
+Name1[$e]=Livret de famille REGNARD.pdf
+Name10[$e]=David J. Griffiths-Introduction to Electrodynamics-Addison-Wesley (2012).pdf
+Name2[$e]=edl_entree.pdf
+Name3[$e]=bail.pdf
+Name4[$e]=Stewart_Calculus_6ed.pdf
+Name5[$e]=microelectronic_circuits_by_Sedra_Smith,7th.pdf
+Name6[$e]=CRC press - VLSI Handbook.pdf
+Name7[$e]=CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
+Name8[$e]=Guide méthodologique rapport de stage 2024.pdf
+Name9[$e]=Classical_Electrodynamics_Jackson_1a_Edicion.pdf
 
 [Shortcut Schemes]
 Current Scheme=Default
