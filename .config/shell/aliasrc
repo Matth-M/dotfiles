@@ -3,7 +3,7 @@ alias ls='ls --color=auto'
 alias ll='ls -AlF'
 alias la='ls -A'
 alias l='ls -CF'
-alias lg='ls -A | grep'
+alias lg='ls -A | rg'
 
 # rm
 alias rm='rm -I'
@@ -22,6 +22,7 @@ alias s='pactl set-sink-volume @DEFAULT_SINK@'
 alias mkcd='function _(){ mkdir $1 && cd $1; }; _'
 alias maj='sudo dnf --assumeyes update && sudo dnf --assumeyes upgrade && sudo dnf --assumeyes	autoremove'
 alias copy='xclip -sel c <'
+alias reload="source ~/.zshrc"
 
 # Paths
 alias cours='cd ~/Documents/ISMIN/3A'
@@ -33,8 +34,8 @@ SONY_HEADPHONES_ID='94:DB:56:AB:52:8E'
 JBL_EARBUDS='78:5E:A2:7C:A8:44'
 JBL_SPEAKER='D8:37:3B:D0:48:B2'
 alias sony='bluetoothctl disconnect $SONY_HEADPHONES_ID; bluetoothctl connect $SONY_HEADPHONES_ID'
-alias jbl='bluetoothctl disconnect $JBL_EARBUDS; bluetoothctl connect $JBL_EARBUDS'
-alias btd='bluetoothctl devices | fzf | cut -d' ' -f2 | xargs -I{} bluetoothctl disconnect {}'
+alias jbl='bluetoothctl disconnect $JBL_SPEAKER; bluetoothctl connect $JBL_SPEAKER'
+alias btd='bluetoothctl disconnect'
 alias bt='bluetoothctl'
 
 # Neovim/Vim

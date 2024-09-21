@@ -25,9 +25,9 @@
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
 # Change $SCRIPT_DIR to the location of your scripts!
-command=$SCRIPT_DIR/$BLOCK_NAME
-separator_block_width=15
-markup=none
+# command=$SCRIPT_DIR/$BLOCK_NAME
+# separator_block_width=15
+# markup=none
 
 # Volume indicator
 #
@@ -40,6 +40,7 @@ markup=none
 label=VOL
 interval=once
 signal=10
+command=~/.config/i3/scripts/volume
 #STEP=5%
 
 # Memory usage
@@ -105,7 +106,7 @@ interval=10
 # The battery instance defaults to 0.
 [battery]
 label=BAT
-#label=⚡
+label=⚡
 interval=30
 
 # Date Time

@@ -57,7 +57,7 @@ export PATH=$PATH:/usr/local/go/bin
 export LAMPP_HOME=/opt/lampp
 export PATH=$PATH:$LAMPP_HOME/bin/
 
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

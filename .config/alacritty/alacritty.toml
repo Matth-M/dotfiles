@@ -10,7 +10,7 @@ import = [
 ]
 
 [font]
-size=6
+# size=6
 [colors]
 draw_bold_text_with_bright_colors = false
 

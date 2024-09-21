@@ -29,7 +29,6 @@ vim.o.wrap = false
 vim.o.cursorline = true
 vim.o.signcolumn = "yes"
 vim.o.cursorlineopt = "number,line"
-vim.o.fileencoding = "utf-8"
 vim.o.swapfile = true
 vim.o.backupcopy = "yes"
 

@@ -28,6 +28,7 @@
 	cb = "checkout -b"
 	ls = "log --oneline --graph -15"
 	la = "log --oneline --graph --all"
+	las = "log --oneline --graph --all -15"
 	cmp = "log --oneline --graph HEAD"
 	ch = "checkout"
 	dmb = !git branch --merged | grep -v 'main' | xargs -I {} git branch -d {}

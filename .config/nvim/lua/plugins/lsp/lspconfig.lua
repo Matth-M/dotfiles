@@ -35,7 +35,8 @@ return {
 			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
 
 			opts.desc = "Show LSP definitions"
-			vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
+			-- vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
+			vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts) -- show lsp definitions
 
 			opts.desc = "Show LSP implementations"
 			vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations
@@ -77,17 +78,18 @@ return {
 			-- "cssls",
 			"clangd",
 			"pyright",
-			-- "jsonls",
-			-- "tsserver",
+			-- -- "jsonls",
+			-- -- "tsserver",
 			"bashls",
-			-- "tailwindcss",
-			"sqlls",
+			-- -- "tailwindcss",
+			-- "sqlls",
 			"gopls",
-			"verible",
-			-- "htmx",
+			-- "verible",
+			-- -- "htmx",
 			"marksman",
 			"ruff_lsp",
 			"zls",
+			-- "nim_langserver"
 		}
 
 		for _, lsp in ipairs(servers) do
