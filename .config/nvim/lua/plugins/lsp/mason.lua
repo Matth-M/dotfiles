@@ -54,7 +54,6 @@ return {
 				"verible",
 				"bashls",
 				"pyright",
-				"tsserver",
 			},
 		})
 

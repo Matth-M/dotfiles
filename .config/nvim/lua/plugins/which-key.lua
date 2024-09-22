@@ -1,5 +1,6 @@
 return {
 	"folke/which-key.nvim",
+	enabled = false,
 	event = "VeryLazy",
 	init = function()
 		vim.o.timeout = true
@@ -15,7 +16,7 @@ return {
 		local wk = require("which-key")
 		wk.setup({ keys = "etovxqpdygfblzhckisuran" })
 		vim.keymap.set("n", "<leader>w", "<cmd>WhichKey<cr>", { desc = "WhichKey" })
-		wk.register({
+		wk.add({
 			i = {
 				name = "Info", -- optional group name
 			},

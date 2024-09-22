@@ -89,8 +89,12 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 ##################### 
 # Brightness
 ####################
+
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set "2%+"
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set "2%-"
+bindsym XF86AudioNext exec --no-startup-id xset dpms force off
+bindsym $mod+ctrl+j exec --no-startup-id xset dpms force off
+
 
 ##################### 
 # Screenshot
@@ -271,7 +275,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Exit i3
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
 # resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {

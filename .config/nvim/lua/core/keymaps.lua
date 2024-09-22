@@ -13,6 +13,9 @@ map("n", "<A-r>h", "<cmd>vertical resize -3<cr>", options)
 map("n", "<A-r>j", "<cmd>resize -3<cr>", options)
 map("n", "<A-r>k", "<cmd>resize +3<cr>", options)
 map("n", "<A-r>l", "<cmd>vertical resize +3<cr>", options)
+
+map("n", "s", "<cmd>split<cr>", options)
+map("n", "S", "<cmd>vsplit<cr>", options)
 -- Go start, end of line
 map({ "n", "x" }, "H", "_", options)
 map({ "n", "x" }, "L", "$", options)
