@@ -7,54 +7,36 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-#font pango:monospace 8
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
+#font pango:monospace 8
 #font pango:DejaVu Sans Mono 8
 # font pango:Ubuntu Mono:style=Bold 10
-font  pango:Hack Nerd Font Mono:style=Medium 11
 #font pango:DejaVu Sans
+font  pango:Hack Nerd Font Mono:style=Medium 11
 
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
+# Disable screen saver
 exec --no-startup-id xset s off
 # xset dpms standby_mode suspend_mode off_mode
 # 0 means disabled
 exec_always --no-startup-id xset dpms 0 0 0 &
-# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --image=$lock_screen_picure
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-
-# Restore GNOME's settings
-# exec --no-startup-id /usr/libexec/gnome-settings-daemon-localeexec
-
-# Fix a bug in gnome-settings-daemon: http://feeding.cloud.geek.nz/posts/creating-a-modern-tiling-desktop-environment-using-i3/
-exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/active false
 
 # Blue light filter
 exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
 
-# exec --nostartup-id dropbox start
-set $wallpaper $HOME/Pictures/wallpapers/forest_lake.png
-
-#Loads wallpaper
-exec_always --no-startup-id feh --bg-scale $wallpaper
-
-# default_border pixel 0
-# default_floating_border pixel 0
-
 # Key repeat rate and delay
 exec_always --no-startup-id xset r rate 250 40
 
+###########
+# Wallpaper
+###########
 
+set $wallpaper $HOME/Pictures/wallpapers/forest_lake.png
+exec_always --no-startup-id feh --bg-scale $wallpaper
+
+#################
 # Keyboard Layout
+#################
+
 exec_always --no-startup-id setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout fr
@@ -65,7 +47,7 @@ bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout fr
 
 bar {
 	position top
-		status_command i3status
+	status_command i3status
 # status_command i3blocks -c ~/.config/i3blocks/config
 # status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	font pango: Noto Sans Regular 12
@@ -157,9 +139,6 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# Locate cursor
-bindsym $mod+ctrl+w exec "DISPLAY=:0 find-cursor -c orange -f"
-
 # split in vertical orientation
 bindsym $mod+v split toggle 
 
@@ -176,13 +155,6 @@ bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
-
-# focus the parent container
-bindsym $mod+p focus parent
-bindsym $mod+c focus child
-
-# focus the child container
-#bindsym $mod+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -208,6 +180,7 @@ set $ws19 "19"
 set $ws20 "20"
 set $ws20 "20"
 
+# Azerty
 # set $1 "ampersand"
 # set $2 "eacute"
 # set $3 "quotedbl"
@@ -219,6 +192,7 @@ set $ws20 "20"
 # set $9 "ccedilla"
 # set $0 "agrave"
 
+# Qwerty
 set $1 1
 set $2 2
 set $3 3
@@ -261,12 +235,6 @@ bindsym $mod+Shift+control+$1 move container to workspace number $ws11
 bindsym $mod+Shift+control+$2 move container to workspace number $ws12
 bindsym $mod+Shift+control+$3 move container to workspace number $ws13
 bindsym $mod+Shift+control+$4 move container to workspace number $ws14
-
-# move to next/prev workspace
-bindsym $mod+control+n workspace next
-bindsym $mod+control+ShiftShift+n workspace prev
-
-
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
