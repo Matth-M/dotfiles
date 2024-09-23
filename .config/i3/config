@@ -308,8 +308,10 @@ mode "resize" {
 # Shut down, restart and locking
 ################################
 
-# set $lock_screen_picure $HOME/Pictures/wallpapers/wallhaven-4oo5l5_1920x1080.png 
-set $lock_screen_picure $HOME/Pictures/wallpapers/neptune-lock.png 
+# set $lock_screen_picure $HOME/Pictures/wallpapers/foggy_forest.png 
+# set $lock_screen_picure $HOME/Pictures/wallpapers/neptune-lock.png 
+set $lock_screen_picure $HOME/Pictures/wallpapers/leaves.png 
+
 bindsym $mod+ctrl+l exec --no-startup-id i3lock --image=$lock_screen_picure
 bindsym $mod+ctrl+s exec --no-startup-id i3lock --image=$lock_screen_picure && systemctl suspend
 
