@@ -54,6 +54,7 @@ return {
 				"verible",
 				"bashls",
 				"pyright",
+				"ltex-ls",
 			},
 		})
 

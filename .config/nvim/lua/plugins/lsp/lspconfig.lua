@@ -71,27 +71,29 @@ return {
 		end
 
 		local servers = {
-			"html",
+			{ server = "html" },
 			-- "cssls",
-			"clangd",
-			"pyright",
+			{ server = "clangd" },
+			{ server = "pyright" },
 			-- "jsonls",
-			"bashls",
+			{ server = "bashls" },
 			-- "tailwindcss",
 			-- "sqlls",
-			"gopls",
+			{ server = "gopls" },
 			-- "verible",
 			-- "htmx",
-			"marksman",
-			"ruff_lsp",
-			"zls",
+			-- "marksman",
+			{ server = "ltex", settings = { ltex = { language = "en-GB" } } },
+			{ server = "ruff_lsp" },
+			{ server = "zls" },
 			-- "nim_langserver"
 		}
 
 		for _, lsp in ipairs(servers) do
-			lspconfig[lsp].setup({
+			lspconfig[lsp.server].setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
+				settings = (lsp.settings ~= nil and lsp.settings or {}),
 			})
 		end
 
