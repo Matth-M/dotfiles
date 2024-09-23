@@ -8,11 +8,11 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 
-#font pango:monospace 8
-#font pango:DejaVu Sans Mono 8
+# font pango:monospace 8
+# font pango:DejaVu Sans Mono 8
 # font pango:Ubuntu Mono:style=Bold 10
-#font pango:DejaVu Sans
-font  pango:Hack Nerd Font Mono:style=Medium 11
+# font pango:DejaVu Sans
+font pango:Hack Nerd Font Mono:style=Medium 11
 
 # Disable screen saver
 exec --no-startup-id xset s off
@@ -23,9 +23,6 @@ exec_always --no-startup-id xset dpms 0 0 0 &
 # Blue light filter
 exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
 
-# Key repeat rate and delay
-exec_always --no-startup-id xset r rate 250 40
-
 ###########
 # Wallpaper
 ###########
@@ -34,12 +31,16 @@ set $wallpaper $HOME/Pictures/wallpapers/forest_lake.png
 exec_always --no-startup-id feh --bg-scale $wallpaper
 
 #################
-# Keyboard Layout
+# Keyboard
 #################
 
 exec_always --no-startup-id setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout fr
+
+# Key repeat rate and delay
+exec_always --no-startup-id xset r rate 250 40
+
 
 ##################### 
 # Status bar
@@ -308,13 +309,6 @@ client.unfocused        #333333 #333333 #888888 #292D2E   #222222
 client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
-
-#####################
-# assigning windows to workspaces
-#####################
-# move specific windows to desired workspaces
-# for_window [class="spotify"] move to workspace number $ws7
-# assign [class="thunderbird"] move to workspace number $ws8
 
 #####################
 # assigning workspaces to monitors
