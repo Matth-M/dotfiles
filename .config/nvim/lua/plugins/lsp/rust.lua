@@ -1,7 +1,13 @@
 return {
 	{
+		"mrcjkb/rustaceanvim",
+		version = "^5", -- Recommended
+		lazy = false, -- This plugin is already lazy
+	},
+	{
 		-- Change to https://github.com/mrcjkb/rustaceanvim
 		"simrat39/rust-tools.nvim",
+		enabled = false,
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
 			"neovim/nvim-lspconfig",

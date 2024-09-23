@@ -23,6 +23,8 @@ font  pango:Hack Nerd Font Mono:style=Medium 11
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xset s off
+# xset dpms standby_mode suspend_mode off_mode
+# 0 means disabled
 exec_always --no-startup-id xset dpms 0 0 0 &
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --image=$lock_screen_picure
 
@@ -40,10 +42,7 @@ exec --no-startup-id dconf write /org/gnome/settings-daemon/plugins/cursor/activ
 exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
 
 # exec --nostartup-id dropbox start
-# set $wallpaper $HOME/Pictures/wallpapers/wallpapers_cool_oldirrtydoogz_deadpool_whipped_couple_wallpaper.jpg
-set $wallpaper $HOME/Pictures/wallpapers/wallhaven-rrpp6m_1920x1080.png
-# set $wallpaper $HOME/Pictures/wallpapers/neon_shallows.png
-# set $wallpaper $HOME/Pictures/wallpapers/dragon.png
+set $wallpaper $HOME/Pictures/wallpapers/forest_lake.png
 
 #Loads wallpaper
 exec_always --no-startup-id feh --bg-scale $wallpaper
@@ -309,7 +308,8 @@ mode "resize" {
 # Shut down, restart and locking
 ################################
 
-set $lock_screen_picure $HOME/Pictures/wallpapers/wallhaven-4oo5l5_1920x1080.png 
+# set $lock_screen_picure $HOME/Pictures/wallpapers/wallhaven-4oo5l5_1920x1080.png 
+set $lock_screen_picure $HOME/Pictures/wallpapers/neptune-lock.png 
 bindsym $mod+ctrl+l exec --no-startup-id i3lock --image=$lock_screen_picure
 bindsym $mod+ctrl+s exec --no-startup-id i3lock --image=$lock_screen_picure && systemctl suspend
 

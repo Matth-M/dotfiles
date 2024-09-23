@@ -17,6 +17,7 @@ return {
 		"nvim-lua/plenary.nvim",
 	},
 	opts = {
+		ui = { enable = false },
 		workspaces = {
 			{
 				name = "personal",
