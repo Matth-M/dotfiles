@@ -83,7 +83,7 @@ return {
 			-- "verible",
 			-- "htmx",
 			-- "marksman",
-			{ server = "ltex", settings = { ltex = { language = "en-GB" } } },
+			-- { server = "ltex", settings = { ltex = { language = "en-GB" } } },
 			{ server = "ruff_lsp" },
 			{ server = "zls" },
 			-- "nim_langserver"
