@@ -13,6 +13,11 @@ return {
 
 			-- configure treesitter
 			treesitter.setup({ -- enable syntax highlighting
+				modules = {},
+				sync_install = false,
+				ignore_install = {},
+				auto_install = false,
+
 				highlight = {
 					enable = true,
 				},
@@ -69,6 +74,6 @@ return {
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-context",
-		enable=false,
+		enable = false,
 	},
 }

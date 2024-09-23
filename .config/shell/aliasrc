@@ -1,6 +1,8 @@
 # ls
 alias ls='ls --color=auto'
-alias ll='ls -AlF'
+alias ll='ls -lF'
+alias lla='ls -AlF'
+alias lal='ls -AlF'
 alias la='ls -A'
 alias l='ls -CF'
 alias lg='ls -A | rg'

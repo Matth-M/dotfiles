@@ -50,9 +50,6 @@ return {
 			opts.desc = "Smart rename"
 			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts) -- smart rename
 
-			opts.desc = "Show buffer diagnostics"
-			vim.keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
-
 			opts.desc = "Go to previous diagnostic"
 			vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer
 

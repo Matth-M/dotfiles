@@ -95,7 +95,7 @@ FullScreen=false
 ColorScheme=Arc Dark
 LockSidebar=true
 Name=Arc Dark
-ShowSidebar=true
+ShowSidebar=false
 shadeSortColumn=true
 
 [KDE]
@@ -105,26 +105,26 @@ contrast=4
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Documents/Administratif/Logement/irelande/broken_door_handle.jpg
-File10[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img.ppm
-File2[$e]=$HOME/Documents/stage/ex/detailed_internship_missions.pdf
-File3[$e]=$HOME/Documents/ISMIN/3A/MD/asic/2021_09_10_raccourcis_cadence.pdf
-File4[$e]=$HOME/Documents/ISMIN/3A/MD/asic/2021_FLOT_VIRTUOSO_3AMD.pdf
-File5[$e]=$HOME/Documents/ISMIN/3A/MD/SC_process.pdf
-File6[$e]=$HOME/Nextcloud/books/Stewart_Calculus_6ed.pdf
-File7[$e]=$HOME/Documents/ISMIN/3A/MD/digital_design/conceptions-des-circuits-numériques-2022.pdf
-File8[$e]=$HOME/Nextcloud/books/microelectronic_circuits_by_Sedra_Smith,7th.pdf
-File9[$e]=$HOME/Documents/stage/report/rapport_Matthieu_Matsima.pdf
-Name1[$e]=broken_door_handle.jpg
-Name10[$e]=img.ppm
-Name2[$e]=detailed_internship_missions.pdf
-Name3[$e]=2021_09_10_raccourcis_cadence.pdf
-Name4[$e]=2021_FLOT_VIRTUOSO_3AMD.pdf
-Name5[$e]=SC_process.pdf
-Name6[$e]=Stewart_Calculus_6ed.pdf
-Name7[$e]=conceptions-des-circuits-numériques-2022.pdf
-Name8[$e]=microelectronic_circuits_by_Sedra_Smith,7th.pdf
-Name9[$e]=rapport_Matthieu_Matsima.pdf
+File1[$e]=$HOME/Documents/ISMIN/3A/MD/asic/2021_FLOT_VIRTUOSO_3AMD.pdf
+File10[$e]=$HOME/Documents/Administratif/Santé (!)/vaccins.jpg
+File2[$e]=$HOME/Documents/ISMIN/3A/MD/SC_process.pdf
+File3[$e]=$HOME/Nextcloud/books/Stewart_Calculus_6ed.pdf
+File4[$e]=$HOME/Documents/ISMIN/3A/MD/digital_design/conceptions-des-circuits-numériques-2022.pdf
+File5[$e]=$HOME/Nextcloud/books/microelectronic_circuits_by_Sedra_Smith,7th.pdf
+File6[$e]=$HOME/Documents/stage/report/rapport_Matthieu_Matsima.pdf
+File7[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img.ppm
+File8[$e]=$HOME/Documents/Administratif/Santé (!)/vaccin Matthieu.pdf
+File9[$e]=$HOME/Documents/Administratif/Santé (!)/vaccin Matthieu Matsima .pdf
+Name1[$e]=2021_FLOT_VIRTUOSO_3AMD.pdf
+Name10[$e]=vaccins.jpg
+Name2[$e]=SC_process.pdf
+Name3[$e]=Stewart_Calculus_6ed.pdf
+Name4[$e]=conceptions-des-circuits-numériques-2022.pdf
+Name5[$e]=microelectronic_circuits_by_Sedra_Smith,7th.pdf
+Name6[$e]=rapport_Matthieu_Matsima.pdf
+Name7[$e]=img.ppm
+Name8[$e]=vaccin Matthieu.pdf
+Name9[$e]=vaccin Matthieu Matsima .pdf
 
 [Shortcut Schemes]
 Current Scheme=Default
