@@ -1,52 +1,27 @@
 return {
 	"folke/which-key.nvim",
-	enabled = false,
+	-- enabled = false,
 	event = "VeryLazy",
 	init = function()
 		vim.o.timeout = true
 		vim.o.timeoutlen = 500
 	end,
-	opts = {
-		-- your configuration comes here
-		-- or leave it empty to use the default settings
-		-- refer to the configuration section below
-	},
 	config = function()
 		-- you can configure Hop the way you like here; see :h hop-config
 		local wk = require("which-key")
-		wk.setup({ keys = "etovxqpdygfblzhckisuran" })
+		wk.setup({})
 		vim.keymap.set("n", "<leader>w", "<cmd>WhichKey<cr>", { desc = "WhichKey" })
 		wk.add({
-			i = {
-				name = "Info", -- optional group name
-			},
-			x = {
-				name = "Trouble", -- optional group name
-			},
-			t = {
-				name = "Toggle", -- optional group name
-			},
-			f = {
-				name = "Telescope", -- optional group name
-			},
-			h = {
-				name = "Harpoon", -- optional group name
-			},
-			b = {
-				name = "Buffers", -- optional group name
-			},
-			d = {
-				name = "Debug", -- optional group name
-			},
-			g = {
-				name = "Git", -- optional group name
-			},
-			p = {
-				name = "Python", -- optional group name
-			},
-			gd = {
-				name = "DiffView", -- optional group name
-			},
-		}, { prefix = "<leader>" })
+			{ "<leader>i", group = "" },
+			{ "<leader>x", group = "Trouble" },
+			{ "<leader>t", group = "Toggle" },
+			{ "<leader>f", group = "Telescope" },
+			{ "<leader>h", group = "Harpoon" },
+			{ "<leader>b", group = "Buffers" },
+			{ "<leader>d", group = "Debug" },
+			{ "<leader>g", group = "Git" },
+			{ "<leader>p", group = "Python" },
+			{ "<leader>g", group = "DiffView" },
+		})
 	end,
 }
