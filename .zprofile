@@ -1,4 +1,4 @@
 # startx when logged in
-if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-    exec startx
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -le 3 ]; then
+  exec startx
 fi

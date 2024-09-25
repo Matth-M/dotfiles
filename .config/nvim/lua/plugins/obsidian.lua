@@ -55,7 +55,7 @@ return {
 			},
 		})
 		vim.keymap.set("n", "<leader>of", "<cmd>ObsidianQuickSwitch<cr>", { desc = "Open obsidian quick switch" })
-		vim.keymap.set("n", "<leader>ot", "<cmd>ObsidianTemplate<cr>", { desc = "Open obsidian quick switch" })
+		vim.keymap.set("n", "<leader>ot", "<cmd>ObsidianTemplate<cr>", { desc = "Use template" })
 		vim.keymap.set("n", "<leader>os", "<cmd>ObsidianSearch<cr>", { desc = "Search in vault" })
 	end,
 }
