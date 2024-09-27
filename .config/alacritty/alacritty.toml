@@ -7,6 +7,7 @@ import = [
 	# "~/.config/alacritty/fonts/Hack.toml",
 	# "~/.config/alacritty/fonts/Terminess.toml",
 	"~/.config/alacritty/fonts/FiraCode.toml",
+	# "~/.config/alacritty/fonts/Gohu.toml",
 ]
 
 [font]

@@ -105,32 +105,32 @@ contrast=4
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Documents/ISMIN/3A/MD/asic/2021_FLOT_VIRTUOSO_3AMD.pdf
-File10[$e]=$HOME/Documents/Administratif/Santé (!)/vaccins.jpg
-File2[$e]=$HOME/Documents/ISMIN/3A/MD/SC_process.pdf
-File3[$e]=$HOME/Nextcloud/books/Stewart_Calculus_6ed.pdf
-File4[$e]=$HOME/Documents/ISMIN/3A/MD/digital_design/conceptions-des-circuits-numériques-2022.pdf
-File5[$e]=$HOME/Nextcloud/books/microelectronic_circuits_by_Sedra_Smith,7th.pdf
-File6[$e]=$HOME/Documents/stage/report/rapport_Matthieu_Matsima.pdf
-File7[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img.ppm
-File8[$e]=$HOME/Documents/Administratif/Santé (!)/vaccin Matthieu.pdf
-File9[$e]=$HOME/Documents/Administratif/Santé (!)/vaccin Matthieu Matsima .pdf
-Name1[$e]=2021_FLOT_VIRTUOSO_3AMD.pdf
-Name10[$e]=vaccins.jpg
-Name2[$e]=SC_process.pdf
-Name3[$e]=Stewart_Calculus_6ed.pdf
-Name4[$e]=conceptions-des-circuits-numériques-2022.pdf
-Name5[$e]=microelectronic_circuits_by_Sedra_Smith,7th.pdf
-Name6[$e]=rapport_Matthieu_Matsima.pdf
-Name7[$e]=img.ppm
-Name8[$e]=vaccin Matthieu.pdf
-Name9[$e]=vaccin Matthieu Matsima .pdf
+File1[$e]=$HOME/Nextcloud/books/Stewart_Calculus_6ed.pdf
+File10[$e]=$HOME/Nextcloud/books/El-Damak_CMO-S-DIGITAL-INTE-GRATE-D-CI-RCUITS.pdf
+File2[$e]=$HOME/Documents/ISMIN/3A/MD/digital_design/conceptions-des-circuits-numériques-2022.pdf
+File3[$e]=$HOME/Nextcloud/books/microelectronic_circuits_by_Sedra_Smith,7th.pdf
+File4[$e]=$HOME/Documents/stage/report/rapport_Matthieu_Matsima.pdf
+File5[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img.ppm
+File6[$e]=$HOME/Documents/Administratif/Santé (!)/vaccin Matthieu.pdf
+File7[$e]=$HOME/Documents/Administratif/Santé (!)/vaccin Matthieu Matsima .pdf
+File8[$e]=$HOME/Documents/Administratif/Santé (!)/vaccins.jpg
+File9[$e]=$HOME/Nextcloud/books/Go Web Programming.pdf
+Name1[$e]=Stewart_Calculus_6ed.pdf
+Name10[$e]=El-Damak_CMO-S-DIGITAL-INTE-GRATE-D-CI-RCUITS.pdf
+Name2[$e]=conceptions-des-circuits-numériques-2022.pdf
+Name3[$e]=microelectronic_circuits_by_Sedra_Smith,7th.pdf
+Name4[$e]=rapport_Matthieu_Matsima.pdf
+Name5[$e]=img.ppm
+Name6[$e]=vaccin Matthieu.pdf
+Name7[$e]=vaccin Matthieu Matsima .pdf
+Name8[$e]=vaccins.jpg
+Name9[$e]=Go Web Programming.pdf
 
 [Shortcut Schemes]
 Current Scheme=Default
 
 [UiSettings]
-ColorScheme=
+ColorScheme=Breeze Dark
 
 [WM]
 activeBackground=56,60,74

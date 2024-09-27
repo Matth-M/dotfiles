@@ -72,21 +72,22 @@ return {
 
 		local servers = {
 			{ server = "html" },
-			-- "cssls",
 			{ server = "clangd" },
 			{ server = "pyright" },
-			-- "jsonls",
 			{ server = "bashls" },
-			-- "tailwindcss",
-			-- "sqlls",
 			{ server = "gopls" },
-			-- "verible",
-			-- "htmx",
-			-- "marksman",
-			-- { server = "ltex", settings = { ltex = { language = "en-GB" } } },
 			{ server = "ruff_lsp" },
 			{ server = "zls" },
-			-- "nim_langserver"
+			{ server = "rust_analyzer" },
+			-- { server = "nim_langserver"}
+			-- { server = "jsonls",}
+			-- { server = "cssls",}
+			-- { server = "verible",}
+			-- { server = "htmx",}
+			-- { server = "marksman",}
+			-- { server = "tailwindcss",}
+			-- { server = "sqlls",}
+			-- { server = "ltex", settings = { ltex = { language = "en-GB" } } }
 		}
 
 		for _, lsp in ipairs(servers) do

@@ -21,7 +21,7 @@ window {
 
 horibox {
     orientation: horizontal;
-    children:   [ prompt, entry, listview ];
+    children:   [ prompt, textbox-prompt-colon, entry, listview ];
 }
 
 listview {
@@ -44,4 +44,11 @@ element selected {
 
 element-icon {
 size: 1.2em;
+}
+
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em;
+    text-color: @normal-foreground;
 }

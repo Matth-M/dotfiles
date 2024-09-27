@@ -1,7 +1,8 @@
 [font.normal]
-family = "Sarasa Mono Tc Nerd Font"
+# family = "Sarasa Mono Tc Nerd Font"
+family = "Sarasa Term SC Nerd"
 [font.offset]
 x = -1
 y=-5
 [font]
-size = 7
+size = 16

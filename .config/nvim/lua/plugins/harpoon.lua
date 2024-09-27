@@ -52,5 +52,8 @@ return {
 		vim.keymap.set("n", "<C-f>", function()
 			harpoon:list():select(4)
 		end, { desc = "Select file" })
+		vim.keymap.set("n", "<C-g>", function()
+			harpoon:list():select(5)
+		end, { desc = "Select file" })
 	end,
 }
