@@ -65,3 +65,6 @@ vim.loader.enable()
 
 -- https://github.com/JoosepAlviste/nvim-ts-context-commentstring
 vim.g.skip_ts_context_commentstring_module = true
+
+-- https://github.com/benlubas/molten-nvim/blob/main/docs/Virtual-Environments.md#point-neovim-at-this-virtual-environment
+vim.g.python3_host_prog=vim.fn.expand("~/.virtualenvs/neovim/bin/python3")

@@ -37,13 +37,15 @@ return {
 						return require("obsidian").util.smart_action()
 					end,
 					opts = { buffer = true, expr = true },
+					desc = "Smart action"
 				},
 				-- Toggle check-boxes.
-				["<leader>otc"] = {
+				["<leader>oc"] = {
 					action = function()
 						return require("obsidian").util.toggle_checkbox()
 					end,
 					opts = { buffer = true },
+					desc="Toggle checkbox",
 				},
 			},
 			wiki_link_func = "prepend_note_path",

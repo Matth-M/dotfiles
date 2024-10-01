@@ -97,8 +97,7 @@ set $terminal /sbin/alacritty
 set $start_dir ~/Documents/ISMIN/3A/
 bindsym $mod+t exec --no-startup-id $terminal
 bindsym $mod+f exec --no-startup-id firefox
-bindsym $mod+y exec --no-startup-id zen-browser
-bindsym $mod+b exec --no-startup-id nautilus $start_dir
+bindsym $mod+b exec --no-startup-id dolphin $start_dir
 # bindsym $mod+n exec  $terminal nnn $start_dir
 bindsym $mod+m exec --no-startup-id thunderbird
 
