@@ -105,26 +105,26 @@ contrast=4
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Nextcloud/books/microelectronic_circuits_by_Sedra_Smith,7th.pdf
-File10[$e]=$HOME/Nextcloud/books/CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
-File2[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img.ppm
-File3[$e]=$HOME/Documents/Administratif/Santé (!)/vaccin Matthieu.pdf
-File4[$e]=$HOME/Documents/Administratif/Santé (!)/vaccin Matthieu Matsima .pdf
-File5[$e]=$HOME/Documents/Administratif/Santé (!)/vaccins.jpg
-File6[$e]=$HOME/Nextcloud/books/Go Web Programming.pdf
-File7[$e]=$HOME/Nextcloud/books/El-Damak_CMO-S-DIGITAL-INTE-GRATE-D-CI-RCUITS.pdf
+File1[$e]=$HOME/Documents/Administratif/Santé (!)/vaccin Matthieu.pdf
+File10[$e]=$HOME/Documents/ISMIN/12A/vhdl/vhdl_2022.pdf
+File2[$e]=$HOME/Documents/Administratif/Santé (!)/vaccin Matthieu Matsima .pdf
+File3[$e]=$HOME/Documents/Administratif/Santé (!)/vaccins.jpg
+File4[$e]=$HOME/Nextcloud/books/Go Web Programming.pdf
+File5[$e]=$HOME/Nextcloud/books/El-Damak_CMO-S-DIGITAL-INTE-GRATE-D-CI-RCUITS.pdf
+File6[$e]=$HOME/Documents/stage/report/rapport_Matthieu_Matsima.pdf
+File7[$e]=$HOME/Nextcloud/books/CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
 File8[$e]=$HOME/Nextcloud/books/Modern Operating Systems 4th Edition--Andrew Tanenbaum.pdf
-File9[$e]=$HOME/Documents/stage/report/rapport_Matthieu_Matsima.pdf
-Name1[$e]=microelectronic_circuits_by_Sedra_Smith,7th.pdf
-Name10[$e]=CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
-Name2[$e]=img.ppm
-Name3[$e]=vaccin Matthieu.pdf
-Name4[$e]=vaccin Matthieu Matsima .pdf
-Name5[$e]=vaccins.jpg
-Name6[$e]=Go Web Programming.pdf
-Name7[$e]=El-Damak_CMO-S-DIGITAL-INTE-GRATE-D-CI-RCUITS.pdf
+File9[$e]=$HOME/Documents/ISMIN/3A/MD/vhdl/compile_src.txt
+Name1[$e]=vaccin Matthieu.pdf
+Name10[$e]=vhdl_2022.pdf
+Name2[$e]=vaccin Matthieu Matsima .pdf
+Name3[$e]=vaccins.jpg
+Name4[$e]=Go Web Programming.pdf
+Name5[$e]=El-Damak_CMO-S-DIGITAL-INTE-GRATE-D-CI-RCUITS.pdf
+Name6[$e]=rapport_Matthieu_Matsima.pdf
+Name7[$e]=CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
 Name8[$e]=Modern Operating Systems 4th Edition--Andrew Tanenbaum.pdf
-Name9[$e]=rapport_Matthieu_Matsima.pdf
+Name9[$e]=compile_src.txt
 
 [Shortcut Schemes]
 Current Scheme=Default

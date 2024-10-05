@@ -79,10 +79,10 @@ return {
 			{ server = "ruff_lsp" },
 			{ server = "zls" },
 			{ server = "rust_analyzer" },
+			{ server = "verible",}
 			-- { server = "nim_langserver"}
 			-- { server = "jsonls",}
 			-- { server = "cssls",}
-			-- { server = "verible",}
 			-- { server = "htmx",}
 			-- { server = "marksman",}
 			-- { server = "tailwindcss",}

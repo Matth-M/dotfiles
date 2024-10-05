@@ -33,10 +33,11 @@ alias wiz='cd ~/Documents/ISMIN/Cours_ISMIN/PI/code/'
 
 # Bluetooth
 SONY_HEADPHONES_ID='94:DB:56:AB:52:8E'
-JBL_EARBUDS='78:5E:A2:7C:A8:44'
-JBL_SPEAKER='D8:37:3B:D0:48:B2'
+SPEAKER='D8:37:3B:D0:48:B2'
+EARBUDS='50:C2:75:30:03:40'
 alias sony='bluetoothctl disconnect $SONY_HEADPHONES_ID; bluetoothctl connect $SONY_HEADPHONES_ID'
-alias jbl='bluetoothctl disconnect $JBL_SPEAKER; bluetoothctl connect $JBL_SPEAKER'
+alias speaker='bluetoothctl disconnect $SPEAKER; bluetoothctl connect $SPEAKER'
+alias earbuds='bluetoothctl disconnect $EARBUDS; bluetoothctl connect $EARBUDS'
 alias btd='bluetoothctl disconnect'
 alias bt='bluetoothctl'
 

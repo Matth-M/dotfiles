@@ -94,10 +94,11 @@ floating_modifier $mod
 
 # set $terminal ~/.local/bin/kitty
 set $terminal /sbin/alacritty
-set $start_dir ~/Documents/ISMIN/3A/
+# set $start_dir ~/Documents/ISMIN/3A/
+set $start_dir ~
 bindsym $mod+t exec --no-startup-id $terminal
 bindsym $mod+f exec --no-startup-id firefox
-bindsym $mod+b exec --no-startup-id dolphin $start_dir
+bindsym $mod+b exec --no-startup-id thunar $start_dir
 # bindsym $mod+n exec  $terminal nnn $start_dir
 bindsym $mod+m exec --no-startup-id thunderbird
 

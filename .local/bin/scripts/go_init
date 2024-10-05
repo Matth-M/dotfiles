@@ -13,8 +13,7 @@ go mod init github.com/$user/$project_name
 mkdir -p bin cmd/$project_name internal tests
 touch cmd/$project_name/main.go
 cp ~/Templates/main.go -t ./cmd/$project_name
-cp ~/Templates/Makefile_go .
-mv Makefile_go Makefile
+cp ~/Templates/Makefile_go ./Makefile
 curl https://www.toptal.com/developers/gitignore/api/go >> .gitignore
 
 # Update the Makefile content with the project name
