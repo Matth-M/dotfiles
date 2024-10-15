@@ -28,7 +28,6 @@ alias reload="source ~/.zshrc"
 
 # Paths
 alias cours='cd ~/Documents/ISMIN/3A'
-alias dev='cd "$DEV_FOLDER"'
 alias wiz='cd ~/Documents/ISMIN/Cours_ISMIN/PI/code/'
 
 # Bluetooth

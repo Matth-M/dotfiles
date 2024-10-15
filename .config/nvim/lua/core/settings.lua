@@ -29,6 +29,7 @@ vim.o.wrap = false
 vim.o.cursorline = true
 vim.o.signcolumn = "yes"
 vim.o.cursorlineopt = "number,line"
+vim.o.colorcolumn = "100"
 vim.o.swapfile = true
 vim.o.backupcopy = "yes"
 

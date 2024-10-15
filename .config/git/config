@@ -7,7 +7,7 @@
 	editor = nvim
 	autocrlf = input
 [help]
-	autocorrect = 1
+	autocorrect = 20
 [commit]
 	template = /home/matth/.config/git/gitCommitMessage.txt
 [status]

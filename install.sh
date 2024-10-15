@@ -32,3 +32,10 @@ hostnamectl hostname laptop
 
 # Make firefox the default application to open html files
 xdg-mime default firefox.desktop text/html
+
+# firefwall
+sudo ufw limit 22/tcp # SSH
+sudo ufw allow 80/tcp # HTTP
+sudo ufw allow 443/tcp # HTTPS
+sudo ufw default deny incoming # Deny access to all other ports
+sudo ufw default allow outgoing
