@@ -95,7 +95,7 @@ FullScreen=false
 ColorScheme=Arc Dark
 LockSidebar=true
 Name=Arc Dark
-ShowSidebar=true
+ShowSidebar=false
 shadeSortColumn=true
 
 [KDE]
@@ -105,26 +105,26 @@ contrast=4
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Documents/Administratif/Santé (!)/vaccins.jpg
+File1[$e]=$HOME/Documents/stage/report/rapport_Matthieu_Matsima.pdf
 File10[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img.ppm
-File2[$e]=$HOME/Nextcloud/books/Go Web Programming.pdf
-File3[$e]=$HOME/Nextcloud/books/El-Damak_CMO-S-DIGITAL-INTE-GRATE-D-CI-RCUITS.pdf
-File4[$e]=$HOME/Documents/stage/report/rapport_Matthieu_Matsima.pdf
-File5[$e]=$HOME/Nextcloud/books/CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
-File6[$e]=$HOME/Nextcloud/books/Modern Operating Systems 4th Edition--Andrew Tanenbaum.pdf
-File7[$e]=$HOME/Documents/ISMIN/3A/MD/vhdl/compile_src.txt
-File8[$e]=$HOME/Documents/ISMIN/12A/vhdl/vhdl_2022.pdf
-File9[$e]=$HOME/Nextcloud/books/ieee_system_verilog_reference_1800-2017.pdf
-Name1[$e]=vaccins.jpg
+File2[$e]=$HOME/Nextcloud/books/CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
+File3[$e]=$HOME/Nextcloud/books/Modern Operating Systems 4th Edition--Andrew Tanenbaum.pdf
+File4[$e]=$HOME/Documents/ISMIN/3A/MD/vhdl/compile_src.txt
+File5[$e]=$HOME/Documents/ISMIN/12A/vhdl/vhdl_2022.pdf
+File6[$e]=$HOME/Nextcloud/books/ieee_system_verilog_reference_1800-2017.pdf
+File7[$e]=$HOME/Nextcloud/books/practical-electronics-for-inventors-4th.pdf
+File8[$e]=$HOME/Documents/Administratif/factures/invoice_additional_baggage_30_09_24.pdf
+File9[$e]=$HOME/dev/projects/ray-tracing-one-weekend/README.md
+Name1[$e]=rapport_Matthieu_Matsima.pdf
 Name10[$e]=img.ppm
-Name2[$e]=Go Web Programming.pdf
-Name3[$e]=El-Damak_CMO-S-DIGITAL-INTE-GRATE-D-CI-RCUITS.pdf
-Name4[$e]=rapport_Matthieu_Matsima.pdf
-Name5[$e]=CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
-Name6[$e]=Modern Operating Systems 4th Edition--Andrew Tanenbaum.pdf
-Name7[$e]=compile_src.txt
-Name8[$e]=vhdl_2022.pdf
-Name9[$e]=ieee_system_verilog_reference_1800-2017.pdf
+Name2[$e]=CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
+Name3[$e]=Modern Operating Systems 4th Edition--Andrew Tanenbaum.pdf
+Name4[$e]=compile_src.txt
+Name5[$e]=vhdl_2022.pdf
+Name6[$e]=ieee_system_verilog_reference_1800-2017.pdf
+Name7[$e]=practical-electronics-for-inventors-4th.pdf
+Name8[$e]=invoice_additional_baggage_30_09_24.pdf
+Name9[$e]=README.md
 
 [Shortcut Schemes]
 Current Scheme=Default

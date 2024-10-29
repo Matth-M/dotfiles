@@ -34,7 +34,10 @@ exec_always --no-startup-id feh --bg-scale $wallpaper
 # Keyboard
 #################
 
+# keyboard layout
 exec_always --no-startup-id setxkbmap -layout fr -variant us
+# remap caps lock
+exec_always --no-startup-id setxkbmap -option caps:escape
 bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout fr
 

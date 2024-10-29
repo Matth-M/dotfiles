@@ -34,9 +34,9 @@
 	dmb = !git branch --merged | grep -v 'main' | xargs -I {} git branch -d {}
 	b = "branch"
 	wt = "worktree"
+	mf = "merge --ff-only"
+	alias = !git config --list | grep alias | cut -d '.' -f2 | awk '$1=$1' OFS='\t' FS='='
 
-# Show lists of alias:
-# git config --list | grep alias | cut -d '.' -f2 | awk '$1=$1' OFS='\t' FS='='
 [user]
 	email = matthieu.matsima@gmail.com
 	name = Matth-M
