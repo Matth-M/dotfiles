@@ -1,4 +1,4 @@
-import = [
+general.import = [
 	# "~/.config/alacritty/themes/themes/afterglow.toml"
     "~/.config/alacritty/themes/themes/catppuccin_macchiato.toml",
 	# "~/.config/alacritty/fonts/Ubuntu.toml",
