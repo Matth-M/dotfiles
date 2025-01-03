@@ -105,26 +105,26 @@ contrast=4
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Nextcloud/books/CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
-File10[$e]=$HOME/Nextcloud/books/Modern Operating Systems 4th Edition--Andrew Tanenbaum.pdf
-File2[$e]=$HOME/Documents/ISMIN/3A/MD/vhdl/compile_src.txt
-File3[$e]=$HOME/Documents/ISMIN/12A/vhdl/vhdl_2022.pdf
-File4[$e]=$HOME/Nextcloud/books/ieee_system_verilog_reference_1800-2017.pdf
-File5[$e]=$HOME/Nextcloud/books/practical-electronics-for-inventors-4th.pdf
-File6[$e]=$HOME/Documents/Administratif/factures/invoice_additional_baggage_30_09_24.pdf
-File7[$e]=$HOME/dev/projects/ray-tracing-one-weekend/README.md
-File8[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img2.ppm
-File9[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img.ppm
-Name1[$e]=CMOS VLSI Design A Circuits and Systems Perspective, 4th Edition (2011).pdf
-Name10[$e]=Modern Operating Systems 4th Edition--Andrew Tanenbaum.pdf
-Name2[$e]=compile_src.txt
-Name3[$e]=vhdl_2022.pdf
-Name4[$e]=ieee_system_verilog_reference_1800-2017.pdf
-Name5[$e]=practical-electronics-for-inventors-4th.pdf
-Name6[$e]=invoice_additional_baggage_30_09_24.pdf
-Name7[$e]=README.md
-Name8[$e]=img2.ppm
-Name9[$e]=img.ppm
+File1[$e]=$HOME/Documents/Administratif/factures/invoice_additional_baggage_30_09_24.pdf
+File10[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img.ppm
+File2[$e]=$HOME/dev/projects/ray-tracing-one-weekend/README.md
+File3[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img2.ppm
+File4[$e]=$HOME/Nextcloud/books/Modern Operating Systems 4th Edition--Andrew Tanenbaum.pdf
+File5[$e]=$HOME/Documents/ISMIN/3A/MD/intro_conception_analogique/EMSE_2019-1.pdf
+File6[$e]=$HOME/Documents/ISMIN/3A/MD/digital_design/conceptions-des-circuits-numériques-2022.pdf
+File7[$e]=$HOME/Documents/ISMIN/12A/vhdl/vhdl_2022.pdf
+File8[$e]=$HOME/Documents/ISMIN/12A/vhdl/modelsim.pdf
+File9[$e]=$HOME/Documents/ISMIN/12A/vhdl/PCSN_ASCON.pdf
+Name1[$e]=invoice_additional_baggage_30_09_24.pdf
+Name10[$e]=img.ppm
+Name2[$e]=README.md
+Name3[$e]=img2.ppm
+Name4[$e]=Modern Operating Systems 4th Edition--Andrew Tanenbaum.pdf
+Name5[$e]=EMSE_2019-1.pdf
+Name6[$e]=conceptions-des-circuits-numériques-2022.pdf
+Name7[$e]=vhdl_2022.pdf
+Name8[$e]=modelsim.pdf
+Name9[$e]=PCSN_ASCON.pdf
 
 [Shortcut Schemes]
 Current Scheme=Default

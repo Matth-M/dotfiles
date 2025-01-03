@@ -79,7 +79,8 @@ return {
 			{ server = "ruff_lsp" },
 			{ server = "zls" },
 			{ server = "rust_analyzer" },
-			{ server = "verible",}
+			{ server = "verible" },
+			{ server = "typst_lsp" },
 			-- { server = "nim_langserver"}
 			-- { server = "jsonls",}
 			-- { server = "cssls",}

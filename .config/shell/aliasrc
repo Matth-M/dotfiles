@@ -1,57 +1,56 @@
 # ls
-alias ls='ls --color=auto'
-alias ll='ls -lF'
-alias lla='ls -AlF'
-alias lal='ls -AlF'
-alias la='ls -A'
-alias l='ls -CF'
-alias lg='ls -A | rg'
+alias ls="ls --color=auto"
+alias ll="ls -lF"
+alias lla="ls -AlF"
+alias lal="ls -AlF"
+alias la="ls -A"
+alias l="ls -CF"
+alias lg="ls -A | rg"
 
 # rm
-alias rm='rm -I'
+alias rm="rm -I"
 
 # Grep
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
 
 # Dotfiles
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" 
 
 # Useful commands
-alias b='sudo brightnessctl s'
-alias s='pactl set-sink-volume @DEFAULT_SINK@'
-alias mkcd='function _(){ mkdir $1 && cd $1; }; _'
-alias maj='sudo dnf --assumeyes update && sudo dnf --assumeyes upgrade && sudo dnf --assumeyes	autoremove'
-alias copy='xclip -sel c <'
-alias reload="source ~/.zshrc"
+alias b="sudo brightnessctl s"
+alias s="pactl set-sink-volume @DEFAULT_SINK@"
+alias maj="sudo dnf --assumeyes update && sudo dnf --assumeyes upgrade && sudo dnf --assumeyes	autoremove"
+alias copy="xclip -sel c <"
 
 # Paths
-alias cours='cd ~/Documents/ISMIN/3A'
-alias wiz='cd ~/Documents/ISMIN/Cours_ISMIN/PI/code/'
+alias cours="cd ~/Documents/ISMIN/3A"
+alias wiz="cd ~/Documents/ISMIN/Cours_ISMIN/PI/code/"
+alias gmd="cd ~/Documents/ISMIN/3A/MD"
+alias gd="cd ~/dev"
 
 # Bluetooth
-SONY_HEADPHONES_ID='94:DB:56:AB:52:8E'
-SPEAKER='D8:37:3B:D0:48:B2'
-EARBUDS='50:C2:75:30:03:40'
-alias sony='bluetoothctl disconnect $SONY_HEADPHONES_ID; bluetoothctl connect $SONY_HEADPHONES_ID'
-alias speaker='bluetoothctl disconnect $SPEAKER; bluetoothctl connect $SPEAKER'
-alias earbuds='bluetoothctl disconnect $EARBUDS; bluetoothctl connect $EARBUDS'
-alias btd='bluetoothctl disconnect'
-alias bt='bluetoothctl'
+# SONY_HEADPHONES_ID="94:DB:56:AB:52:8E"
+# SPEAKER="D8:37:3B:D0:48:B2"
+# EARBUDS="50:C2:75:30:03:40"
+alias sony="bluetoothctl disconnect 94:DB:56:AB:52:8E; bluetoothctl connect 94:DB:56:AB:52:8E"
+alias speaker="bluetoothctl disconnect D8:37:3B:D0:48:B2; bluetoothctl connect D8:37:3B:D0:48:B2"
+alias earbuds="bluetoothctl disconnect 50:C2:75:30:03:40; bluetoothctl connect 50:C2:75:30:03:40"
+alias btd="bluetoothctl disconnect"
+alias bt="bluetoothctl"
 
 # Neovim/Vim
-alias v='vim'
-alias nv='nvim'
-alias nvl='NVIM_APPNAME=lazy_nvim nvim'
-alias nvp='NVIM_APPNAME=nvim_packer nvim'
-alias nvv='NVIM_APPNAME=nvim_vanilla nvim'
+alias v="vim"
+alias nv="nvim"
+alias nvl="NVIM_APPNAME=lazy_nvim nvim"
+alias nvp="NVIM_APPNAME=nvim_packer nvim"
+alias nvv="NVIM_APPNAME=nvim_vanilla nvim"
 
 # Tmux
-alias t='tmux'
+alias t="tmux"
 
 # Programs
-alias zig='~/install/zig-linux-x86_64-0.13.0-dev.365+332fbb4b0/zig'
-alias matlab='bash ~/matlab/bin/matlab'
-alias py='python3'
-alias pn='pnpm'
+alias matlab="bash ~/matlab/bin/matlab"
+alias py="python3"
+alias pn="pnpm"

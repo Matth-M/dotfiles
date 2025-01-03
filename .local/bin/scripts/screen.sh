@@ -1,7 +1,8 @@
 #!/bin/bash
 
-primary="eDP1"
-secondary="DP1"
+primary="eDP"
+# secondary="DP1"
+secondary="DisplayPort-3"
 
 display_count=$(xrandr --query | grep '\bconnected\b' | awk '{print $1}' | wc -l)
 
