@@ -33,4 +33,4 @@ fi
 # Launch anacron
 anacron -t ~/.local/etc/anacrontab -S ~/.local/var/spool/anacron
 # Launch i3
-exec i3
+exec i3 --shmlog-size=26214400

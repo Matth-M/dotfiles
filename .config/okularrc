@@ -105,26 +105,26 @@ contrast=4
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Documents/ISMIN/3A/MD/digital_design/conceptions-des-circuits-numériques-2022.pdf
-File10[$e]=$HOME/dev/projects/ray-tracing-one-weekend/main/img.ppm
-File2[$e]=$HOME/Documents/ISMIN/12A/vhdl/vhdl_2022.pdf
-File3[$e]=$HOME/Documents/ISMIN/12A/vhdl/modelsim.pdf
-File4[$e]=$HOME/Documents/ISMIN/12A/vhdl/PCSN_ASCON.pdf
-File5[$e]=$HOME/Documents/pro/resume/main.pdf
-File6[$e]=$HOME/Documents/Administratif/Scolarité/Certificat_de_scolarité_ISMIN_Anglais MATSIMA Matthieu.pdf
-File7[$e]=$HOME/Documents/Administratif/Scolarité/ATTESTATIONS DIPLOMATION 2024 - Matthieu MATSIMA.pdf
-File8[$e]=$HOME/Documents/Administratif/Scolarité/ISMIN/CERTIFICATION - Matthieu MATSIMA.pdf
-File9[$e]=$HOME/dev/projects/ray-tracing-one-weekend/img.ppm
-Name1[$e]=conceptions-des-circuits-numériques-2022.pdf
-Name10[$e]=img.ppm
-Name2[$e]=vhdl_2022.pdf
-Name3[$e]=modelsim.pdf
-Name4[$e]=PCSN_ASCON.pdf
-Name5[$e]=main.pdf
-Name6[$e]=Certificat_de_scolarité_ISMIN_Anglais MATSIMA Matthieu.pdf
-Name7[$e]=ATTESTATIONS DIPLOMATION 2024 - Matthieu MATSIMA.pdf
-Name8[$e]=CERTIFICATION - Matthieu MATSIMA.pdf
-Name9[$e]=img.ppm
+File1[$e]=$HOME/Documents/ISMIN/3A/ITS/machine_learning/TP NOTE TIME SERIES.pdf
+File10[$e]=$HOME/Documents/ISMIN/3A/MD/architecture_des_processeurs/architecture_des_microprocesseurs_abi_2021_2022.pdf
+File2[$e]=$HOME/Documents/ISMIN/3A/MD/digital_design/2_cours_MOS_2021.pdf
+File3[$e]=$HOME/dev/projects/ray-tracing-one-weekend/main/img.ppm
+File4[$e]=$HOME/Documents/ISMIN/3A/MD/fpga/cours/fsm_ascon_md.pdf
+File5[$e]=$HOME/Documents/ISMIN/3A/MD/fpga/cours/zedboard_ug.pdf
+File6[$e]=$HOME/Documents/ISMIN/12A/Architecture des processeurs/TD1.pdf
+File7[$e]=$HOME/Documents/ISMIN/12A/Architecture des processeurs/cours_Mallay/Support de Cours-20231201/architecture_des_microprocesseurs_abi_handout_2021_2022.pdf
+File8[$e]=$HOME/Documents/ISMIN/12A/Architecture des processeurs/cours_Mallay/Supports de cours-20231201(3)/architecture_des_microprocesseurs_handout_S4_2021-2022.pdf
+File9[$e]=$HOME/Documents/ISMIN/12A/Architecture des processeurs/cours_Mallay/Supports de cours-20231201(3)/architecture_des_microprocesseurs_S4_2021-2022.pdf
+Name1[$e]=TP NOTE TIME SERIES.pdf
+Name10[$e]=architecture_des_microprocesseurs_abi_2021_2022.pdf
+Name2[$e]=2_cours_MOS_2021.pdf
+Name3[$e]=img.ppm
+Name4[$e]=fsm_ascon_md.pdf
+Name5[$e]=zedboard_ug.pdf
+Name6[$e]=TD1.pdf
+Name7[$e]=architecture_des_microprocesseurs_abi_handout_2021_2022.pdf
+Name8[$e]=architecture_des_microprocesseurs_handout_S4_2021-2022.pdf
+Name9[$e]=architecture_des_microprocesseurs_S4_2021-2022.pdf
 
 [Shortcut Schemes]
 Current Scheme=Default
