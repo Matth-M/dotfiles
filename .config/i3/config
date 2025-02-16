@@ -21,7 +21,8 @@ exec --no-startup-id xset s off
 exec_always --no-startup-id xset dpms 0 0 0 &
 
 # Blue light filter
-exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
+# exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
+# exec --no-startup-id ~/.local/bin/scripts/redshift.sh -c ~/.config/redshift/redshift.conf
 
 ###########
 # Wallpaper
@@ -78,7 +79,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set "2%+"
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set "2%-"
-bindsym XF86AudioNext exec --no-startup-id "sleep 1; xset dpms force off""
 bindsym $mod+ctrl+z exec --no-startup-id "sleep 1; xset dpms force off"
 
 

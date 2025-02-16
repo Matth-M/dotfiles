@@ -23,6 +23,9 @@ alias b="sudo brightnessctl s"
 alias s="pactl set-sink-volume @DEFAULT_SINK@"
 alias maj="sudo dnf --assumeyes update && sudo dnf --assumeyes upgrade && sudo dnf --assumeyes	autoremove"
 alias copy="xclip -sel c <"
+alias set-fan="sudo ectool --interface=lpc fanduty"
+alias auto-fan="sudo ectool --interface=lpc autofanctrl"
+alias reload="source ~/.zshrc"
 
 # Paths
 alias cours="cd ~/Documents/ISMIN/3A"
@@ -54,3 +57,5 @@ alias t="tmux"
 alias matlab="bash ~/matlab/bin/matlab"
 alias py="python3"
 alias pn="pnpm"
+
+# Fan
