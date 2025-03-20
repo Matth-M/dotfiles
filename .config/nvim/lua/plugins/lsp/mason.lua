@@ -44,7 +44,7 @@ return {
 				"black", -- python formatter
 				"pylint", -- python linter
 				"cpptools",
-				"mypy",
+				-- "mypy",
 				"codelldb",
 				"clangd",
 				"shfmt",

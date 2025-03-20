@@ -58,7 +58,7 @@ return {
 					-- 		"--disable=C0111,C0103",
 					-- 	},
 					-- }),
-					diagnostics.mypy,
+					-- diagnostics.mypy,
 				},
 				-- configure format on save
 				-- 	on_attach = function(current_client, bufnr)

@@ -26,6 +26,8 @@ alias copy="xclip -sel c <"
 alias set-fan="sudo ectool --interface=lpc fanduty"
 alias auto-fan="sudo ectool --interface=lpc autofanctrl"
 alias reload="source ~/.zshrc"
+alias nr="nohup redshift >/dev/null 2>&1 &"
+alias kr="killall redshift"
 
 # Paths
 alias cours="cd ~/Documents/ISMIN/3A"
@@ -57,5 +59,3 @@ alias t="tmux"
 alias matlab="bash ~/matlab/bin/matlab"
 alias py="python3"
 alias pn="pnpm"
-
-# Fan

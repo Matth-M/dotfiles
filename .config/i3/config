@@ -24,6 +24,9 @@ exec_always --no-startup-id xset dpms 0 0 0 &
 # exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
 # exec --no-startup-id ~/.local/bin/scripts/redshift.sh -c ~/.config/redshift/redshift.conf
 
+# detect additionnal screen
+exec_always --no-startup-id screen
+
 ###########
 # Wallpaper
 ###########
@@ -39,7 +42,7 @@ exec_always --no-startup-id feh --bg-scale $wallpaper
 # keyboard layout
 exec_always --no-startup-id setxkbmap -layout fr -variant us
 # remap caps lock
-exec_always --no-startup-id setxkbmap -option caps:escape
+# exec_always --no-startup-id setxkbmap -option caps:escape
 bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout fr -variant us
 bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout fr
 
@@ -101,7 +104,9 @@ set $terminal /sbin/alacritty
 # set $start_dir ~/Documents/ISMIN/3A/
 set $start_dir ~
 bindsym $mod+t exec --no-startup-id $terminal
-bindsym $mod+f exec --no-startup-id firefox
+bindsym $mod+f exec --no-startup-id zen-browser
+bindsym $mod+p exec --no-startup-id torbrowser-launcher
+
 # bindsym $mod+b exec --no-startup-id thunar $start_dir
 bindsym $mod+b exec --no-startup-id ADW_DISABLE_PORTAL=1 nautilus
 # bindsym $mod+n exec  $terminal nnn $start_dir
@@ -321,9 +326,9 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 #####################
 
 set $primary eDP1
-set $secondary DP1
+set $secondary DP3
 
-workspace $ws1 output $primary
+workspace $ws1 output $secondary
 workspace $ws2 output $primary
 workspace $ws3 output $primary
 workspace $ws4 output $primary
@@ -335,4 +340,4 @@ workspace $ws9 output $primary
 workspace $ws10 output $primary
 workspace $ws11 output $primary
 workspace $ws12 output $primary
-workspace $ws13 output $secondary
+workspace $ws13 output $primary
