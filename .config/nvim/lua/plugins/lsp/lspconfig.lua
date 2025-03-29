@@ -76,12 +76,12 @@ return {
 			{ server = "pyright" },
 			{ server = "bashls" },
 			{ server = "gopls" },
-			{ server = "ruff_lsp" },
+			{ server = "ruff" },
 			{ server = "zls" },
 			{ server = "rust_analyzer" },
 			{ server = "verible" },
-			{ server = "typst_lsp" },
-			{ server = "vhdl_ls" },
+			{ server = "tinymist" },
+			-- { server = "vhdl_ls" },
 			-- { server = "nim_langserver"}
 			-- { server = "jsonls",}
 			-- { server = "cssls",}
