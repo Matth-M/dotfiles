@@ -51,23 +51,16 @@ return {
 			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts) -- smart rename
 
 			opts.desc = "Go to previous diagnostic"
-			vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer
+			vim.keymap.set("n", "[d", vim.diagnostic.get_prev, opts) -- jump to previous diagnostic in buffer
 
 			opts.desc = "Go to next diagnostic"
-			vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts) -- jump to next disgnostic in buffer
+			vim.keymap.set("n", "]d", vim.diagnostic.get_next, opts) -- jump to next disgnostic in buffer
 
 			opts.desc = "Show documentation for what is under cursor"
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
 
 			opts.desc = "Restart LSP"
 			vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
-		end
-
-		-- Change the Diagnostic symbols in the sign column (gutter)
-		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
-		for type, icon in pairs(signs) do
-			local hl = "DiagnosticSign" .. type
-			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
 		local servers = {

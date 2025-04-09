@@ -39,6 +39,12 @@ vim.o.shiftwidth = 4
 vim.o.softtabstop = 0
 vim.o.expandtab = false
 
+vim.diagnostic.config({
+	virtual_text = true,
+	severity_sort = true,
+	update_in_insert = true,
+})
+
 -- Make the line separating split thiner
 -- vim.cmd(':hi WinSeparator guibg=None')
 
@@ -68,4 +74,4 @@ vim.loader.enable()
 vim.g.skip_ts_context_commentstring_module = true
 
 -- https://github.com/benlubas/molten-nvim/blob/main/docs/Virtual-Environments.md#point-neovim-at-this-virtual-environment
-vim.g.python3_host_prog=vim.fn.expand("~/.virtualenvs/neovim/bin/python3")
+vim.g.python3_host_prog = vim.fn.expand("~/.virtualenvs/neovim/bin/python3")

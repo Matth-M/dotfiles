@@ -10,6 +10,8 @@ alias lg="ls -A | rg"
 # rm
 alias rm="rm -I"
 
+alias pacman="pacman --color=auto"
+
 # Grep
 alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
