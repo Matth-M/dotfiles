@@ -29,7 +29,7 @@ return {
             },
             modes = {
                 -- Enable flash when searching with ? or /
-                search = { enabled = true },
+                search = { enabled = false },
             },
         },
         keys = {
