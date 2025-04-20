@@ -8,7 +8,7 @@ vim.g.mapleader = " " -- 'vim.g' sets global variables
 ----------------
 -- NAVIGATION --
 ----------------
--- change split
+-- resize
 map("n", "<A-r>h", "<cmd>vertical resize -3<cr>", options)
 map("n", "<A-r>j", "<cmd>resize -3<cr>", options)
 map("n", "<A-r>k", "<cmd>resize +3<cr>", options)
