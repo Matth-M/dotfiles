@@ -74,6 +74,7 @@ return {
 			{ server = "rust_analyzer" },
 			{ server = "verible" },
 			{ server = "tinymist" },
+			{ server = "harper_ls" },
 			-- { server = "vhdl_ls" },
 			-- { server = "nim_langserver"}
 			-- { server = "jsonls",}
