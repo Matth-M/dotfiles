@@ -44,6 +44,7 @@ alias gd="cd ~/dev"
 alias sony="bluetoothctl disconnect 94:DB:56:AB:52:8E; bluetoothctl connect 94:DB:56:AB:52:8E"
 alias speaker="bluetoothctl disconnect D8:37:3B:D0:48:B2; bluetoothctl connect D8:37:3B:D0:48:B2"
 alias earbuds="bluetoothctl disconnect 50:C2:75:30:03:40; bluetoothctl connect 50:C2:75:30:03:40"
+alias corsair="bluetoothctl disconnect B4:84:D5:70:E2:39; bluetoothctl connect B4:84:D5:70:E2:39"
 alias btd="bluetoothctl disconnect"
 alias bt="bluetoothctl"
 
