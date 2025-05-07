@@ -1,4 +1,11 @@
 #!/bin/sh
+sudo pacman -Syu --needed - < ~/package_list.txt
+# AUR
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git ~/install/paru-git/
+cd ~/install/paru-git
+makepkg -si
+paru -S --needed - < ~/foreignpkglist.txt
 
 # Change default shell to zsh
 chsh -s /bin/zsh $USER
@@ -29,11 +36,9 @@ EOF
 # firefox to open in it.
 hostnamectl hostname laptop
 
+xdg-mime default zen.desktop text/html
 
-# Make firefox the default application to open html files
-xdg-mime default firefox.desktop text/html
-
-# firefwall
+# firewall
 sudo ufw limit 22/tcp # SSH
 sudo ufw allow 80/tcp # HTTP
 sudo ufw allow 443/tcp # HTTPS
