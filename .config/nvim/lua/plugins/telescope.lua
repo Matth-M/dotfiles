@@ -41,6 +41,7 @@ return {
 			{ "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find string under cursor in cwd" } },
 			{ "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find string under cursor in cwd" } },
 			{ "<leader>fg", "<cmd>Telescope git_files<cr>", { desc = "Search git files" } },
+			{ "gd", "<cmd>Telescope lsp_definitions<cr>", { desc = "Go to definition" } },
 		},
 	},
 }

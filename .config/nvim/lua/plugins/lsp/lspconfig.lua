@@ -24,6 +24,13 @@ return {
 		--Enable (broadcasting) snippet capability for completion
 		capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+		-- using this prevents go_to_def from opening quickfix
+		local function on_list(options)
+			options.tagstack = true
+			vim.fn.setqflist({}, " ", options)
+			vim.cmd.cfirst()
+		end
+
 		local on_attach = function(_, bufnr)
 			opts.buffer = bufnr
 
@@ -36,7 +43,9 @@ return {
 
 			opts.desc = "Show LSP definitions"
 			-- vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
-			vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts) -- show lsp definitions
+			vim.keymap.set("n", "gd", function()
+				return vim.lsp.buf.definition({ on_list = on_list })
+			end, opts) -- show lsp definitions
 
 			opts.desc = "Show LSP implementations"
 			vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations

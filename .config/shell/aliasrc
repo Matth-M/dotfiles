@@ -54,6 +54,7 @@ alias nv="nvim"
 alias nvl="NVIM_APPNAME=lazy_nvim nvim"
 alias nvp="NVIM_APPNAME=nvim_packer nvim"
 alias nvv="NVIM_APPNAME=nvim_vanilla nvim"
+alias nvc="NVIM_APPNAME=nvchad nvim"
 
 # Tmux
 alias t="tmux"

@@ -2,7 +2,7 @@
 return {
 	{
 		"iamcco/markdown-preview.nvim",
-		enabled = true,
+		enabled = false,
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
 		ft = { "markdown" },
 		build = function()
@@ -16,9 +16,11 @@ return {
 	},
 	{
 		"ixru/nvim-markdown",
+		enabled = false,
 	},
 	{
 		"MeanderingProgrammer/render-markdown.nvim",
+		enabled = false,
 		ft = "markdown",
 		opts = {},
 		-- dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite

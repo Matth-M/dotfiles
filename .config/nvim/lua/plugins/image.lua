@@ -3,6 +3,7 @@ return {
 	dependencies = {
 		"kiyoon/magick.nvim",
 	},
+	enabled = false,
 	-- default config
 	config = function()
 		require("image").setup({
