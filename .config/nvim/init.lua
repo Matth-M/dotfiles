@@ -1,6 +1,7 @@
 -- load lazy which loads all plugins
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
+-- install lazy if not found
+if not vim.uv.fs_stat(lazypath) then
 	vim.fn.system({
 		"git",
 		"clone",
@@ -16,20 +17,16 @@ vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappin
 vim.keymap.set("n", "<leader>iz", "<cmd>Lazy<cr>", { desc = "Open Lazy.nvim ui" })
 
 local opts = {
-	install = {
-		colorscheme = { "catppuccin" },
-	},
 	checker = {
-		enabled = true,
+		enabled = false,
 		notify = false,
 	},
 	change_detection = {
+		enabled = true,
 		notify = false,
 	},
 }
 
 require("lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" } }, opts)
-
--- loads options and configurations
 require("core")
 require("config")

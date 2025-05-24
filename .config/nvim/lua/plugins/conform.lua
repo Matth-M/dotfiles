@@ -26,6 +26,7 @@ return {
 			golang = { "gofmt" },
 			bash = { "beautysh" },
 			systemverilog = { "verible" },
+			ruby = {"rubyfmt"}
 		},
 		-- Set up format-on-save
 		-- format_on_save = { timeout_ms = 500, lsp_fallback = true },

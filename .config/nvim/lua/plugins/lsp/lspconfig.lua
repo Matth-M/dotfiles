@@ -34,9 +34,12 @@ return {
 		local on_attach = function(_, bufnr)
 			opts.buffer = bufnr
 
-			-- set keybinds
-			opts.desc = "Show LSP references"
-			vim.keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
+			-- Keybinds
+
+			-- opts.desc = "Show LSP references"
+			-- vim.keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
+			-- vim.keymap.set("n", "gR", vim.lsp.buf.references, opts) -- show definition, references
+			-- grr
 
 			opts.desc = "Go to declaration"
 			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
@@ -47,17 +50,21 @@ return {
 				return vim.lsp.buf.definition({ on_list = on_list })
 			end, opts) -- show lsp definitions
 
-			opts.desc = "Show LSP implementations"
-			vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations
+			-- opts.desc = "Show LSP implementations"
+			-- vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations
+			-- gri
 
 			opts.desc = "Show LSP type definitions"
 			vim.keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
 
-			opts.desc = "See available code actions"
-			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
+			-- opts.desc = "See available code actions"
+			-- vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
+			-- gra
 
-			opts.desc = "Smart rename"
-			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts) -- smart rename
+			-- opts.desc = "Smart rename"
+			-- vim.keymap.set("n", "grn")
+			-- vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts) -- smart rename
+			-- grn
 
 			opts.desc = "Go to previous diagnostic"
 			vim.keymap.set("n", "[d", vim.diagnostic.get_prev, opts) -- jump to previous diagnostic in buffer
@@ -83,6 +90,27 @@ return {
 			{ server = "rust_analyzer" },
 			{ server = "verible" },
 			{ server = "tinymist" },
+			{ server = "ruby_lsp" },
+			{
+				server = "lua_ls",
+				settings = {
+					Lua = {
+						diagnostics = {
+							-- set vim as a global variable
+							globals = { "vim" },
+						},
+						completion = {
+							callSnippet = "Replace",
+						},
+					},
+					workspace = {
+						library = {
+							[vim.fn.expand("$VIMRUNTIME/lua")] = true,
+							[vim.fn.stdpath("config") .. "/lua"] = true,
+						},
+					},
+				},
+			},
 			-- { server = "harper_ls" }, -- english spelling
 			-- { server = "vhdl_ls" },
 			-- { server = "nim_langserver"}
@@ -102,27 +130,6 @@ return {
 				settings = (lsp.settings ~= nil and lsp.settings or {}),
 			})
 		end
-
-		-- specific configurations
-		lspconfig.lua_ls.setup({
-			settings = {
-				Lua = {
-					completion = {
-						callSnippet = "Replace",
-					},
-					diagnostics = {
-						-- set vim as a global variable
-						globals = { "vim" },
-					},
-				},
-				workspace = {
-					library = {
-						[vim.fn.expand("$VIMRUNTIME/lua")] = true,
-						[vim.fn.stdpath("config") .. "/lua"] = true,
-					},
-				},
-			},
-		})
 		vim.keymap.set("n", "<leader>il", "<cmd>LspInfo<cr>", { noremap = true, desc = "LspInfo" })
 	end,
 }

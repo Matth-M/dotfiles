@@ -7,10 +7,11 @@ return {
 			"mfussenegger/nvim-dap-python", --optional
 			{ "nvim-telescope/telescope.nvim", branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } },
 		},
+		ft = "python",
 		lazy = true,
 		branch = "regexp", -- This is the regexp branch, use this for the new version
 		config = function()
-			require("venv-selector").setup()
+			require("venv-selector").setup({})
 		end,
 		keys = {
 			-- Keymap to open VenvSelector to pick a venv.
@@ -18,5 +19,12 @@ return {
 			-- Keymap to retrieve the venv from a cache (the one previously used for the same project directory).
 			{ "<leader>pc", "<cmd>VenvSelectCached<cr>", desc = "Select a cached environment" },
 		},
+	},
+	{
+		"benomahony/uv.nvim",
+		ft = "python",
+		config = function()
+			require("uv").setup()
+		end,
 	},
 }
