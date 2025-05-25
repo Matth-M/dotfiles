@@ -1,17 +1,12 @@
 general.import = [
-	# "~/.config/alacritty/themes/themes/afterglow.toml"
-    "~/.config/alacritty/themes/themes/catppuccin_macchiato.toml",
-	# "~/.config/alacritty/fonts/Ubuntu.toml",
-	# "~/.config/alacritty/fonts/JetBrains.toml",
-	# "~/.config/alacritty/fonts/Sarasa.toml",
-	# "~/.config/alacritty/fonts/Hack.toml",
-	# "~/.config/alacritty/fonts/Terminess.toml",
+	"~/.config/alacritty/themes/themes/ayu_mirage.toml", # Dark mode theme
+	# "~/.config/alacritty/themes/themes/rose_pine_dawn.toml", # Light mode theme
 	"~/.config/alacritty/fonts/FiraCode.toml",
 	# "~/.config/alacritty/fonts/Gohu.toml",
 ]
 
 [font]
-# size=6
+size = 12
 [colors]
 draw_bold_text_with_bright_colors = false
 
