@@ -24,47 +24,20 @@ return {
 		--Enable (broadcasting) snippet capability for completion
 		capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-		-- using this prevents go_to_def from opening quickfix
-		local function on_list(options)
-			options.tagstack = true
-			vim.fn.setqflist({}, " ", options)
-			vim.cmd.cfirst()
-		end
-
 		local on_attach = function(_, bufnr)
 			opts.buffer = bufnr
 
 			-- Keybinds
-
-			-- opts.desc = "Show LSP references"
-			-- vim.keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
-			-- vim.keymap.set("n", "gR", vim.lsp.buf.references, opts) -- show definition, references
-			-- grr
 
 			opts.desc = "Go to declaration"
 			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
 
 			opts.desc = "Show LSP definitions"
 			-- vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
-			vim.keymap.set("n", "gd", function()
-				return vim.lsp.buf.definition({ on_list = on_list })
-			end, opts) -- show lsp definitions
-
-			-- opts.desc = "Show LSP implementations"
-			-- vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations
-			-- gri
+			vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts) -- show lsp definitions
 
 			opts.desc = "Show LSP type definitions"
 			vim.keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
-
-			-- opts.desc = "See available code actions"
-			-- vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
-			-- gra
-
-			-- opts.desc = "Smart rename"
-			-- vim.keymap.set("n", "grn")
-			-- vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts) -- smart rename
-			-- grn
 
 			opts.desc = "Go to previous diagnostic"
 			vim.keymap.set("n", "[d", vim.diagnostic.get_prev, opts) -- jump to previous diagnostic in buffer
@@ -124,6 +97,7 @@ return {
 		}
 
 		for _, lsp in ipairs(servers) do
+			vim.lsp.config(lsp.server, lsp.config ~= nil and lsp.config or {})
 			lspconfig[lsp.server].setup({
 				on_attach = on_attach,
 				capabilities = capabilities,

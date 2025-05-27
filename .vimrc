@@ -34,63 +34,71 @@ set cursorline
 " Plugins
 """""""""""
 
-call plug#begin('~/.vim/plugged')
+" call plug#begin('~/.vim/plugged')
+"
+" Plug 'vim-utils/vim-man'
+" Plug 'kien/ctrlp.vim'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'itchyny/lightline.vim'
+" Plug 'dense-analysis/ale'
+" Plug 'tpope/vim-surround'
+" Plug 'preservim/nerdtree'
+" "Plug 'psliwka/vim-smoothie' "Need updated version of vim or neovim
+" Plug 'jeetsukumaran/vim-buffergator'
+" Plug 'ap/vim-css-color'
+" Plug 'itchyny/vim-gitbranch'
+" Plug 'francoiscabrol/ranger.vim'
+" Plug 'tpope/vim-fugitive'
+" Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+"
+" call plug#end()
+"
+" """""
+" " Plugins options
+" """""
+"
+" let NERDTreeNaturalSort = 1
+" let g:lightline = {
+"     \ 'colorscheme': 'wombat',
+"       \ 'active': {
+"       \   'left': [ [ 'mode', 'paste' ],
+"       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+"       \ },
+"       \ 'component_function': {
+"       \   'gitbranch': 'gitbranch#name'
+"       \ },
+" \ }
+"
+" if !has('gui-running')
+"     set t_Co=256
+" endif
+"
+" "when using ctrlp
+" let g:netrw_winsize = 25
+" let g:ctrlp_working_path_mode = 'ra'
+" let g:ctrlp_show_hidden = 1
+"
+" "to activate vim-rainbow
+" let g:rainbow_active = 1
+"
+" "Allow custom bindings for buffergator
+" let g:buffergator_suppress_keymaps = 1
+"
+" "Auto close pop-up on auto-complete 
+" let g:ycm_autoclose_preview_window_after_completion = 1
+"
+"
+"
+" "poppy.vim
+" let g:poppy_point_enable = 1
 
-Plug 'vim-utils/vim-man'
-Plug 'kien/ctrlp.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'itchyny/lightline.vim'
-Plug 'dense-analysis/ale'
-Plug 'tpope/vim-surround'
-Plug 'preservim/nerdtree'
-"Plug 'psliwka/vim-smoothie' "Need updated version of vim or neovim
-Plug 'jeetsukumaran/vim-buffergator'
-Plug 'ap/vim-css-color'
-Plug 'itchyny/vim-gitbranch'
-Plug 'francoiscabrol/ranger.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+"""""""""""
+" Plugins mappings
+"""""""""""
 
-call plug#end()
-
-"""""
-" Plugins options
-"""""
-
-let NERDTreeNaturalSort = 1
-let g:lightline = {
-    \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'gitbranch#name'
-      \ },
-\ }
-
-if !has('gui-running')
-    set t_Co=256
-endif
-
-"when using ctrlp
-let g:netrw_winsize = 25
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_show_hidden = 1
-
-"to activate vim-rainbow
-let g:rainbow_active = 1
-
-"Allow custom bindings for buffergator
-let g:buffergator_suppress_keymaps = 1
-
-"Auto close pop-up on auto-complete 
-let g:ycm_autoclose_preview_window_after_completion = 1
-
-
-
-"poppy.vim
-let g:poppy_point_enable = 1
+" nnoremap <C-x> :call smoothie#upwards()<CR>
+" nnoremap <leader>b :BuffergatorToggle<CR>
+" nnoremap <leader>g :Git<CR>
 
 """""""""""
 " Mappings
@@ -107,11 +115,9 @@ nnoremap <C-l> <C-w>l
 "nnoremap <C-S-j> <C-w><S-j>
 "nnoremap <C-S-k> <C-w><S-k>
 "nnoremap <C-S-l> <C-w><S-l>
-nnoremap <C-x> :call smoothie#upwards()<CR>
 nnoremap <C-o> <C-o>zz
 "nnoremap <C-i> <C-i>zz
 
-nnoremap <leader>b :BuffergatorToggle<CR>
 nnoremap <leader>r :registers<CR>
 
 nnoremap <C-n> :NERDTreeToggle<CR>
@@ -136,6 +142,3 @@ imap jj <Esc>
 
 "Tags
 nnoremap ff <Ctrl-]>
-
-"fugitive
-nnoremap <leader>g :Git<CR>
