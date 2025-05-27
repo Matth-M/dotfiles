@@ -29,6 +29,9 @@ map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 map("n", "<leader><leader>", "<C-^>", options)
 
+-- -- Quickfix
+map("n", "gq", "<cmd>cclose<cr>", options)
+
 ----------------
 -- Editing --
 ----------------

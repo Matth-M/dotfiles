@@ -31,15 +31,16 @@ return {
 		keys = {
 			{ "<leader>fc", "<cmd>Telescope colorscheme enable_preview=true<cr>", desc = "Colorscheme" },
 			{ "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" } },
-			{ "<leader>fr", "<cmd>Telescope frecency<cr>", { desc = "Fuzzy find files in cwd" } },
 			{ "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "Diagnostics" } },
-			{ "<leader>fo", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" } },
-			{ "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" } },
-			{ "<leader>fw", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" } },
-			{ "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find string under cursor in cwd" } },
-			{ "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find string under cursor in cwd" } },
-			{ "<leader>fg", "<cmd>Telescope git_files<cr>", { desc = "Search git files" } },
-			{ "gd", "<cmd>Telescope lsp_definitions<cr>", { desc = "Go to definition" } },
+			{ "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" } },
+
+			{ "<leader>fw", "<cmd>Telescope grep_string<cr>", { desc = "Grep for word under cursor" } },
+			{
+				"<leader>fg",
+				'<cmd>lua require("telescope.builtin").grep_string({ search = vim.fn.input("grep for> ") })<cr>',
+				{ desc = "Grep for a string" },
+			},
+			{ "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Search for keymaps" } },
 		},
 	},
 }
