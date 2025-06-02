@@ -30,23 +30,23 @@ return {
 			-- Keybinds
 
 			opts.desc = "Go to declaration"
-			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
+			vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<cr>", opts) -- go to declaration
 
 			opts.desc = "Show LSP definitions"
-			-- vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
-			vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts) -- show lsp definitions
+			vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
+			-- vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>", opts) -- show lsp definitions
 
 			opts.desc = "Show LSP type definitions"
 			vim.keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
 
 			opts.desc = "Go to previous diagnostic"
-			vim.keymap.set("n", "[d", vim.diagnostic.get_prev, opts) -- jump to previous diagnostic in buffer
+			vim.keymap.set("n", "[d", "<cmd>vim.diagnostic.get_prev()<cr>", opts) -- jump to previous diagnostic in buffer
 
 			opts.desc = "Go to next diagnostic"
-			vim.keymap.set("n", "]d", vim.diagnostic.get_next, opts) -- jump to next disgnostic in buffer
+			vim.keymap.set("n", "]d", "<cmd>vim.diagnostic.get_next()<cr>", opts) -- jump to next disgnostic in buffer
 
 			opts.desc = "Show documentation for what is under cursor"
-			vim.keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
+			vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", opts) -- show documentation for what is under cursor
 
 			opts.desc = "Restart LSP"
 			vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary

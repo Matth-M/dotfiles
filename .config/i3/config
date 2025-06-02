@@ -110,9 +110,10 @@ floating_modifier $mod
 # set $terminal ~/.local/bin/kitty
 set $terminal /sbin/alacritty
 # set $start_dir ~/Documents/ISMIN/3A/
+set $browser /usr/bin/floorp
 set $start_dir ~
 bindsym $mod+t exec --no-startup-id $terminal
-bindsym $mod+f exec --no-startup-id zen-browser
+bindsym $mod+f exec --no-startup-id $browser
 bindsym $mod+p exec --no-startup-id torbrowser-launcher
 
 # bindsym $mod+b exec --no-startup-id thunar $start_dir
