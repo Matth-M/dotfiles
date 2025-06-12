@@ -1,7 +1,7 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
-		branch = "0.1.x",
+		branch = "master",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
@@ -35,6 +35,7 @@ return {
 			{ "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" } },
 
 			{ "<leader>fw", "<cmd>Telescope grep_string<cr>", { desc = "Grep for word under cursor" } },
+			-- { "gd", "<cmd>Telescope lsp_definitions<cr>", { desc = "Show LSP definitions" } },
 			{
 				"<leader>fg",
 				'<cmd>lua require("telescope.builtin").grep_string({ search = vim.fn.input("grep for> ") })<cr>',

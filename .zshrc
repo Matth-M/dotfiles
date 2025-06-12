@@ -8,6 +8,8 @@ HISTFILE=~/.zsh_history
 
 source $SHDOTDIR/aliasrc
 
+export MANPAGER='nvim +Man!'
+
 # Example install plugins
 plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-autosuggestions"

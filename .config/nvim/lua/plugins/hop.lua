@@ -1,7 +1,7 @@
 return {
 	"smoka7/hop.nvim",
 	version = "*",
-	event = { "BufReadPre", "BufNewFile" },
+	event = "VeryLazy",
 	opts = {},
 	config = function()
 		-- you can configure Hop the way you like here; see :h hop-config

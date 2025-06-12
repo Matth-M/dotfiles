@@ -9,6 +9,22 @@ return {
 		end,
 	},
 	opts = {
-		-- add any options here
+		toggler = {
+			---Line-comment toggle keymap
+			line = "gcc",
+		},
+		---LHS of operator-pending mappings in NORMAL and VISUAL mode
+		opleader = {
+			---Line-comment keymap
+			line = "gc",
+		},
+		---Enable keybindings
+		---NOTE: If given `false` then the plugin won't create any mappings
+		mappings = {
+			---Operator-pending mapping; `gcc` `gbc` `gc[count]{motion}` `gb[count]{motion}`
+			basic = false,
+			---Extra mapping; `gco`, `gcO`, `gcA`
+			extra = false,
+		},
 	},
 }
