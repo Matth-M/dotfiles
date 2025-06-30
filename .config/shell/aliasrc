@@ -18,7 +18,7 @@ alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
 
 # Dotfiles
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" 
+alias dots="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" 
 
 # Useful commands
 alias b="sudo brightnessctl s"
@@ -63,4 +63,3 @@ alias t="tmux"
 alias matlab="bash ~/matlab/bin/matlab"
 alias py="python3"
 alias pn="pnpm"
-alias sudo="doas"

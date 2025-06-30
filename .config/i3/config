@@ -24,9 +24,6 @@ exec_always --no-startup-id xset dpms 0 0 0 &
 # exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
 # exec --no-startup-id ~/.local/bin/scripts/redshift.sh -c ~/.config/redshift/redshift.conf
 
-# detect additionnal screen
-exec_always --no-startup-id screen
-
 ###########
 # Wallpaper
 ###########
@@ -57,9 +54,13 @@ exec_always --no-startup-id xset r rate 250 40
 bar {
 	position top
 	status_command i3status
-# status_command i3blocks -c ~/.config/i3blocks/config
-# status_command i3blocks -c ~/.config/i3/i3blocks.conf
+	# status_command i3blocks -c ~/.config/i3blocks/config
+	# status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	font pango: Noto Sans Regular 12
+
+	# Disable scrolling from switching workspaces
+	bindsym button4 nop
+	bindsym button5 nop
 }
 
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh 
