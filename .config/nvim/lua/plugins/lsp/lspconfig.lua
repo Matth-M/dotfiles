@@ -62,7 +62,7 @@ return {
 			{ server = "rust_analyzer" },
 			{ server = "verible" },
 			{ server = "tinymist" },
-			{ server = "ruby_lsp" },
+			-- { server = "ruby_lsp" },
 			{
 				server = "lua_ls",
 				settings = {

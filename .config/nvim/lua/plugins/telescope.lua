@@ -31,6 +31,7 @@ return {
 		keys = {
 			{ "<leader>fc", "<cmd>Telescope colorscheme enable_preview=true<cr>", desc = "Colorscheme" },
 			{ "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" } },
+			{ "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Fuzzy find buffers" } },
 			{ "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "Diagnostics" } },
 			{ "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" } },
 
