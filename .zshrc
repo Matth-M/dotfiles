@@ -46,6 +46,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$HOME/.local/bin/kitty.app/bin/
+export PATH=$PATH:$HOME/install/Vivado/2024.1/bin
 
 # nnn
 export NNN_PLUG="p:preview-tabbed"
