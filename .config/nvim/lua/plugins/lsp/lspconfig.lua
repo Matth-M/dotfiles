@@ -24,6 +24,14 @@ return {
 		--Enable (broadcasting) snippet capability for completion
 		capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+		vim.diagnostic.config({
+			float = { scope = "line" },
+			signs = true,
+			virtual_text = false,
+			severity_sort = true,
+			virtual_lines = { current_line = true },
+		})
+
 		local on_attach = function(_, bufnr)
 			opts.buffer = bufnr
 

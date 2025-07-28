@@ -19,6 +19,7 @@
 	dft = "-c diff.external=difft diff --ext-diff"
 	dfts = "-c diff.external=difft show --ext-diff"
 	dftc="-c diff.external=difft diff --cached --ext-diff"
+	dftl="-c diff.external=difft log -p  --ext-diff"
 	s = "status"
 	su = "status -u"
 	l = "log --oneline --graph"
