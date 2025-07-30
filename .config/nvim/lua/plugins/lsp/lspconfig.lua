@@ -3,16 +3,16 @@ return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		{ "folke/neodev.nvim", opts = {} },
+		{ "folke/neodev.nvim",      opts = {} },
 		{ "lewis6991/gitsigns.nvim" },
 	},
 	config = function()
 		-- then setup your lsp server as usual
 		local lspconfig = require("lspconfig")
 
-		-- Need to call lsp-installer setup before the setup of the servers
-		require("mason").setup()
-		require("mason-lspconfig").setup()
+		-- -- Need to call lsp-installer setup before the setup of the servers
+		-- require("mason").setup()
+		-- require("mason-lspconfig").setup()
 
 		-- import cmp-nvim-lsp plugin
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -25,12 +25,15 @@ return {
 		capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 		vim.diagnostic.config({
-			float = { scope = "line" },
 			signs = true,
-			virtual_text = false,
+			virtual_text = { current_line = true },
 			severity_sort = true,
-			virtual_lines = { current_line = true },
 		})
+
+		vim.keymap.set('n', '<leader>ld', function()
+			local new_config = not vim.diagnostic.config().virtual_text.current_line
+			vim.diagnostic.config({ virtual_text = { current_line = new_config } })
+		end, { desc = 'Toggle diagnostic virtual_text for only current line' })
 
 		local on_attach = function(_, bufnr)
 			opts.buffer = bufnr
@@ -111,6 +114,6 @@ return {
 				settings = (lsp.settings ~= nil and lsp.settings or {}),
 			})
 		end
-		vim.keymap.set("n", "<leader>il", "<cmd>LspInfo<cr>", { noremap = true, desc = "LspInfo" })
+		vim.keymap.set("n", "<leader>li", "<cmd>LspInfo<cr>", { noremap = true, desc = "LspInfo" })
 	end,
 }
