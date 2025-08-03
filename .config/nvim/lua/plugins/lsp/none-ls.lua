@@ -1,6 +1,7 @@
 return {
 	{
 		"jay-babu/mason-null-ls.nvim",
+		enabled = false,
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
 			"williamboman/mason.nvim",
@@ -11,24 +12,24 @@ return {
 		"nvimtools/none-ls.nvim", -- configure formatters & linters
 		event = { "BufReadPre", "BufNewFile" },
 		config = function()
-			local mason_null_ls = require("mason-null-ls")
+			-- local mason_null_ls = require("mason-null-ls")
 
 			local null_ls = require("null-ls")
 
 			local null_ls_utils = require("null-ls.utils")
 
-			mason_null_ls.setup({
-				ensure_installed = {
-					-- "prettier", -- prettier formatter
-					"stylua", -- lua formatter
-					-- "black", -- python formatter
-					-- "pylint", -- python linter
-					"beautysh",
-					-- "mypy",
-					"ruff",
-					"verible_verilog_format",
-				},
-			})
+			-- mason_null_ls.setup({
+			-- 	ensure_installed = {
+			-- 		-- "prettier", -- prettier formatter
+			-- 		"stylua", -- lua formatter
+			-- 		-- "black", -- python formatter
+			-- 		-- "pylint", -- python linter
+			-- 		"beautysh",
+			-- 		-- "mypy",
+			-- 		"ruff",
+			-- 		"verible_verilog_format",
+			-- 	},
+			-- })
 
 			-- for conciseness
 			local formatting = null_ls.builtins.formatting -- to setup formatters

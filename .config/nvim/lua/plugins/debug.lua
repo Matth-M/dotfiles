@@ -13,6 +13,7 @@ end
 return {
 	{
 		"mfussenegger/nvim-dap",
+		enabled = false,
 
 		dependencies = {
 
@@ -108,6 +109,7 @@ return {
 	},
 	{
 		"mfussenegger/nvim-dap-python",
+		enabled = false,
 		ft = "python",
 		dependencies = {
 			"mfussenegger/nvim-dap",
@@ -122,6 +124,7 @@ return {
 	},
 	{
 		"leoluz/nvim-dap-go",
+		enabled = false,
 		ft = "go",
 		dependencies = {
 			"mfussenegger/nvim-dap",
@@ -132,6 +135,7 @@ return {
 	},
 	{
 		"ldelossa/nvim-dap-projects",
+		enabled = false,
 		dependencies = {
 			"mfussenegger/nvim-dap",
 		},
