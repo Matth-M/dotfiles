@@ -3,7 +3,7 @@ return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		{ "folke/neodev.nvim",      opts = {} },
+		{ "folke/lazydev.nvim", ft = "lua", opts = {} },
 		{ "lewis6991/gitsigns.nvim" },
 	},
 	config = function()
@@ -30,10 +30,10 @@ return {
 			severity_sort = true,
 		})
 
-		vim.keymap.set('n', '<leader>ld', function()
+		vim.keymap.set("n", "<leader>ld", function()
 			local new_config = not vim.diagnostic.config().virtual_text.current_line
 			vim.diagnostic.config({ virtual_text = { current_line = new_config } })
-		end, { desc = 'Toggle diagnostic virtual_text for only current line' })
+		end, { desc = "Toggle diagnostic virtual_text for only current line" })
 
 		local on_attach = function(_, bufnr)
 			opts.buffer = bufnr

@@ -1,6 +1,5 @@
 return {
 	"nvim-tree/nvim-tree.lua",
-	event = "VeryLazy",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		local nvimtree = require("nvim-tree")
@@ -95,7 +94,6 @@ return {
 
 		-- set keymaps
 		local keymap = vim.keymap -- for conciseness
-
-		keymap.set("n", "<C-b>", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
 	end,
+	keys = { { "<C-b>", "<cmd>NvimTreeToggle<CR>", desc = "Toggle file explorer" } }, -- toggle file explorer
 }
