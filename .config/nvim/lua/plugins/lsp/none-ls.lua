@@ -11,6 +11,7 @@ return {
 	{
 		"nvimtools/none-ls.nvim", -- configure formatters & linters
 		event = { "BufReadPre", "BufNewFile" },
+		enabled = false,
 		config = function()
 			-- local mason_null_ls = require("mason-null-ls")
 
@@ -48,12 +49,12 @@ return {
 					--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
 					-- formatting.prettier.with({
 					-- 	extra_filetypes = { "svelte" },
-					-- }), -- js/ts formatter
-					formatting.stylua, -- lua formatter
-					formatting.isort,
-					-- formatting.black,
-					formatting.shfmt,
-					formatting.verible_verilog_format,
+					-- -- }), -- js/ts formatter
+					-- formatting.stylua, -- lua formatter
+					-- formatting.isort,
+					-- -- formatting.black,
+					-- formatting.shfmt,
+					-- formatting.verible_verilog_format,
 					-- diagnostics.pylint.with({
 					-- 	extra_args = {
 					-- 		"--disable=C0111,C0103",

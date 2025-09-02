@@ -19,15 +19,15 @@ return {
 	},
 	opts = {
 		-- Define your formatters
-		formatters_by_ft = {
-			lua = { "stylua" },
-			python = { "isort", "black" },
-			rust = { "rustfmt" },
-			golang = { "gofmt" },
-			bash = { "beautysh" },
-			systemverilog = { "verible" },
-			ruby = {"rubyfmt"}
-		},
+		-- formatters_by_ft = {
+		-- 	lua = { "stylua" },
+		-- 	python = { "isort", "black" },
+		-- 	rust = { "rustfmt" },
+		-- 	golang = { "gofmt" },
+		-- 	bash = { "shfmt" },
+		-- 	systemverilog = { "verible" },
+		-- 	ruby = {"rubyfmt"}
+		-- },
 		-- Set up format-on-save
 		-- format_on_save = { timeout_ms = 500, lsp_fallback = true },
 		-- Customize formatters

@@ -1,41 +1,33 @@
 return {
-
-	"neovim/nvim-lspconfig",
-	event = { "BufReadPre", "BufNewFile" },
-	dependencies = {
-		{ "folke/lazydev.nvim", ft = "lua", opts = {} },
-		{ "lewis6991/gitsigns.nvim" },
+	{
+		"Fildo7525/pretty_hover",
+		event = "LspAttach",
+		opts = {}
 	},
-	config = function()
-		-- then setup your lsp server as usual
-		local lspconfig = require("lspconfig")
+	{
+		"neovim/nvim-lspconfig",
+		event = { "BufReadPre", "BufNewFile" },
+		dependencies = {
+			{ "folke/lazydev.nvim",     ft = "lua", opts = {} },
+			{ "lewis6991/gitsigns.nvim" },
+		},
+		config = function()
+			local lspconfig = require("lspconfig")
 
-		-- -- Need to call lsp-installer setup before the setup of the servers
-		-- require("mason").setup()
-		-- require("mason-lspconfig").setup()
+			local opts = { noremap = true, silent = true }
 
-		-- import cmp-nvim-lsp plugin
-		local cmp_nvim_lsp = require("cmp_nvim_lsp")
+			vim.diagnostic.config({
+				signs = true,
+				virtual_text = { current_line = true },
+				severity_sort = true,
+			})
 
-		local opts = { noremap = true, silent = true }
+			vim.keymap.set("n", "<leader>ld", function()
+				local new_config = not vim.diagnostic.config().virtual_text.current_line
+				vim.diagnostic.config({ virtual_text = { current_line = new_config } })
+			end, { desc = "Toggle diagnostic virtual_text for only current line" })
 
-		-- used to enable autocompletion (assign to every lsp server config)
-		local capabilities = cmp_nvim_lsp.default_capabilities()
-		--Enable (broadcasting) snippet capability for completion
-		capabilities.textDocument.completion.completionItem.snippetSupport = true
-
-		vim.diagnostic.config({
-			signs = true,
-			virtual_text = { current_line = true },
-			severity_sort = true,
-		})
-
-		vim.keymap.set("n", "<leader>ld", function()
-			local new_config = not vim.diagnostic.config().virtual_text.current_line
-			vim.diagnostic.config({ virtual_text = { current_line = new_config } })
-		end, { desc = "Toggle diagnostic virtual_text for only current line" })
-
-		local on_attach = function(_, bufnr)
+			-- local on_attach = function(_, bufnr)
 			opts.buffer = bufnr
 
 			-- Keybinds
@@ -60,60 +52,44 @@ return {
 
 			opts.desc = "Restart LSP"
 			vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
-		end
+			-- end
 
-		local servers = {
-			{ server = "html" },
-			{ server = "clangd" },
-			{ server = "pyright" },
-			{ server = "bashls" },
-			{ server = "gopls" },
-			{ server = "ruff" },
-			{ server = "zls" },
-			{ server = "rust_analyzer" },
-			{ server = "verible" },
-			{ server = "tinymist" },
-			-- { server = "ruby_lsp" },
-			{
-				server = "lua_ls",
-				settings = {
-					Lua = {
-						diagnostics = {
-							-- set vim as a global variable
-							globals = { "vim" },
+			local servers = {
+				html = {},
+				clangd = {},
+				pyright = {},
+				bashls = {},
+				gopls = {},
+				ruff = {},
+				zls = {},
+				rust_analyzer = {},
+				verible = {},
+				tinymist = {},
+				lua_ls = {
+					settings = {
+						Lua = {
+							diagnostics = {
+								-- set vim as a global variable
+								globals = { "vim" },
+							},
+							completion = {
+								callSnippet = "Replace",
+							},
 						},
-						completion = {
-							callSnippet = "Replace",
-						},
-					},
-					workspace = {
-						library = {
-							[vim.fn.expand("$VIMRUNTIME/lua")] = true,
-							[vim.fn.stdpath("config") .. "/lua"] = true,
+						workspace = {
+							library = {
+								[vim.fn.expand("$VIMRUNTIME/lua")] = true,
+								[vim.fn.stdpath("config") .. "/lua"] = true,
+							},
 						},
 					},
 				},
-			},
-			-- { server = "harper_ls" }, -- english spelling
-			-- { server = "vhdl_ls" },
-			-- { server = "nim_langserver"}
-			-- { server = "jsonls",}
-			-- { server = "cssls",}
-			-- { server = "htmx",}
-			-- { server = "marksman",}
-			-- { server = "tailwindcss",}
-			-- { server = "sqlls",}
-			-- { server = "ltex", settings = { ltex = { language = "en-GB" } } }
-		}
+			}
 
-		for _, lsp in ipairs(servers) do
-			vim.lsp.config(lsp.server, lsp.config ~= nil and lsp.config or {})
-			lspconfig[lsp.server].setup({
-				on_attach = on_attach,
-				capabilities = capabilities,
-				settings = (lsp.settings ~= nil and lsp.settings or {}),
-			})
-		end
-		vim.keymap.set("n", "<leader>li", "<cmd>LspInfo<cr>", { noremap = true, desc = "LspInfo" })
-	end,
-}
+			for server, config in pairs(servers) do
+				vim.lsp.config(server, config ~= nil and config or {})
+				vim.lsp.enable(server)
+			end
+			vim.keymap.set("n", "<leader>li", "<cmd>LspInfo<cr>", { noremap = true, desc = "LspInfo" })
+		end,
+	}, }

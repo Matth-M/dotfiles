@@ -36,6 +36,9 @@ alias cours="cd ~/Documents/ISMIN/3A"
 alias wiz="cd ~/Documents/ISMIN/Cours_ISMIN/PI/code/"
 alias gmd="cd ~/Documents/ISMIN/3A/MD"
 alias gd="cd ~/dev"
+alias gn="cd $HOME/.config/nvim"
+alias gc="cd $HOME/.config"
+alias gt="cd $HOME/test"
 
 # Bluetooth
 # SONY_HEADPHONES_ID="94:DB:56:AB:52:8E"

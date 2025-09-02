@@ -27,10 +27,15 @@ map("n", "<C-o>", "<C-o>zz", options)
 map("n", "<C-i>", "<C-i>zz", options)
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
+
+
+
+
+-- alternate file
 map("n", "<leader><leader>", "<C-^>", options)
 map("n", "<c-f>", "<C-^>", options)
 
--- -- Quickfix
+-- Quickfix
 map("n", "gq", "<cmd>cclose|lclose<cr>", options)
 
 ----------------
@@ -55,6 +60,7 @@ map("i", "<C-a>", "<C-o>_")
 ----------------
 
 map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
+map("n", "<leader>ts", "<cmd>nohlsearch<cr>", options) -- See help :set-inv
 map("t", "<esc>", "<C-\\><C-n>", options)
 
 -- https://github.com/mhinz/vim-galore#saner-command-line-history

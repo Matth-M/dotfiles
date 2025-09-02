@@ -5,7 +5,7 @@ return {
 		version = false,
 		config = function()
 			require("mini.cursorword").setup({
-				delay = 100,
+				delay = 400,
 			})
 		end,
 	},
