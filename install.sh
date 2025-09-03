@@ -2,6 +2,7 @@
 sudo pacman -Syu --needed - < ~/package_list.txt
 # AUR
 sudo pacman -S --needed base-devel
+mkdir ~/install -p
 git clone https://aur.archlinux.org/paru.git ~/install/paru-git/
 cd ~/install/paru-git
 makepkg -si
@@ -36,7 +37,8 @@ EOF
 # firefox to open in it.
 hostnamectl hostname laptop
 
-xdg-mime default zen.desktop text/html
+# Set default application for opening html
+xdg-mime default floorp.desktop text/html
 
 # firewall
 sudo ufw limit 22/tcp # SSH
