@@ -70,6 +70,18 @@ return {
 					vim.cmd([[colorscheme rose-pine]])
 				end,
 			},
+			-- { 'nyoom-engineering/oxocarbon.nvim', event = "VeryLazy", },
+			{ 'kdheepak/monochrome.nvim',            event = "VeryLazy", },
+
+			{ 'olimorris/onedarkpro.nvim',           event = "VeryLazy", },
+			{ '4513ECHO/vim-colors-hatsunemiku',     event = "VeryLazy", },
+			{ 'polirritmico/monokai-nightasty.nvim', event = "VeryLazy", },
+			{ 'deparr/tairiki.nvim', event = "VeryLazy", },
+			{
+				'uloco/bluloco.nvim',
+				event = "VeryLazy",
+				dependencies = { 'rktjmp/lush.nvim' },
+			},
 		},
 		lazy = false,
 		priority = 1000,
@@ -78,12 +90,15 @@ return {
 			latitude = 48.866667,
 			longitude = 2.333333,
 			day_callback = function()
+				vim.o.termguicolors = true
 				vim.o.background = "light"
-				vim.cmd.colorscheme("rose-pine-dawn")
+				vim.cmd.colorscheme("monochrome")
 			end,
 			night_callback = function()
+				vim.o.termguicolors = true
 				vim.o.background = "dark"
-				vim.cmd.colorscheme("ayu-mirage")
+				vim.cmd.colorscheme("monochrome")
+				-- vim.cmd.colorscheme("ayu-mirage")
 			end,
 		},
 	},

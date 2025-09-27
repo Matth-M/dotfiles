@@ -118,3 +118,5 @@ export PATH="$PNPM_HOME:$PATH"
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 
 export QSYS_ROOTDIR="/home/matth/.cache/paru/clone/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/24.1/quartus/sopc_builder/bin"
+
+export STM32_PRG_PATH=/home/matth/install/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin

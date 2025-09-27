@@ -31,10 +31,17 @@ return {
 			--
 			-- See :h blink-cmp-config-keymap for defining your own keymap
 			keymap = {
-				preset = "enter",
+				preset = "default",
 				['<C-k>'] = { 'select_prev', 'fallback' },
 				['<C-j>'] = { 'select_next', 'fallback' },
-				['<C-p>'] = { 'show_documentation' },
+				['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
+				['<C-e>'] = { 'cancel' },
+				['<C-y>'] = { 'select_and_accept' },
+				['<C-b>'] = { 'scroll_documentation_up', 'fallback' },
+				['<C-f>'] = { 'scroll_documentation_down', 'fallback' },
+				['<A-j>'] = { 'snippet_forward', 'fallback' },
+				['<A-k>'] = { 'snippet_backward', 'fallback' },
+				['<C-s>'] = { 'show_signature', 'hide_signature', 'fallback' },
 			},
 
 			appearance = {

@@ -60,7 +60,7 @@ map("i", "<C-a>", "<C-o>_")
 ----------------
 
 map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
-map("n", "<leader>ts", "<cmd>nohlsearch<cr>", options) -- See help :set-inv
+map("n", "gs", "<cmd>nohlsearch<cr>", options) -- See help :set-inv
 map("t", "<esc>", "<C-\\><C-n>", options)
 
 -- https://github.com/mhinz/vim-galore#saner-command-line-history
