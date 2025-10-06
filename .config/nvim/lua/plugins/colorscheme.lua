@@ -76,7 +76,8 @@ return {
 			{ 'olimorris/onedarkpro.nvim',           event = "VeryLazy", },
 			{ '4513ECHO/vim-colors-hatsunemiku',     event = "VeryLazy", },
 			{ 'polirritmico/monokai-nightasty.nvim', event = "VeryLazy", },
-			{ 'deparr/tairiki.nvim', event = "VeryLazy", },
+			{ 'deparr/tairiki.nvim',                 event = "VeryLazy", },
+			{ 'projekt0n/github-nvim-theme',         name="github-theme", },
 			{
 				'uloco/bluloco.nvim',
 				event = "VeryLazy",
@@ -93,12 +94,13 @@ return {
 				vim.o.termguicolors = true
 				vim.o.background = "light"
 				vim.cmd.colorscheme("monochrome")
+				vim.cmd.colorscheme("github_light")
 			end,
 			night_callback = function()
 				vim.o.termguicolors = true
 				vim.o.background = "dark"
-				vim.cmd.colorscheme("monochrome")
-				-- vim.cmd.colorscheme("ayu-mirage")
+				-- vim.cmd.colorscheme("monochrome")
+				vim.cmd.colorscheme("ayu-dark")
 			end,
 		},
 	},
