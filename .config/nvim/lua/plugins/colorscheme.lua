@@ -100,7 +100,7 @@ return {
 				vim.o.termguicolors = true
 				vim.o.background = "dark"
 				-- vim.cmd.colorscheme("monochrome")
-				vim.cmd.colorscheme("ayu-dark")
+				vim.cmd.colorscheme("ayu-mirage")
 			end,
 		},
 	},

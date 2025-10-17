@@ -30,6 +30,8 @@ alias auto-fan="sudo ectool --interface=lpc autofanctrl"
 alias reload="source ~/.zshrc"
 alias nr="nohup redshift >/dev/null 2>&1 &"
 alias kr="killall redshift; redshift -x"
+alias ng="nohup gammastep >/dev/null 2>&1 &"
+alias kg="killall gammastep" # ; gammastep -x"
 
 # Paths
 alias cours="cd ~/Documents/ISMIN/3A"
