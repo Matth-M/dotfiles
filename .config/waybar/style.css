@@ -1,10 +1,11 @@
 @define-color foreground #eeeeee;
+@define-color foreground-focused #f78800;
 @define-color foreground-inactive #aaaaaa;
 @define-color background #000000;
 
 * {
-    font-family: JetBrainsMono Nerd Font;
-    font-size: 17px;
+    font-family: "GohuFont 11 Nerd Font","FiraCode Nerd Font", "JetBrainsMono Nerd Font", "Sarasa Term SC Nerd";
+    font-size: 1.04em;
     padding: 0;
     margin: 0;
 }
@@ -23,17 +24,30 @@
     color: @foreground-inactive;
 }
 
+#workspaces button.focused {
+    color: @foreground-focused;
+}
+
 #memory,
 #custom-platform-profile {
     padding-left: 1em
 }
 
-#wireplumber,
+#battery {
+
+}
+
 #battery,
-#idle_inhibitor,
-#language,
 #network,
+#temperature,
 #bluetooth,
+#battery,
+#pulseaudio,
+#cpu,
+#memory,
 #tray {
-    padding-right: 1em 
+	padding-right: 1em;
+	padding-left: 1em;
+	border: 1px solid white;
+	border-radius: 5px;
 }
