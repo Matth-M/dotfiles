@@ -14,6 +14,9 @@
     color: @foreground;
     background-color: @background;
 }
+.modules-right {
+	padding-right: 1em;
+}
 
 #workspaces button {
     color: @foreground;
