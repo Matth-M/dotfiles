@@ -36,7 +36,15 @@
     padding-left: 1em
 }
 
-#battery,
+#battery.critical {
+	color: red;
+}
+
+
+#battery.warning {
+	color: orange;
+}
+
 #network,
 #temperature,
 #bluetooth,

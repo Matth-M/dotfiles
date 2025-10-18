@@ -44,6 +44,10 @@
     "battery": {
         "bat": "BAT1",
         "interval": 60,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
         "format": "{icon}  {capacity}% {time}" ,
         "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
     },
