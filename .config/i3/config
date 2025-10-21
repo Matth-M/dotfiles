@@ -83,7 +83,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set "2%+"
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set "2%-"
-bindsym $mod+ctrl+z exec --no-startup-id "sleep 1; xset dpms force off"
+bindsym $mod+ctrl+z exec --no-startup-id "xset dpms force off"
 
 ##################### 
 # Player

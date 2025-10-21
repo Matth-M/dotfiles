@@ -374,7 +374,7 @@ binds {
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+B hotkey-overlay-title="Run an Application: fuzzel" { spawn "floorp"; }
     Super+Ctrl+alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Super+Ctrl+S  { spawn-sh "systemctl suspend"; }
+    Super+Ctrl+S  { spawn-sh "swaylock -f && systemctl suspend"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
