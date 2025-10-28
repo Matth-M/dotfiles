@@ -81,13 +81,15 @@ output "eDP-1" {
     // Uncomment this line to disable this output.
     // off
 
+	focus-at-startup
+
     // Resolution and, optionally, refresh rate of the output.
     // The format is "<width>x<height>" or "<width>x<height>@<refresh rate>".
     // If the refresh rate is omitted, niri will pick the highest refresh rate
     // for the resolution.
     // If the mode is omitted altogether or is invalid, niri will pick one automatically.
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
-    mode "1920x1080@120.030"
+    // mode "2880x1920@120.030"
 
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
     scale 1.25
@@ -105,13 +107,13 @@ output "eDP-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=1280 y=1080
+    position x=0 y=4000
 }
 
 output "DP-2" {
 	scale 0.85
 	mode "1920x1080@60.0"
-	position x=414 y=0
+	position x=0 y=0
 	transform "normal"
 }
 
@@ -411,9 +413,11 @@ binds {
     Mod+Shift+Q repeat=false { close-window; }
 
     Mod+H     { focus-column-left; }
+	Mod+Shift+Tab    { focus-column-left; }
     Mod+J     { focus-window-down; }
     Mod+K     { focus-window-up; }
     Mod+L     { focus-column-right; }
+    Mod+Tab    { focus-column-right; }
 
     Mod+Shift+H     { move-column-left; }
     Mod+Shift+J     { move-window-down; }
