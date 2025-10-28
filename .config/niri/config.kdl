@@ -105,7 +105,14 @@ output "eDP-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=1280 y=0
+    position x=1280 y=1080
+}
+
+output "DP-2" {
+	scale 0.85
+	mode "1920x1080@60.0"
+	position x=414 y=0
+	transform "normal"
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -140,7 +147,7 @@ layout {
     // preset-window-heights { }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 1.0; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
@@ -434,8 +441,8 @@ binds {
     Mod+U              { focus-workspace-up; }
     Mod+Shift+I { move-column-to-workspace-down; }
     Mod+Shift+U   { move-column-to-workspace-up; }
-    Mod+Ctrl+I         { move-workspace-down; }
-    Mod+Ctrl+U         { move-workspace-up; }
+    Mod+Shift+Ctrl+I         { move-workspace-down; }
+    Mod+Shift+Ctrl+U         { move-workspace-up; }
     // Mod+Shift+J         { move-column-to-workspace-down; }
     // Mod+Shift+K         { move-column-to-workspace-up; }
 
@@ -468,8 +475,6 @@ binds {
     Mod+Shift+8 { move-column-to-workspace 8; }
     Mod+Shift+9 { move-column-to-workspace 9; }
 
-    // Alternatively, there are commands to move just a single window:
-    Mod+Ctrl+1 { move-window-to-workspace 1; }
 
     // Switches focus between the current and the previous workspace.
     // Mod+Tab { focus-workspace-previous; }
