@@ -30,8 +30,8 @@ vim.o.cursorline = true
 vim.o.signcolumn = "yes"
 vim.o.cursorlineopt = "number,line"
 vim.o.colorcolumn = "100"
-vim.o.swapfile = true
-vim.o.backupcopy = "yes"
+vim.o.swapfile = false
+vim.o.backupcopy = "auto"
 
 vim.o.cindent = true
 vim.o.tabstop = 4

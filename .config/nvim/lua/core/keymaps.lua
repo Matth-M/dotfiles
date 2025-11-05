@@ -49,6 +49,7 @@ map("x", "<", "<gv")
 map("x", ">", ">gv")
 map("i", "<c-c>", "<esc>", options)
 map({ "n", "v" }, "D", [["_d]], options)
+map({ "n", "v" }, "C", [["_c]], options)
 map("x", "<leader>p", [["_dP]])
 
 -- Go to end/start of line in edit mode
@@ -60,7 +61,7 @@ map("i", "<C-a>", "<C-o>_")
 ----------------
 
 map("n", "<leader>tn", "<cmd>set invrnu<cr>", options) -- See help :set-inv
-map("n", "gs", "<cmd>nohlsearch<cr>", options) -- See help :set-inv
+map("n", "gs", "<cmd>nohlsearch<cr>", options)         -- See help :set-inv
 map("t", "<esc>", "<C-\\><C-n>", options)
 
 -- https://github.com/mhinz/vim-galore#saner-command-line-history

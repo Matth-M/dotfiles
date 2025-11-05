@@ -59,8 +59,8 @@ return {
 				incremental_selection = {
 					enable = true,
 					keymaps = {
-						init_selection = "<C-z>",
-						node_incremental = "<C-z>",
+						init_selection = "<C-y>",
+						node_incremental = "<C-y>",
 						scope_incremental = false,
 						node_decremental = "<bs>",
 					},
@@ -93,6 +93,14 @@ return {
 							["[C"] = "@class.outer",
 							["[A"] = "@parameter.inner",
 						},
+					},
+					select = {
+						enable = true,
+						keymaps = {
+							["if"] = "@function.inner",
+							["af"] = "@function.outer",
+						},
+						include_surrounding_whitespace = true,
 					},
 				},
 			})
