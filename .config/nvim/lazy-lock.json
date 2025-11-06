@@ -71,5 +71,6 @@
   "venv-selector.nvim": { "branch": "main", "commit": "0241027095d7efd111b84ff4e980b3d1cce2335c" },
   "vim-colors-hatsunemiku": { "branch": "main", "commit": "eecb0f1fe4db10c312a8174d758ba275a8e95736" },
   "vimtex": { "branch": "master", "commit": "be9deac3a23eeb145ccf11dd09080795838496ce" },
-  "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }
+  "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" },
+  "zellij-nav.nvim": { "branch": "main", "commit": "91cc2a642d8927ebde50ced5bf71ba470a0fc116" }
 }

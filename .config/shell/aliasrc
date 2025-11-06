@@ -9,6 +9,7 @@ alias lg="ls -A | rg"
 
 # rm
 alias rm="rm -I"
+alias trash="mv -f -t $HOME/Trash"
 
 alias pacman="pacman --color=auto"
 
