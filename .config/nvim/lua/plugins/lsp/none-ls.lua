@@ -2,7 +2,7 @@ return {
 	{
 		"nvimtools/none-ls.nvim", -- configure formatters & linters
 		event = { "BufReadPre", "BufNewFile" },
-		enabled = false,
+		-- enabled = false,
 		config = function()
 			local null_ls = require("null-ls")
 
@@ -28,6 +28,7 @@ return {
 					formatting.black,
 					formatting.shfmt,
 					formatting.verible_verilog_format,
+					formatting.typstyle,
 				},
 			})
 			vim.keymap.set("n", "<leader>in", "<cmd>NullLsInfo<cr>", { noremap = true, desc = "NullLsInfo" })

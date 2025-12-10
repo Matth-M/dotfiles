@@ -13,7 +13,8 @@ input {
             // For more information, see xkeyboard-config(7).
 
             // For example:
-            // layout "us,ru"
+            layout "us,fr"
+			// layout "fr,us"
             // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
 
             // If this section is empty, niri will fetch xkb settings
@@ -107,11 +108,11 @@ output "eDP-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=0 y=1280 // second_monitor_height / scale_2nd
+    position x=2400 y=0 // second_monitor_width / scale_2nd
 }
 
 output "DP-2" {
-	scale 0.85
+	scale 0.8 
 	mode "1920x1080@60.0"
 	position x=0 y=0
 	transform "normal"
@@ -382,7 +383,8 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+B hotkey-overlay-title="Run an Application: fuzzel" { spawn "floorp"; }
+    Mod+B hotkey-overlay-title="Open browser" { spawn "floorp"; }
+    Mod+E hotkey-overlay-title="Open file browser" { spawn "nautilus"; }
     Super+Ctrl+alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Super+Ctrl+S  { spawn-sh "swaylock -f && systemctl suspend"; }
 
@@ -499,9 +501,9 @@ binds {
     // Cycling through the presets in reverse order is also possible.
     // Mod+R { switch-preset-column-width-back; }
     Mod+Shift+R { switch-preset-window-height; }
-    Mod+Ctrl+R { reset-window-height; }
+    Mod+Shift+F { reset-window-height; }
     Mod+F { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
+    Mod+Ctrl+Shift+F { fullscreen-window; }
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
@@ -528,8 +530,8 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    Mod+V       { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+Shift+Space       { toggle-window-floating; }
+    Mod+Space { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,

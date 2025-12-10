@@ -34,6 +34,7 @@ return {
 			{ "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Fuzzy find buffers" } },
 			{ "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "Diagnostics" } },
 			{ "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" } },
+			{ "<leader>fl", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "Live grep" } },
 
 			{ "<leader>fw", "<cmd>Telescope grep_string<cr>", { desc = "Grep for word under cursor" } },
 			-- { "gd", "<cmd>Telescope lsp_definitions<cr>", { desc = "Show LSP definitions" } },

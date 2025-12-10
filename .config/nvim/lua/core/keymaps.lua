@@ -28,12 +28,14 @@ map("n", "<C-i>", "<C-i>zz", options)
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
+-- movement panes
 map("n", "<A-h>", "<C-w>h", options)
-map("n", "<A-l>", "<C-w>l", options)
+map("n", "<A-j>", "<C-w>j", options)
 map("n", "<A-k>", "<C-w>k", options)
 map("n", "<A-l>", "<C-w>l", options)
 
 
+map("n", "ZA", "<cmd>qa<cr>", options)
 
 
 

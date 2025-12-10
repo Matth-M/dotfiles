@@ -53,8 +53,8 @@
     },
 	"cpu": {
 		"interval": 10,
-		"format": "{}% ",
-		"max-length": 10
+		"format": "{usage}%@{avg_frequency}GHz ",
+		// "max-length": 10
 	},
 
     "temperature": {

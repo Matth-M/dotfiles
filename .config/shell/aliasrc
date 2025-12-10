@@ -28,11 +28,12 @@ alias maj="sudo dnf --assumeyes update && sudo dnf --assumeyes upgrade && sudo d
 alias copy="xclip -sel c <"
 alias set-fan="sudo ectool --interface=lpc fanduty"
 alias auto-fan="sudo ectool --interface=lpc autofanctrl"
-alias reload="source ~/.zshrc"
+alias reload="source ~/.zshrc && source ~/.zprofile"
 alias nr="nohup redshift >/dev/null 2>&1 &"
 alias kr="killall redshift; redshift -x"
 alias ng="nohup gammastep >/dev/null 2>&1 &"
 alias kg="killall gammastep" # ; gammastep -x"
+alias refresh-wifi="sudo systemctl restart doh-client.service NetworkManager.service"
 
 # Paths
 alias cours="cd ~/Documents/ISMIN/3A"

@@ -78,7 +78,7 @@ keybinds clear-defaults=true {
         bind "up" { MovePane "up"; }
         bind "right" { MovePane "right"; }
         bind "h" { MovePane "left"; }
-        bind "Ctrl h" { SwitchToMode "normal"; }
+        bind "Ctrl shift z" { SwitchToMode "normal"; }
         bind "j" { MovePane "down"; }
         bind "k" { MovePane "up"; }
         bind "l" { MovePane "right"; }
@@ -145,7 +145,7 @@ keybinds clear-defaults=true {
         bind "Alt shift l" { GoToNextTab; SwitchToMode "normal"; }
     }
     shared_except "locked" "move" {
-        bind "Ctrl h" { SwitchToMode "move"; }
+        bind "Ctrl shift z" { SwitchToMode "move"; }
     }
     shared_except "locked" "session" {
         bind "Alt o" { SwitchToMode "session"; }
@@ -156,8 +156,8 @@ keybinds clear-defaults=true {
         bind "Alt up" { MoveFocus "up"; }
         bind "Alt right" { MoveFocusOrTab "right"; }
         bind "Alt Ctrl h" { MoveFocus "left"; }
-        bind "Alt j" { MoveFocus "down"; }
-        bind "Alt k" { MoveFocus "up"; }
+        bind "Alt Ctrl j" { MoveFocus "down"; }
+        bind "Alt Ctrl k" { MoveFocus "up"; }
         bind "Alt Ctrl l" { MoveFocus "right"; }
     }
     shared_except "locked" "scroll" "search" "tmux" {
@@ -259,18 +259,12 @@ plugins {
     welcome-screen location="zellij:session-manager" {
         welcome_screen true
     }
-	autolock location="https://github.com/fresh2dev/zellij-autolock/releases/latest/download/zellij-autolock.wasm" {
-	  triggers "nvim|vim|v|nv"  // Lock when any open these programs open. They are expected to unlock themselves when closed (e.g., using zellij.vim plugin).
-	  watch_triggers "fzf|zoxide|atuin|atac"  // Lock when any of these open and monitor until closed.
-	  watch_interval "1.0"  // When monitoring, check every X seconds.
-	}
 }
 
 // Plugins to load in the background when a new session starts
 // eg. "file:/path/to/my-plugin.wasm"
 // eg. "https://example.com/my-plugin.wasm"
 load_plugins {
-	autolock
 }
 web_client {
     font "monospace"

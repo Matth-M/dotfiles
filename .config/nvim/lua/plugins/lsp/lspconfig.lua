@@ -2,7 +2,7 @@ return {
 	{
 		"Fildo7525/pretty_hover",
 		event = "LspAttach",
-		opts = {}
+		opts = {},
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -22,10 +22,11 @@ return {
 				severity_sort = true,
 			})
 
+			opts.desc = "Toggle diagnostic virtual_text for only current line"
 			vim.keymap.set("n", "<leader>ld", function()
 				local new_config = not vim.diagnostic.config().virtual_text.current_line
 				vim.diagnostic.config({ virtual_text = { current_line = new_config } })
-			end, { desc = "Toggle diagnostic virtual_text for only current line" })
+			end, opts)
 
 			-- Keybinds
 			opts.desc = "Go to declaration"
@@ -42,6 +43,9 @@ return {
 
 			-- opts.desc = "Show documentation for what is under cursor"
 			-- vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", opts) -- show documentation for what is under cursor
+
+			opts.desc = "Open line diagnostic in floating window."
+			vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<cr>", opts) -- mapping to restart lsp if necessary
 
 			opts.desc = "Restart LSP"
 			vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
@@ -85,4 +89,5 @@ return {
 			end
 			vim.keymap.set("n", "<leader>li", "<cmd>LspInfo<cr>", { noremap = true, desc = "LspInfo" })
 		end,
-	}, }
+	},
+}
