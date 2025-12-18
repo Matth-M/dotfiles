@@ -383,7 +383,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+B hotkey-overlay-title="Open browser" { spawn "floorp"; }
+    Mod+B hotkey-overlay-title="Open browser" { spawn "waterfox"; }
     Mod+E hotkey-overlay-title="Open file browser" { spawn "nautilus"; }
     Super+Ctrl+alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Super+Ctrl+S  { spawn-sh "swaylock -f && systemctl suspend"; }
@@ -442,6 +442,11 @@ binds {
     Mod+Shift+Alt+J  { move-column-to-monitor-down; }
     Mod+Shift+Alt+K    { move-column-to-monitor-up; }
     Mod+Shift+Alt+L { move-column-to-monitor-right; }
+
+	Mod+Shift+Ctrl+Alt+H {move-workspace-to-monitor-left;}
+	Mod+Shift+Ctrl+Alt+J {move-workspace-to-monitor-down;}
+	Mod+Shift+Ctrl+Alt+K {move-workspace-to-monitor-up;}
+	Mod+Shift+Ctrl+Alt+L {move-workspace-to-monitor-right;}
 
 
     Mod+I              { focus-workspace-down; }

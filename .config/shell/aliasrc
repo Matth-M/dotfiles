@@ -65,6 +65,7 @@ alias nvc="NVIM_APPNAME=nvchad nvim"
 
 # Tmux
 alias t="tmux"
+alias zj="zellij"
 
 # Programs
 alias matlab="bash ~/matlab/bin/matlab"
