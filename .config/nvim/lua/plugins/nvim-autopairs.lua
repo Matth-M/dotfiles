@@ -1,5 +1,8 @@
 return {
 	"windwp/nvim-autopairs",
 	event = "InsertEnter",
-	opts = {}, -- this is equalent to setup({}) function
+	opts = {
+		ignored_next_char = [=[[%w%%%'%[%"%.%`%$%@%(]]=],
+		enable_check_bracket_line = false,
+	},
 }
