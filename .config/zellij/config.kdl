@@ -31,15 +31,15 @@ keybinds clear-defaults=true {
         bind "down" { GoToNextTab; }
         bind "up" { GoToPreviousTab; }
         bind "right" { GoToNextTab; }
-        bind "1" { GoToTab 1; SwitchToMode "normal"; }
-        bind "2" { GoToTab 2; SwitchToMode "normal"; }
-        bind "3" { GoToTab 3; SwitchToMode "normal"; }
-        bind "4" { GoToTab 4; SwitchToMode "normal"; }
-        bind "5" { GoToTab 5; SwitchToMode "normal"; }
-        bind "6" { GoToTab 6; SwitchToMode "normal"; }
-        bind "7" { GoToTab 7; SwitchToMode "normal"; }
-        bind "8" { GoToTab 8; SwitchToMode "normal"; }
-        bind "9" { GoToTab 9; SwitchToMode "normal"; }
+        bind "1" { GoToTab 1;}
+        bind "2" { GoToTab 2;}
+        bind "3" { GoToTab 3;}
+        bind "4" { GoToTab 4;}
+        bind "5" { GoToTab 5;}
+        bind "6" { GoToTab 6;}
+        bind "7" { GoToTab 7;}
+        bind "8" { GoToTab 8;}
+        bind "9" { GoToTab 9;}
         bind "[" { BreakPaneLeft; SwitchToMode "normal"; }
         bind "]" { BreakPaneRight; SwitchToMode "normal"; }
         bind "b" { BreakPane; SwitchToMode "normal"; }
@@ -137,12 +137,20 @@ keybinds clear-defaults=true {
         bind "Alt ]" { NextSwapLayout; }
         bind "Alt Shift f" { ToggleFloatingPanes; }
         bind "Ctrl g" { SwitchToMode "locked"; }
-        bind "Alt u" { MoveTab "left"; }
         bind "Alt n" { NewPane; }
-        bind "Alt o" { MoveTab "right"; }
-        // bind "Ctrl q" { Quit; }
+        bind "Ctrl Shift h" { MoveTab "left"; }
+        bind "Ctrl Shift l" { MoveTab "right"; }
         bind "Alt shift h" { GoToPreviousTab; SwitchToMode "normal"; }
         bind "Alt shift l" { GoToNextTab; SwitchToMode "normal"; }
+        bind "Alt 1" { GoToTab 1;}
+        bind "Alt 2" { GoToTab 2;}
+        bind "Alt 3" { GoToTab 3;}
+        bind "Alt 4" { GoToTab 4;}
+        bind "Alt 5" { GoToTab 5;}
+        bind "Alt 6" { GoToTab 6;}
+        bind "Alt 7" { GoToTab 7;}
+        bind "Alt 8" { GoToTab 8;}
+        bind "Alt 9" { GoToTab 9;}
     }
     shared_except "locked" "move" {
         bind "Ctrl shift z" { SwitchToMode "move"; }

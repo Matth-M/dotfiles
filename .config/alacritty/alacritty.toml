@@ -58,10 +58,10 @@ action = "DecreaseFontSize"
 key = "Minus"
 mods = "Control"
 
-[[keyboard.bindings]]
-action = "ToggleFullscreen"
-key = "F11"
-mods = "None"
+# [[keyboard.bindings]]
+# action = "ToggleFullscreen"
+# key = "F11"
+# mods = "None"
 
 [[keyboard.bindings]]
 action = "Paste"

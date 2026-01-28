@@ -48,9 +48,10 @@ alias gt="cd $HOME/test"
 # SONY_HEADPHONES_ID="94:DB:56:AB:52:8E"
 # SPEAKER="D8:37:3B:D0:48:B2"
 # EARBUDS="50:C2:75:30:03:40"
-alias sony="bluetoothctl disconnect 94:DB:56:AB:52:8E; bluetoothctl connect 94:DB:56:AB:52:8E"
+alias sony3="bluetoothctl disconnect 94:DB:56:AB:52:8E; bluetoothctl connect 94:DB:56:AB:52:8E"
+alias sony="bluetoothctl disconnect 88:C9:E8:6A:60:41; bluetoothctl connect 88:C9:E8:6A:60:41"
 alias speaker="bluetoothctl disconnect D8:37:3B:D0:48:B2; bluetoothctl connect D8:37:3B:D0:48:B2"
-alias earbuds="bluetoothctl disconnect 50:C2:75:30:03:40; bluetoothctl connect 50:C2:75:30:03:40"
+alias earbuds="bluetoothctl disconnect E8:C9:13:BC:61:A4; bluetoothctl connect E8:C9:13:BC:61:A4"
 alias corsair="bluetoothctl disconnect B4:84:D5:70:E2:39; bluetoothctl connect B4:84:D5:70:E2:39"
 alias btd="bluetoothctl disconnect"
 alias bt="bluetoothctl"
@@ -71,3 +72,22 @@ alias zj="zellij"
 alias matlab="bash ~/matlab/bin/matlab"
 alias py="python3"
 alias pn="pnpm"
+
+
+
+# https://gist.github.com/rajeshg/712300
+#   mkcd command
+#   This is an improvised version of the mkcd command at http://superuser.com/questions/152794/is-there-a-shortcut-to-mkdir-foo-and-immediately-cd-into-it
+#   This function has to be added to the ~/.bashrc file
+#   After that you can run command like: mkdir abc, mkdir -p one/two/three
+#
+function mkcd {
+  last=$(eval "echo \$$#")
+  if [ ! -n "$last" ]; then
+    echo "Enter a directory name"
+  elif [ -d $last ]; then
+    echo "\`$last' already exists"
+  else
+    mkdir $@ && cd $last
+  fi
+}

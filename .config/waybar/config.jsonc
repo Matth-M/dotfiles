@@ -30,11 +30,11 @@
         "format": "{:%d.%m.%Y | %H:%M}"
     },
 
-    // "wireplumber": {
-    //     "format": "\udb81\udd7e  {volume}%",
-    //     "max-volume": 100,
-    //     "scroll-step": 5
-    // },
+    "wireplumber": {
+        "format": "\udb81\udd7e  {volume}%",
+        "max-volume": 100,
+        "scroll-step": 5
+    },
 
 	"memory": {
 		"interval": 30,
