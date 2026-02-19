@@ -8,12 +8,10 @@ return {
 		"neovim/nvim-lspconfig",
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
-			{ "folke/lazydev.nvim", ft = "lua", opts = {} },
+			{ "folke/lazydev.nvim",     ft = "lua", opts = {} },
 			{ "lewis6991/gitsigns.nvim" },
 		},
 		config = function()
-			-- local lspconfig = require("lspconfig")
-
 			local opts = { noremap = true, silent = true }
 
 			vim.diagnostic.config({
@@ -41,8 +39,8 @@ return {
 			-- opts.desc = "Go to next diagnostic"
 			-- vim.keymap.set("n", "]d", vim.diagnostic.get_next, opts) -- jump to next disgnostic in buffer
 
-			-- opts.desc = "Show documentation for what is under cursor"
-			-- vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", opts) -- show documentation for what is under cursor
+			opts.desc = "Show documentation for what is under cursor"
+			vim.keymap.set("n", "K", require("pretty_hover").hover, opts) -- show documentation for what is under cursor
 
 			opts.desc = "Show line diagnostics in a floating tooltip"
 			vim.keymap.set("n", "gK", vim.diagnostic.open_float, opts)

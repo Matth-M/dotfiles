@@ -22,7 +22,6 @@
 	dftl="-c diff.external=difft log -p  --ext-diff"
 	s = "status --branch --short"
 	su = "status --untracked-files --short --branch"
-	l = "log --oneline --graph"
 	rs = "restore --staged"
 	cm = "commit -m"
 	ap = "add -p"
@@ -32,6 +31,8 @@
 	ls = "log --oneline --graph -15"
 	la = "log --oneline --graph --all"
 	las = "log --oneline --graph --all -15"
+	l = "log --oneline --graph"
+	lp = "log --patch"
 	cmp = "log --oneline --graph HEAD"
 	ch = "checkout"
 	dmb = !git branch --merged | grep -v 'main' | xargs -I {} git branch -d {}

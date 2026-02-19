@@ -32,6 +32,7 @@ alias reload="source ~/.zshrc && source ~/.zprofile"
 alias nr="nohup redshift >/dev/null 2>&1 &"
 alias kr="killall redshift; redshift -x"
 alias ng="nohup gammastep >/dev/null 2>&1 &"
+alias rw="killall waybar; nohup waybar  2>/dev/null &"
 alias kg="killall gammastep" # ; gammastep -x"
 alias refresh-wifi="sudo systemctl restart doh-client.service NetworkManager.service"
 

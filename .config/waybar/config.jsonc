@@ -95,29 +95,29 @@
             "deactivated": "\udb83\udfaa"
         }
     },
-    "pulseaudio": {
-        "format": "{icon} {volume}% {format_source}",
-        "format-muted": " {format_source}",
-        // "format-bluetooth": "{icon}  {format_source}",
-        // "format-bluetooth-muted": "{icon}  {format_source}",
-        "format-bluetooth": "{icon} {volume}%",
-        "format-bluetooth-muted": "{icon} ",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "󰋎",
-            "phone": " ",
-            "portable": " ",
-            "car": "",
-            "default": [
-                "",
-                "",
-                ""
-            ]
-        },
-        "tooltip-format": "{icon} {volume}%\n{format_source}",
-        "ignored-sinks": [
-            "Easy Effects Sink"
-        ]
-    },
+    // "pulseaudio": {
+    //     "format": "{icon} {volume}% {format_source}",
+    //     "format-muted": " {format_source}",
+    //     // "format-bluetooth": "{icon}  {format_source}",
+    //     // "format-bluetooth-muted": "{icon}  {format_source}",
+    //     "format-bluetooth": "{icon} {volume}%",
+    //     "format-bluetooth-muted": "{icon} ",
+    //     "format-icons": {
+    //         "headphone": "",
+    //         "hands-free": "",
+    //         "headset": "󰋎",
+    //         "phone": " ",
+    //         "portable": " ",
+    //         "car": "",
+    //         "default": [
+    //             "",
+    //             "",
+    //             ""
+    //         ]
+    //     },
+    //     "tooltip-format": "{icon} {volume}%\n{format_source}",
+    //     "ignored-sinks": [
+    //         "Easy Effects Sink"
+    //     ]
+    // },
 }
