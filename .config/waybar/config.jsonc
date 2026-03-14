@@ -4,7 +4,7 @@
     "height": 24,
     "spacing": 5,
 
-    "modules-left": ["niri/workspaces", ],
+    "modules-left": ["niri/workspaces", "custom/open-apps"],
     "modules-center": ["clock"],
     "modules-right": [ "pulseaudio", "battery", "temperature", "cpu", "memory", "network", "bluetooth", "tray"],
 
@@ -25,6 +25,13 @@
             "5": [],
         }
     },
+
+	"custom/open-apps": {
+		"exec": "$HOME/.config/waybar/scripts/open-apps.py",
+		"interval": 0.2,
+		"format": "{}"
+	},
+
 
     "clock": {
         "format": "{:%d.%m.%Y | %H:%M}"

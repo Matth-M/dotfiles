@@ -35,6 +35,7 @@ return {
 			shfmt = {
 				prepend_args = { "-i", "2" },
 			},
+			mbake = {},
 		},
 	},
 	init = function()
