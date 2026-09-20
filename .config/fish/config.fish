@@ -1,6 +1,13 @@
 if status is-interactive
-	source $HOME/.config/shell/aliasrc
 	alias reload="source $HOME/.config/fish/config.fish"
+	alias dots='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+
+# Replace ls with eza
+alias ls='eza -al --color=always --group-directories-first --icons=always' # preferred listing
+alias la='eza -a --color=always --group-directories-first --icons=always'  # all files and dirs
+alias ll='eza -l --color=always --group-directories-first --icons=always'  # long format
+alias lt='eza -aT --color=always --group-directories-first --icons=always' # tree listing
+alias l.="eza -a | grep -e '^\.'"                                     # show only dotfiles
 
 	function bind_bang
 		switch (commandline -t)[-1]
