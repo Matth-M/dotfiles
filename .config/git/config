@@ -13,28 +13,34 @@
 [status]
 	showUntrackedFiles = no
 [alias]
-	dc = "diff --cached"
 	d = "diff"
 	dl = "diff HEAD~ HEAD"
-	dft = "-c diff.external=difft diff --ext-diff"
-	dfts = "-c diff.external=difft show --ext-diff"
-	dftc="-c diff.external=difft diff --cached --ext-diff"
-	dftl="-c diff.external=difft log -p  --ext-diff"
+	dc = "diff --cached"
+
+	df = "-c diff.external=difft diff --ext-diff"
+	dfl = "-c diff.external=difft show --ext-diff"
+	dfc="-c diff.external=difft diff --cached --ext-diff"
+
 	s = "status --branch --short"
+	st = "status"
 	su = "status --untracked-files --short --branch"
+
 	rs = "restore --staged"
 	cm = "commit -m"
 	ap = "add -p"
 	ai = "add -i"
 	can = "commit --amend --no-edit"
+
 	cb = "checkout -b"
+	ch = "checkout"
+
 	ls = "log --oneline --graph -15"
 	la = "log --oneline --graph --all"
 	las = "log --oneline --graph --all -15"
 	l = "log --oneline --graph"
-	lp = "log --patch"
+	ld="-c diff.external=difft log -p  --ext-diff"
 	cmp = "log --oneline --graph HEAD"
-	ch = "checkout"
+
 	dmb = !git branch --merged | grep -v 'main' | xargs -I {} git branch -d {}
 	b = "branch"
 	wt = "worktree"
