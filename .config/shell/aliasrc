@@ -18,6 +18,9 @@ alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
 
+alias fdu="fd --unrestricted"
+alias fd="fd --hidden"
+
 # Dotfiles
 alias dots="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" 
 
@@ -52,7 +55,7 @@ alias gt="cd $HOME/test"
 alias sony3="bluetoothctl disconnect 94:DB:56:AB:52:8E; bluetoothctl connect 94:DB:56:AB:52:8E"
 alias sony="bluetoothctl disconnect 88:C9:E8:6A:60:41; bluetoothctl connect 88:C9:E8:6A:60:41"
 alias speaker="bluetoothctl disconnect D8:37:3B:D0:48:B2; bluetoothctl connect D8:37:3B:D0:48:B2"
-alias earbuds="bluetoothctl disconnect E8:C9:13:BC:61:A4; bluetoothctl connect E8:C9:13:BC:61:A4"
+alias earbuds="bluetoothctl disconnect A8:D1:62:0D:6B:60; bluetoothctl connect A8:D1:62:0D:6B:60"
 alias corsair="bluetoothctl disconnect B4:84:D5:70:E2:39; bluetoothctl connect B4:84:D5:70:E2:39"
 alias btd="bluetoothctl disconnect"
 alias bt="bluetoothctl"
@@ -74,6 +77,8 @@ alias matlab="bash ~/matlab/bin/matlab"
 alias py="python3"
 alias pn="pnpm"
 
+alias zigm="$HOME/install/zigm/zig"
+
 
 
 # https://gist.github.com/rajeshg/712300
@@ -92,3 +97,6 @@ function mkcd {
     mkdir $@ && cd $last
   fi
 }
+
+
+alias path="echo $PATH | tr ':' '\n' | uniq | sort"

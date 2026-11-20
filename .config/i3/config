@@ -37,7 +37,8 @@ exec_always --no-startup-id feh --bg-scale $wallpaper
 #################
 
 # keyboard layout
-exec_always --no-startup-id setxkbmap -layout fr -variant us
+# exec_always --no-startup-id setxkbmap -layout fr -variant us
+exec_always --no-startup-id setxkbmap -layout us -variant qwerty-fr
 # remap caps lock
 # exec_always --no-startup-id setxkbmap -option caps:escape
 bindsym $mod+Ctrl+Shift+F11 exec setxkbmap -layout fr -variant us
@@ -46,6 +47,8 @@ bindsym $mod+Ctrl+Shift+F12 exec setxkbmap -layout fr
 # Key repeat rate and delay
 exec_always --no-startup-id xset r rate 250 40
 
+
+exec_always alttab -w 1
 
 ##################### 
 # Status bar
@@ -111,14 +114,16 @@ floating_modifier $mod
 # set $terminal ~/.local/bin/kitty
 set $terminal /sbin/alacritty
 # set $start_dir ~/Documents/ISMIN/3A/
-set $browser /usr/bin/floorp
+# set $browser /usr/bin/floorp
+set $browser /usr/bin/waterfox
 set $start_dir ~
 bindsym $mod+t exec --no-startup-id $terminal
-bindsym $mod+f exec --no-startup-id $browser
+bindsym $mod+b exec --no-startup-id $browser
 bindsym $mod+p exec --no-startup-id torbrowser-launcher
 
-# bindsym $mod+b exec --no-startup-id thunar $start_dir
-bindsym $mod+b exec --no-startup-id ADW_DISABLE_PORTAL=1 nautilus
+# bindsym $mod+e exec --no-startup-id thunar $start_dir
+bindsym $mod+e exec --no-startup-id ADW_DISABLE_PORTAL=1 nautilus
+# bindsym $mod+e exec --no-startup-id dolphin
 # bindsym $mod+n exec  $terminal nnn $start_dir
 bindsym $mod+m exec --no-startup-id thunderbird
 
@@ -177,6 +182,10 @@ bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
+
+
+
+# bindsym Mod1+Tab exec --no-startup-id alttab -fg "#d58681" -bg "#4a4a4a" -frame "#eb564d" -t 128x150 -i 127x64
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -303,7 +312,7 @@ mode "resize" {
 set $lock_screen_picure $HOME/Pictures/wallpapers/leaves.png 
 
 bindsym $mod+ctrl+l exec --no-startup-id i3lock --image=$lock_screen_picure
-bindsym $mod+ctrl+s exec --no-startup-id i3lock --image=$lock_screen_picure && systemctl suspend
+bindsym $mod+ctrl+s exec --no-startup-id i3lock --image=$lock_screen_picure && systemctl sleep
 
 ##################### 
 #i3 gaps

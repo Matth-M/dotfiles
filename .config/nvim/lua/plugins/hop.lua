@@ -8,5 +8,7 @@ return {
 		require("hop").setup({ uppercase_labels = true })
 	end,
 
-	keys = { { "<leader>j", "<cmd>HopCamelCaseMW<cr>", desc = "Hop Word" } },
+	keys = { { "<leader>j", "<cmd>HopWordMW<cr>", desc = "Hop Word" },
+	{ "<leader>J", "<cmd>HopCamelCaseMW<cr>", desc = "Hop Word" }},
 }
+

@@ -8,7 +8,7 @@ return {
 		"neovim/nvim-lspconfig",
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
-			{ "folke/lazydev.nvim",     ft = "lua", opts = {} },
+			{ "folke/lazydev.nvim", ft = "lua", opts = {} },
 			{ "lewis6991/gitsigns.nvim" },
 		},
 		config = function()

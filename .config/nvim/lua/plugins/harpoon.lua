@@ -4,14 +4,29 @@ return {
 	branch = "harpoon2",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		"nvim-telescope/telescope.nvim",
 	},
 	config = function()
 		local harpoon = require("harpoon")
 
-		harpoon:setup({})
-		-- basic telescope configuration
-		local conf = require("telescope.config").values
+		harpoon:setup({ settings = { sync_on_ui_close = true, save_on_toggle = true } })
+		harpoon:extend({
+			UI_CREATE = function(cx)
+				vim.keymap.set("n", "<C-v>", function()
+					harpoon.ui:select_menu_item({ vsplit = true })
+				end, { buffer = cx.bufnr })
+
+				vim.keymap.set("n", "<C-x>", function()
+					harpoon.ui:select_menu_item({ split = true })
+				end, { buffer = cx.bufnr })
+
+				vim.keymap.set("n", "<C-t>", function()
+					harpoon.ui:select_menu_item({ tabedit = true })
+				end, { buffer = cx.bufnr })
+			end,
+		})
+
+		local harpoon_extensions = require("harpoon.extensions")
+		harpoon:extend(harpoon_extensions.builtins.highlight_current_file())
 		vim.keymap.set("n", "<C-h>", function()
 			harpoon:list():add()
 		end, { desc = "Mark file with harpoon" })
@@ -40,3 +55,4 @@ return {
 		end, { desc = "Select file" })
 	end,
 }
+

@@ -5,6 +5,8 @@
     "spacing": 5,
 
     "modules-left": ["niri/workspaces", "custom/open-apps"],
+    // "modules-left": ["niri/workspaces", "wlr/taskbar"],
+	// "modules-left": ["cffi/niri-taskbar"],
     "modules-center": ["clock"],
     "modules-right": [ "pulseaudio", "battery", "temperature", "cpu", "memory", "network", "bluetooth", "tray"],
 
@@ -28,9 +30,32 @@
 
 	"custom/open-apps": {
 		"exec": "$HOME/.config/waybar/scripts/open-apps.py",
-		"interval": 0.2,
+		"interval": 0.5,
 		"format": "{}"
 	},
+
+	"cffi/niri-taskbar" :{
+		"module_path":"/usr/lib/waybar/libniri_taskbar.so",
+		"show_all_outputs":false,
+	},
+
+	"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 14,
+    "icon-theme": "Numix-Circle",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    // "app_ids-mapping": {
+    //   "firefoxdeveloperedition": "firefox-developer-edition"
+    // },
+    // "rewrite": {
+    //     "Firefox Web Browser": "Firefox",
+    //     "Foot Server": "Terminal",
+    //     ".*(steam_app_[0-9]+).*": "Game"
+    //
+    // },
+},
 
 
     "clock": {

@@ -24,7 +24,7 @@ def main():
     windows_sorted = sorted(windows, key=lambda w: w["layout"]["pos_in_scrolling_layout"])
 
     # Extract app_ids and join them with spaces
-    app_ids = [w["app_id"] for w in windows_sorted]
+    app_ids = [w["app_id"].lower() for w in windows_sorted]
     print(" ".join(app_ids))
 
 if __name__ == "__main__":

@@ -1,16 +1,19 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
-		event = { "BufReadPre", "BufNewFile" },
+		enabled = false,
+		branch = "main",
+		-- event = { "BufReadPre", "BufNewFile" },
 		-- event = "VeryLazy",
 		build = ":TSUpdate",
+		lazy = false,
 		dependencies = {
-			"nvim-treesitter/nvim-treesitter-textobjects",
-			"windwp/nvim-ts-autotag",
+			-- {"nvim-treesitter/nvim-treesitter-textobjects",branch = "main",},
+			-- "windwp/nvim-ts-autotag",
 		},
 		config = function()
 			-- import nvim-treesitter plugin
-			local treesitter = require("nvim-treesitter.configs")
+			local treesitter = require("nvim-treesitter")
 
 			-- configure treesitter
 			treesitter.setup({ -- enable syntax highlighting
@@ -70,39 +73,39 @@ return {
 					enable = true,
 					enable_autocmd = false,
 				},
-				textobjects = {
-					move = {
-						enable = true,
-						goto_next_start = {
-							["]f"] = "@function.outer",
-							["]c"] = "@class.outer",
-							["]a"] = "@parameter.inner",
-						},
-						goto_next_end = {
-							["]F"] = "@function.outer",
-							["]C"] = "@class.outer",
-							["]A"] = "@parameter.inner",
-						},
-						goto_previous_start = {
-							["[f"] = "@function.outer",
-							["[c"] = "@class.outer",
-							["[a"] = "@parameter.inner",
-						},
-						goto_previous_end = {
-							["[F"] = "@function.outer",
-							["[C"] = "@class.outer",
-							["[A"] = "@parameter.inner",
-						},
-					},
-					select = {
-						enable = true,
-						keymaps = {
-							["if"] = "@function.inner",
-							["af"] = "@function.outer",
-						},
-						include_surrounding_whitespace = true,
-					},
-				},
+				-- textobjects = {
+				-- 	move = {
+				-- 		enable = true,
+				-- 		goto_next_start = {
+				-- 			["]f"] = "@function.outer",
+				-- 			["]c"] = "@class.outer",
+				-- 			["]a"] = "@parameter.inner",
+				-- 		},
+				-- 		goto_next_end = {
+				-- 			["]F"] = "@function.outer",
+				-- 			["]C"] = "@class.outer",
+				-- 			["]A"] = "@parameter.inner",
+				-- 		},
+				-- 		goto_previous_start = {
+				-- 			["[f"] = "@function.outer",
+				-- 			["[c"] = "@class.outer",
+				-- 			["[a"] = "@parameter.inner",
+				-- 		},
+				-- 		goto_previous_end = {
+				-- 			["[F"] = "@function.outer",
+				-- 			["[C"] = "@class.outer",
+				-- 			["[A"] = "@parameter.inner",
+				-- 		},
+				-- 	},
+				-- 	select = {
+				-- 		enable = true,
+				-- 		keymaps = {
+				-- 			["if"] = "@function.inner",
+				-- 			["af"] = "@function.outer",
+				-- 		},
+				-- 		include_surrounding_whitespace = true,
+				-- 	},
+				-- },
 			})
 		end,
 	},
@@ -121,7 +124,7 @@ return {
 				mode = "cursor", -- Line used to calculate context. Choices: 'cursor', 'topline'
 				-- Separator between context and content. Should be a single character string, like '-'.
 				-- When separator is set, the context will only show up when there are at least 2 lines above cursorline.
-				separator = '-',
+				separator = "-",
 				zindex = 20, -- The Z-index of the context window
 				on_attach = nil, -- (fun(buf: integer): boolean) return false to disable attaching
 			})

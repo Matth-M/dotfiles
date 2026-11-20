@@ -106,7 +106,7 @@ keybinds clear-defaults=true {
         bind "w" { SearchToggleOption "Wrap"; }
     }
     session {
-        bind "c" {
+        bind "b" {
             LaunchOrFocusPlugin "configuration" {
                 floating true
                 move_to_focused_tab true
@@ -121,7 +121,7 @@ keybinds clear-defaults=true {
             }
             SwitchToMode "normal"
         }
-        bind "w" {
+        bind "c" {
             LaunchOrFocusPlugin "session-manager" {
                 floating true
                 move_to_focused_tab true
@@ -172,7 +172,7 @@ keybinds clear-defaults=true {
     //     bind "Ctrl b" { SwitchToMode "tmux"; }
     // }
     shared_except "locked" "scroll" "search" {
-        bind "Ctrl s" { SwitchToMode "scroll"; }
+        bind "Ctrl /" { SwitchToMode "scroll"; }
     }
     shared_except "locked" "tab" {
         bind "Alt t" { SwitchToMode "tab"; }
@@ -207,7 +207,7 @@ keybinds clear-defaults=true {
         bind "j" { ScrollDown; }
         bind "k" { ScrollUp; }
         bind "l" { PageScrollDown; }
-        bind "Ctrl s" { SwitchToMode "normal"; }
+        bind "Ctrl /" { SwitchToMode "normal"; }
         bind "u" { HalfPageScrollUp; }
     }
     entersearch {
@@ -263,9 +263,12 @@ plugins {
     session-manager location="zellij:session-manager"
     status-bar location="zellij:status-bar"
     strider location="zellij:strider"
-    tab-bar location="zellij:tab-bar"
     welcome-screen location="zellij:session-manager" {
         welcome_screen true
+    }
+    tab-bar location="zellij:tab-bar"
+	tab-bar location="https://github.com/ivoronin/zellij-tab-bar-indexed/releases/latest/download/tab-bar.wasm" {
+        show_tab_indices true
     }
 }
 
@@ -273,6 +276,7 @@ plugins {
 // eg. "file:/path/to/my-plugin.wasm"
 // eg. "https://example.com/my-plugin.wasm"
 load_plugins {
+
 }
 web_client {
     font "monospace"
@@ -367,8 +371,8 @@ pane_frames false
 // that will be used by default if this option is not set.
 // Examples:
 //
-// copy_command "xclip -selection clipboard" // x11
-copy_command "wl-copy"                    // wayland
+copy_command "xclip -selection clipboard" // x11
+// copy_command "wl-copy"                    // wayland
 // copy_command "pbcopy"                     // osx
 // 
 // copy_command "pbcopy"

@@ -8,12 +8,12 @@ return {
 		vim.opt.foldlevelstart = 99
 	end,
 	config = function()
-		require("origami").setup {
-			useLspFoldsWithTreesitterFallback = true,
+		require("origami").setup({
+			useLspFoldsWithTreesitterFallback = { enabled = true },
 			pauseFoldsOnSearch = true,
 			foldtext = {
 				enabled = true,
-				padding = 3,
+				padding = { width = 3 },
 				lineCount = {
 					template = "%d lines", -- `%d` is replaced with the number of folded lines
 					hlgroup = "Comment",
@@ -29,6 +29,6 @@ return {
 				setup = false, -- modifies `h`, `l`, and `$`
 				hOnlyOpensOnFirstColumn = false,
 			},
-		}
-	end
+		})
+	end,
 }

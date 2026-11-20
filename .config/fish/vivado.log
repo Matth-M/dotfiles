@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Jan 11 17:18:05 2025
+# Process ID: 22848
+# Current directory: /home/matth/.config/fish
+# Command line: vivado -mode tcl
+# Log file: /home/matth/.config/fish/vivado.log
+# Journal file: /home/matth/.config/fish/vivado.jou
+# Running On        :framework13
+# Platform          :Arch
+# Operating System  :Arch Linux
+# Processor Detail  :AMD Ryzen 7 7840U w/ Radeon  780M Graphics
+# CPU Frequency     :2461.301 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :29220 MB
+# Swap memory       :34359 MB
+# Total Virtual     :63579 MB
+# Available Virtual :54253 MB
+#-----------------------------------------------------------
+help
+WARNING: [Common 17-20] Did not find any categories for task 'platform_verify'
+WARNING: [Common 17-20] Did not find any categories for task 'report_run_status'
+WARNING: [Common 17-20] Did not find any categories for task 'tandem_verify'
+WARNING: [Common 17-20] Did not find any categories for task 'update_calibration_scheme'
+Topic Categories:
+Bitgen
+Board
+CDC
+Configuration
+DRC
+Debug
+Device
+Feasibility
+FileIO
+Floorplan
+GUIControl
+HD
+IPFlow
+IPIntegrator
+Lint
+Memory
+Memory Initialization
+Methodology
+NOC
+Netlist
+Object
+Partition
+PinPlanning
+Platform
+Power
+Project
+PropertyAndParameter
+Report
+Report, NOC
+Run
+SDC
+Simulation
+SysGen
+Tcl
+TclBuiltIn
+TclPackage
+Timing
+ToolLaunch
+Tools
+Vitis
+Waiver
+XDC
+XPS
+cluster_configuration
+projutils
+simulation
+synthesis
+user-written
+vivado_preferences
+xilinxtclstore
+To list help topics by category, type 'help -category <category>'. For example:
+% help -category Project
+memory
+invalid command name "memory"
+Netlist
+invalid command name "Netlist"
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 11 17:51:27 2025...

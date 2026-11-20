@@ -49,6 +49,10 @@ export PATH=$PATH:$HOME/.local/bin/kitty.app/bin/
 export PATH=$PATH:$HOME/install/Vivado/2024.1/bin
 export PATH=$PATH:$HOME/.cargo/bin
 
+# zig
+
+# export PATH=$PATH:$HOME/install/zig/
+
 # nnn
 export NNN_PLUG="p:preview-tabbed"
 # export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
